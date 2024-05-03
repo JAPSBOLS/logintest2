@@ -15,4 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
             userLogo.src = "images/studentLOGO.png";
         }
     });
+
+    setTimeout(function() {
+        var errorAlert = document.getElementById('error-alert');
+        if (errorAlert) {
+            errorAlert.style.display = 'none';
+        }
+    }, 5000); // 5000 milliseconds = 5 seconds
 });

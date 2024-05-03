@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="NEWstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
     <title>NEW Login Page</title>
 </head>
 <body>
@@ -20,11 +21,11 @@
         <img src="images/BUP2.png" alt="BUP Logo" class="logo">
         <div class="form-container sign-in">
             <form action="php/login_code.php" method="POST">
-            <?php if (isset($_GET['error'])) { ?>
-      	      <div class="alert alert-danger" role="alert">
-				  <?=$_GET['error']?>
+            <?php if (isset($_SESSION['error'])) { ?>
+      	      <div class="alert alert-danger" role="alert" id="error-alert">
+				  <?=$_SESSION['error']?>
 			  </div>
-			  <?php } ?>
+			  <?php unset($_SESSION['error']); } ?>
                 <img src="images/studentLOGO.png" id="userLogo" class="guestLOGO">
                 <div class="input-group">
                     <select name="role" id="user" class="select">

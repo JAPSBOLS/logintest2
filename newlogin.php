@@ -15,7 +15,6 @@
     rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>NEW Login Page</title>
 </head>
-
 <body>
     <div class="container" id="container">
         <img src="images/BUP2.png" alt="BUP Logo" class="logo">

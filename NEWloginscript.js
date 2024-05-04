@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     userTypeSelect.addEventListener("change", function() {
         const selectedUserType = userTypeSelect.value;
-        if (selectedUserType === "Admin") {
+        if (selectedUserType === "admin") {
             emailInput.placeholder = adminPlaceholder;
             userLogo.src = "images/adminLOGO.png";
         } else {

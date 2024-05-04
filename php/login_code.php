@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../admin/config/dbconn.php';
+include '../admin/config/dbconn.php'; // Make sure this file contains your database connection
 
 if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'])) {
 
@@ -16,23 +16,63 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
     $password = test_input($_POST['password']);
     $role = test_input($_POST['role']);
 
-    if ($role === "Admin" && empty($studNum)) {
-        $_SESSION['error'] = "Username is Required";
-        header("Location: ../newlogin.php");
-        exit();
-    } else if ($role !== "Admin" && empty($studNum)) {
-        $_SESSION['error'] = "Student Number is Required";
-        header("Location: ../newlogin.php");
-        exit();
-    } else if (empty($password)) {
+    if (empty($password)) {
         $_SESSION['error'] = "Password is Required";
         header("Location: ../newlogin.php");
         exit();
     } else {
-        // Login logic here
-        echo "hello";
+
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        
+        if ($role === "admin") {
+            // Admin login
+            if (empty($studNum)) {
+                $_SESSION['error'] = "Username is Required";
+                header("Location: ../newlogin.php");
+                exit();
+            }
+            $query = "SELECT t_admin.*, t_users.password 
+                      FROM t_admin 
+                      INNER JOIN t_users ON t_admin.user_fk = t_users.userID 
+                      WHERE t_admin.username = '$studNum' AND t_users.password = '$password'";
+        } else {
+            // Student login
+            if (empty($studNum)) {
+                $_SESSION['error'] = "Student Number is Required";
+                header("Location: ../newlogin.php");
+                exit();
+            }
+            $query = "SELECT t_student.*, t_users.* FROM t_student 
+                        INNER JOIN t_users ON t_student.user_fk = t_users.userID 
+                        WHERE t_student.studentNum = '$studNum' AND t_users.password = '$password'";
+        }
+
+        $result = mysqli_query($conn, $query);
+
+        if ($result) {
+            if (mysqli_num_rows($result) == 1) {
+                // User authenticated successfully
+                $row = mysqli_fetch_assoc($result);
+                $_SESSION['user'] = $row; // Storing user data in session
+                if ($role === "admin") {
+                    header("Location: ../adminhome.php");
+                } else {
+                    header("Location: ../home.php");
+                }
+                exit();
+            } else {
+                $_SESSION['error'] = "Invalid credentials";
+                header("Location: ../newlogin.php");
+                exit();
+            }
+        } else {
+            $_SESSION['error'] = "Error: " . mysqli_error($conn);
+            header("Location: ../newlogin.php");
+            exit();
+        }
     }
 } else {
     header("Location: ../newlogin.php");
 }
 ?>
+

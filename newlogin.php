@@ -29,8 +29,8 @@
                 <img src="images/studentLOGO.png" id="userLogo" class="guestLOGO">
                 <div class="input-group">
                     <select name="role" id="user" class="select">
-                        <option value="Student">Student</option>
-                        <option value="Admin">Admin</option>
+                        <option value="student">Student</option>
+                        <option value="admin">Admin</option>
                     </select>
                 </div>
                 <input type ="text" name="studNum" placeholder="Student Number">

@@ -55,13 +55,17 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 $row = mysqli_fetch_assoc($result);
                 $_SESSION['user'] = $row; // Storing user data in session
                 if ($role === "admin") {
-                    header("Location: ../adminhome.php");
+                    header("Location: ../admin/index.php");
                 } else {
                     header("Location: ../home.php");
                 }
                 exit();
             } else {
-                $_SESSION['error'] = "Invalid credentials";
+                if ($role === "admin") {
+                    $_SESSION['error'] = "Invalid Username or Password";
+                } else {
+                    $_SESSION['error'] = "Invalid Student Number or Password";
+                }
                 header("Location: ../newlogin.php");
                 exit();
             }
@@ -75,4 +79,3 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
     header("Location: ../newlogin.php");
 }
 ?>
-

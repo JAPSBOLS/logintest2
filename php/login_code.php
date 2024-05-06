@@ -54,6 +54,7 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 // User authenticated successfully
                 $row = mysqli_fetch_assoc($result);
                 $_SESSION['user'] = $row; // Storing user data in session
+                $_SESSION['username'] = $studNum;
                 if ($role === "admin") {
                     header("Location: ../admin/index.php");
                 } else {

@@ -7,7 +7,6 @@
     height: 100%;
     background-image: url(images/BU.jpeg);
     background-size: cover; 
-    /* object-fit: cover; Adjust this value based on your needs */
   }
   .navbar-toggler{
     background-color:coral;

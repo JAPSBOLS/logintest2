@@ -8,9 +8,7 @@
     background-image: url(images/BU.jpeg);
     background-size: cover; 
   }
-  .navbar-toggler{
-    background-color:coral;
-  }
+ 
 </style>
 <div class="bg">
   <?php

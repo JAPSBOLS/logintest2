@@ -58,10 +58,11 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 if ($role === "admin") {
                     header("Location: ../admin/index.php");
                 } else {
-                    header("Location: ../home.php");
+                    header("Location: ../admin/index.php");
                 }
                 exit();
             } else {
+                //User authentication failed
                 if ($role === "admin") {
                     $_SESSION['error'] = "Invalid Username or Password";
                 } else {

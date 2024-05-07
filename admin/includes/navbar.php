@@ -33,25 +33,25 @@
 
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Home</span></a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i class="fas fa-landmark"></i>
             <span>Thesis Library</span></a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i class="fas fa-user-friends"></i>
             <span>Contacts</span></a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i class="fas fa-question"></i>
+            <span>FAQ</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-laugh"></i>
             <span>About Us</span></a>
     </li>
 </ul>

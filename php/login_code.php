@@ -34,7 +34,7 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
             $query = "SELECT t_admin.*, t_users.password 
                       FROM t_admin 
                       INNER JOIN t_users ON t_admin.user_fk = t_users.userID 
-                      WHERE t_admin.username = '$studNum' AND t_users.password = '$password'";
+                      WHERE t_users.username = '$studNum' AND t_users.password = '$password'";
         } else {
             // Student login
             if (empty($studNum)) {

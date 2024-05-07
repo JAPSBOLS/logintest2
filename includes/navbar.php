@@ -1,6 +1,7 @@
 <div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
   <nav class="navbar navbar-expand-lg" style="background-color:orange">
     <div class="container-fluid">
+      <img src='images/systemLogo.png' style="height: 50px; width:30%; object-fit:cover" class='mb-3'></img>
       <a class="navbar-brand" href="#">WELCOME HOME BUENOS!</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

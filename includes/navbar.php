@@ -1,5 +1,5 @@
-<div class="container-fluid" style="background-color: orange; padding-left: 15px; padding-right: 15px;">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
+  <nav class="navbar navbar-expand-lg" style="background-color:orange">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">WELCOME HOME BUENOS!</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

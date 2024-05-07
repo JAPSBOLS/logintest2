@@ -1,0 +1,236 @@
+body{
+    background: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    min-height: 100vh;
+}
+.container{
+   
+    background-color:lightsalmon;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 0 15px;
+    box-shadow: 0 5px 10px gray;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.container .alert {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 300px;
+    padding: 1em;
+    background-color: green;
+    box-shadow: 0 0 5px;
+}
+
+
+.alert-icon{
+    display: flex;
+    align-items: center;
+}
+
+.alert-text{
+    margin-left: 1em;
+    font-size: 1.15em;
+    font-weight: 500;
+}
+
+
+.container header{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container form{
+    position: relative;
+    font-size: 16px;
+    min-height: 120px;
+}
+
+.container form .details{
+     
+    margin-top:  20px;
+}
+
+.container form .title{
+    
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 600;
+    display: block;
+}
+
+.container form .fields{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field input{
+    height: 30px;
+    width: 240px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 8px 0;
+    outline: none;
+}
+.input-field label{
+    font-size: 15px;
+}
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 3px black;
+} /*to be studied*/
+
+.container form .abstractField{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form .abstractField .abstract-field{
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0;
+    outline: none;
+}
+
+.abstract-field label{
+    font-size: 15px;
+}
+
+textarea{
+    height: 250px;
+    width: 895px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 8px 0;
+    outline: none;
+    resize: none;
+   }
+
+textarea:is(:focus, :valid){
+    box-shadow: 0 3px 3px black;
+} /*to be studied*/
+
+form .button, .remove_button {
+    height: 55px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: lightblue;
+    margin-top: 20px; /* Add margin top for spacing */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Set font weight */   
+}
+
+form .button:hover, .remove_button:hover{
+    background-color: darkcyan;
+}
+
+.message-box {
+
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    animation: buttons .3s linear;
+    display: none;
+    position: absolute;
+}
+
+#toastBox {
+    position: fixed; /* Change position to fixed */
+    top: 30px;
+    right: 30px;
+    z-index: 9999; 
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.toast {
+    width: 400px;
+    height: 80px; /* Change height to auto */
+    font-weight: 500;
+    margin: 15px 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: lightseagreen;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: side 3s linear forwards, fadeOut 0.5s linear 5s forwards; /* Add fadeOut animation */
+}
+
+@keyframes side {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.toast i {
+    margin: 0 20px;
+    font-size: 35px;
+}
+
+.toast::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anim 3s linear forwards;
+    
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0; /* Fade out the toast after 5 seconds */
+    }
+}

@@ -21,7 +21,7 @@
             <a class="nav-link" href="#" style="margin-right: 20px;">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary" href="newlogin.php">Login</a>
+            <a class="btn btn-primary" href="Login/newlogin.php">Login</a>
           </li>
         </ul>
       </div>

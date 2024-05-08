@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include('admin/config/dbconn.php');
+    include('../admin/config/dbconn.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,10 +17,10 @@
 </head>
 <body>
     <div class="container" id="container">
-        <img src="images/BUP2.png" alt="BUP Logo" class="logo">
+        <img src="../images/BUP2.png" alt="BUP Logo" class="logo">
         <div class="form-container sign-in">
-            <form action="php/login_code.php" method="POST">
-                <img src="images/studentLOGO.png" id="userLogo" class="guestLOGO">
+            <form action="login_code.php" method="POST">
+                <img src="../images/studentLOGO.png" id="userLogo" class="guestLOGO">
                 <?php if (isset($_SESSION['error'])) { ?>
                      <div class="alert alert-danger" role="alert" id="error-alert" style="color: darkred;">
                         <strong>&times;</strong> <?=$_SESSION['error']?>

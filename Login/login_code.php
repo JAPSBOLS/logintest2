@@ -18,7 +18,7 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
 
     if (empty($password)) {
         $_SESSION['error'] = "Password is Required";
-        header("Location: ../newlogin.php");
+        header("Location: newlogin.php");
         exit();
     } else {
 
@@ -28,7 +28,7 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
             // Admin login
             if (empty($studNum)) {
                 $_SESSION['error'] = "Username is Required";
-                header("Location: ../newlogin.php");
+                header("Location: newlogin.php");
                 exit();
             }
             $query = "SELECT t_admin.*, t_users.password 
@@ -39,7 +39,7 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
             // Student login
             if (empty($studNum)) {
                 $_SESSION['error'] = "Student Number is Required";
-                header("Location: ../newlogin.php");
+                header("Location: newlogin.php");
                 exit();
             }
             $query = "SELECT t_student.*, t_users.* FROM t_student 
@@ -68,12 +68,12 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 } else {
                     $_SESSION['error'] = "Invalid Student Number or Password";
                 }
-                header("Location: ../newlogin.php");
+                header("Location: newlogin.php");
                 exit();
             }
         } else {
             $_SESSION['error'] = "Error: " . mysqli_error($conn);
-            header("Location: ../newlogin.php");
+            header("Location: newlogin.php");
             exit();
         }
     }

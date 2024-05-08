@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const selectedUserType = userTypeSelect.value;
         if (selectedUserType === "admin") {
             emailInput.placeholder = adminPlaceholder;
-            userLogo.src = "images/adminLOGO.png";
+            userLogo.src = "../images/adminLOGO.png";
         } else {
             emailInput.placeholder = studentPlaceholder;
-            userLogo.src = "images/studentLOGO.png";
+            userLogo.src = "../images/studentLOGO.png";
         }
     });
 

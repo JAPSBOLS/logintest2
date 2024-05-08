@@ -55,8 +55,8 @@
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="mr-2 d-none d-lg-inline text-gray-600 small" >
-                <?php if(isset($_SESSION['username'])){ 
-                        echo $_SESSION['username'];
+                <?php if(isset($_SESSION['user'])){ 
+                        echo $_SESSION['user']['fname'] . " " . $_SESSION['user']['MI'] . " " . $_SESSION['user']['lname'];
                     }else{
                         echo "Not logged in";
                     }

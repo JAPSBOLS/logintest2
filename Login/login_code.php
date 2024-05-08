@@ -57,7 +57,6 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 $_SESSION['auth'] = true;
                 $_SESSION['auth_role'] = $role;
                 $_SESSION['user'] = $row; // Storing user data in session
-                $_SESSION['username'] = $studNum;
                 
                 header("Location: ../admin/index.php");
                 exit();

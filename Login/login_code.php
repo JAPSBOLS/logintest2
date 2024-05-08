@@ -53,6 +53,9 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
             if (mysqli_num_rows($result) == 1) {
                 // User authenticated successfully
                 $row = mysqli_fetch_assoc($result);
+
+                $_SESSION['auth'] = true;
+                $_SESSION['auth_role'] = $role;
                 $_SESSION['user'] = $row; // Storing user data in session
                 $_SESSION['username'] = $studNum;
                 

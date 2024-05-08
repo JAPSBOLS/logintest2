@@ -118,7 +118,7 @@ body{
 .toggle-right{
     right: 0;
     transform: translateX(0);
-    background-image: url('images/loginimg.png');
+    background-image: url('../images/loginimg.png');
     background-size: 670pX;
     background-repeat: no-repeat;
     background-position: calc(100% - -30px) calc(100% - -200px);

@@ -1,6 +1,6 @@
 <?php
 // Check if user is not logged in or is not an admin, redirect to login page
-session_start();
+include('auth.php');
 include('config/dbconn.php');
 include('includes/header.php');
 include('includes/navbar.php');

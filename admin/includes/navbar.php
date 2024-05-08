@@ -3,10 +3,9 @@
 
     <!-- Sidebar - ADD LOGO HERE-->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-brand-text ml-3 mb-3">
+            <img src='../images/systemLogo.png' width=280></img>
         </div>
-        <div class="sidebar-brand-text mx-3">LAGAY NYO LOGO DITO</div>
     </a>
 
     <!-- Divider -->
@@ -34,25 +33,25 @@
 
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Home</span></a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i class="fas fa-landmark"></i>
             <span>Thesis Library</span></a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i class="fas fa-user-friends"></i>
             <span>Contacts</span></a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="#">
-            <i class="fas fa-fw fa-chart-area"></i>
+            <i class="fas fa-question"></i>
+            <span>FAQ</span></a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <i class="fas fa-laugh"></i>
             <span>About Us</span></a>
     </li>
 </ul>

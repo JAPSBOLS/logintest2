@@ -34,14 +34,22 @@ session_start();
                     <div class="tab-content">
                         <div class="tab-pane fade active show" id="account-general">
                             <div class="card-body media align-items-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt
-                                    class="img-profile rounded-circle">
+                                <?php
+                                if(isset($_SESSION['auth_role'])) {
+                                    if($_SESSION['auth_role'] == 'student') {
+                                        $logo = 'studentLOGO.png';
+                                    } elseif($_SESSION['auth_role'] == 'admin') {
+                                        $logo = 'adminLOGO.png';
+                                    } 
+                                } 
+                                ?>
+                                <img src="../../../images/<?php echo $logo; ?>" alt="Profile Logo"
+                                    class="img-profile rounded-circle" style="width: 100px; height: 100px;">
                                 <div class="media-body ml-4">
                                     <label class="btn btn-outline-primary">
                                         Upload new photo
                                         <input type="file" class="account-settings-fileinput">
                                     </label> &nbsp;
-                                    <button type="button" class="btn btn-default md-btn-flat">Reset</button>
                                     <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
                                 </div>
                             </div>
@@ -62,7 +70,7 @@ session_start();
                                 <div class="form-group">
                                     <label class="form-label">Name</label>
                                     <input type="text" class="form-control" value="<?php
-                                    echo $_SESSION['user']['fname'].' '.$_SESSION['user']['MI'].' '.$_SESSION['user']['lname'];
+                                    echo $_SESSION['user']['fname'].' '.$_SESSION['user']['MI'].'. '.$_SESSION['user']['lname'];
                                     ?>">
                                 </div>
                                 <div class="form-group">

@@ -21,15 +21,13 @@
             <form action="login_code.php" method="POST">
                 <img src="../images/studentLOGO.png" id="userLogo" class="guestLOGO">
                 <?php
-                    include('message.php');
+                    include('message.php'); // for logout alert
                 ?>
-                
                 <?php if (isset($_SESSION['error'])) { ?>
-                     <div class="alert alert-danger" role="alert" id="error-alert" style="color: darkred;">
+                     <div class="alert alert-danger" role="alert" id="error-alert" style="color: darkred;">  
                         <strong>&times;</strong> <?=$_SESSION['error']?>
                      </div>
                 <?php unset($_SESSION['error']); } ?>
-
                 <div class="input-group">
                     <select name="role" id="user" class="select">
                         <option value="student">Student</option>

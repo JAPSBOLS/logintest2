@@ -62,8 +62,17 @@
                     }
                 ?>
             </span>
+            <?php
+                if(isset($_SESSION['auth_role'])) {
+                    if($_SESSION['auth_role'] == 'student') {
+                        $logo = 'studentLOGO.png';
+                    } elseif($_SESSION['auth_role'] == 'admin') {
+                        $logo = 'adminLOGO.png';
+                    } 
+                } 
+            ?>
             <img class="img-profile rounded-circle"
-                src="img/undraw_profile.svg">
+                src="../../images/<?php echo $logo; ?>">
         </a>
         <!-- Dropdown - User Information -->
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

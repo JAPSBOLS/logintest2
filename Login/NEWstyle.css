@@ -164,3 +164,9 @@ body{
 .guestLOGO {
     width: 80px;
 }
+
+.bi {
+    width: 2em; /* Adjust the width as needed */
+    height: 2em; /* Adjust the height as needed */
+}
+

@@ -48,6 +48,12 @@ session_start();
                             <hr class="border-light m-0">
                             <div class="card-body">
                                 <div class="form-group">
+                                    <label class="form-label">Student Number</label>
+                                    <input type="text" class="form-control mb-1" value="<?php
+                                    echo $_SESSION['user']['username'];
+                                    ?>">
+                                </div>
+                                <div class="form-group">
                                     <label class="form-label">Username</label>
                                     <input type="text" class="form-control mb-1" value="<?php
                                     echo $_SESSION['user']['username'];

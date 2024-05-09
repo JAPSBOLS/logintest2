@@ -50,28 +50,26 @@ session_start();
                                 <div class="form-group">
                                     <label class="form-label">Username</label>
                                     <input type="text" class="form-control mb-1" value="<?php
-                                    echo $_SESSION['user_name'];
+                                    echo $_SESSION['user']['username'];
                                     ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Name</label>
                                     <input type="text" class="form-control" value="<?php
-                                    echo $_SESSION['name'];
+                                    echo $_SESSION['user']['fname'].' '.$_SESSION['user']['MI'].' '.$_SESSION['user']['lname'];
                                     ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">E-mail</label>
                                     <input type="text" class="form-control mb-1" value="<?php
-                                    echo $_SESSION['email'];
+                                    echo $_SESSION['user']['email'];
                                     ?>">
-                                    <div class="alert alert-warning mt-3">
-                                        Your email is not confirmed. Please check your inbox.<br>
-                                        <a href="javascript:void(0)">Resend confirmation</a>
-                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Department</label>
-                                    <input type="text" class="form-control" value="">
+                                    <input type="text" class="form-control" value="<?php
+                                    echo $_SESSION['user']['department'];
+                                    ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Course</label>
@@ -84,7 +82,7 @@ session_start();
                                 <div class="form-group">
                                     <label class="form-label">Current password</label>
                                     <input type="password" class="form-control" value="<?php
-                                    echo $_SESSION['password'];
+                                    echo $_SESSION['user']['password'];
                                     ?>">
                                 </div>
                                 <div class="form-group">
@@ -102,7 +100,7 @@ session_start();
                                 <div class="form-group">
                                     <label class="form-label">Address</label>
                                     <input type="text" class="form-control" value="<?php
-                                    echo $_SESSION['address'];
+                                    echo $_SESSION['user']['address'];
                                     ?>">
                                 </div>
                             </div>
@@ -110,7 +108,7 @@ session_start();
                                 <div class="form-group">
                                     <label class="form-label">Date of Birth</label>
                                     <input type="text" class="form-control" value="<?php
-                                    echo $_SESSION['birthday'];
+                                    echo $_SESSION['user']['dob'];
                                     ?>">
                                 </div>
                             </div>
@@ -120,7 +118,7 @@ session_start();
                                 <div class="form-group">
                                     <label class="form-label">Phone</label>
                                     <input type="text" class="form-control" value="<?php
-                                    echo $_SESSION['phoneNum'];
+                                    echo $_SESSION['user']['phoneNum'];
                                     ?>">
                                 </div>
                             </div>

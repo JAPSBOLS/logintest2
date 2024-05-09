@@ -33,33 +33,39 @@ var myPieChart = new Chart(ctx, {
   },
 });
 
-var ctx = document.getElementById("usersByDept");
-var myPieChart = new Chart(ctx, {
-  type: 'pie',
-  data: {
-    labels: ["Engineering Department", "Nursing Department", "Technology and Entrepreneurship Department", "Computer Studies Department","Teacher Education Department"],
-    datasets: [{
-      data: [1, 1, 2, 1, 3],
-      backgroundColor: ['#4e73df', '#99f5d3', '#36b9cc', '#1cb9fc','#256c8a'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf','#1692c7','#1a4e63'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#000000",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    // cutoutPercentage: 50,
-  },
-});
+
+fetch('getStudentsDeptCount.php')
+  .then(response => response.json())
+  .then(data => {
+    var ctx = document.getElementById("usersByDept");
+    var myPieChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: data.map(item => item.course),
+        datasets: [{
+          data: data.map(item => item.count),
+          backgroundColor: ['#4e73df', '#99f5d3', '#36b9cc', '#1cb9fc','#256c8a'],
+          hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf','#1692c7','#1a4e63'],
+          hoverBorderColor: "rgba(234, 236, 244, 1)",
+        }],
+      },
+      options: {
+        maintainAspectRatio: false,
+        tooltips: {
+          backgroundColor: "rgb(255,255,255)",
+          bodyFontColor: "#000000",
+          borderColor: '#dddfeb',
+          borderWidth: 1,
+          xPadding: 15,
+          yPadding: 15,
+          displayColors: false,
+          caretPadding: 10,
+        },
+        legend: {
+          display: false
+        },
+        // cutoutPercentage: 50,
+      },
+    });
+  })
+

@@ -1,5 +1,5 @@
 <?php
-session_start();
+include '../admin/auth.php';
 ?>
 <!--Website: wwww.codingdung.com-->
 <!DOCTYPE html>
@@ -154,7 +154,7 @@ session_start();
 
     <script>
     function redirectToIndex() {
-        window.location.href = '../../index.php';
+        window.location.href = '../admin';
     }
     </script>
 </body>

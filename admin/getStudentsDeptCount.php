@@ -5,7 +5,7 @@ include 'config/dbconn.php';
 $arr = array();
 
 // Count students from each course
-$query = "SELECT course, COUNT(*) as count FROM t_student GROUP BY course";
+$query = "SELECT department, COUNT(*) as count FROM t_users GROUP BY department";
 $result = mysqli_query($conn, $query);
 
 while($row = mysqli_fetch_assoc($result)){

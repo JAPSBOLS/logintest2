@@ -41,7 +41,7 @@ fetch('getStudentsDeptCount.php')
     var myPieChart = new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: data.map(item => item.course),
+        labels: data.map(item => item.department),
         datasets: [{
           data: data.map(item => item.count),
           backgroundColor: ['#4e73df', '#99f5d3', '#36b9cc', '#1cb9fc','#256c8a'],

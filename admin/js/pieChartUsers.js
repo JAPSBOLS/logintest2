@@ -37,8 +37,17 @@ var myPieChart = new Chart(ctx, {
 fetch('getStudentsDeptCount.php')
   .then(response => response.json())
   .then(data => {
+    var totalCount = document.getElementById('userCount')
+    var total = 0
+    for(i=0;i<data.length;i++){
+      // Convert to int then add to total
+      total += +data[i].count;
+    }
+    totalCount.innerHTML = total;
+    
     var ctx = document.getElementById("usersByDept");
-    var myPieChart = new Chart(ctx, {
+
+    new Chart(ctx, {
       type: 'pie',
       data: {
         labels: data.map(item => item.department),

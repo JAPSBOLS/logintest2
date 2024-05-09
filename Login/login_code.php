@@ -31,7 +31,7 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 header("Location: newlogin.php");
                 exit();
             }
-            $query = "SELECT t_admin.*, t_users.password 
+            $query = "SELECT t_admin.*, t_users.* 
                       FROM t_admin 
                       INNER JOIN t_users ON t_admin.user_fk = t_users.userID 
                       WHERE t_users.username = '$studNum' AND t_users.password = '$password'";
@@ -57,7 +57,6 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 $_SESSION['auth'] = true;
                 $_SESSION['auth_role'] = $role;
                 $_SESSION['user'] = $row; // Storing user data in session
-                $_SESSION['username'] = $studNum;
                 
                 header("Location: ../admin/index.php");
                 exit();

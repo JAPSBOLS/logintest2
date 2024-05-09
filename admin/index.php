@@ -34,7 +34,7 @@ include('includes/navbar.php');
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Registered Users</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="userCount">5</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-child fa-2x text-gray-300"></i>
@@ -155,5 +155,5 @@ include('includes/navbar.php');
   include('includes/footer.php');
   include('includes/scripts.php');
   ?>
-  <script src='js/pieChartByDeptPieChart.js'></script>
+  <script src='js/pieChartUsers.js'></script>
  

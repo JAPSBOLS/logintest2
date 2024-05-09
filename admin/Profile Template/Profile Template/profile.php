@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!--Website: wwww.codingdung.com-->
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +35,7 @@
                         <div class="tab-pane fade active show" id="account-general">
                             <div class="card-body media align-items-center">
                                 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt
-                                    class="d-block ui-w-80">
+                                    class="img-profile rounded-circle">
                                 <div class="media-body ml-4">
                                     <label class="btn btn-outline-primary">
                                         Upload new photo
@@ -47,15 +49,21 @@
                             <div class="card-body">
                                 <div class="form-group">
                                     <label class="form-label">Username</label>
-                                    <input type="text" class="form-control mb-1" value="">
+                                    <input type="text" class="form-control mb-1" value="<?php
+                                    echo $_SESSION['user_name'];
+                                    ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Name</label>
-                                    <input type="text" class="form-control" value="">
+                                    <input type="text" class="form-control" value="<?php
+                                    echo $_SESSION['name'];
+                                    ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">E-mail</label>
-                                    <input type="text" class="form-control mb-1" value="">
+                                    <input type="text" class="form-control mb-1" value="<?php
+                                    echo $_SESSION['email'];
+                                    ?>">
                                     <div class="alert alert-warning mt-3">
                                         Your email is not confirmed. Please check your inbox.<br>
                                         <a href="javascript:void(0)">Resend confirmation</a>
@@ -75,7 +83,9 @@
                             <div class="card-body pb-2">
                                 <div class="form-group">
                                     <label class="form-label">Current password</label>
-                                    <input type="password" class="form-control">
+                                    <input type="password" class="form-control" value="<?php
+                                    echo $_SESSION['password'];
+                                    ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">New password</label>
@@ -91,13 +101,17 @@
                             <div class="card-body pb-2">
                                 <div class="form-group">
                                     <label class="form-label">Address</label>
-                                    <input type="text" class="form-control" value="">
+                                    <input type="text" class="form-control" value="<?php
+                                    echo $_SESSION['address'];
+                                    ?>">
                                 </div>
                             </div>
                             <div class="card-body pb-2">
                                 <div class="form-group">
                                     <label class="form-label">Date of Birth</label>
-                                    <input type="text" class="form-control" value="">
+                                    <input type="text" class="form-control" value="<?php
+                                    echo $_SESSION['birthday'];
+                                    ?>">
                                 </div>
                             </div>
                             <hr class="border-light m-0">
@@ -105,7 +119,9 @@
                                 <h6 class="mb-4">Contacts:</h6>
                                 <div class="form-group">
                                     <label class="form-label">Phone</label>
-                                    <input type="text" class="form-control" value="">
+                                    <input type="text" class="form-control" value="<?php
+                                    echo $_SESSION['phoneNum'];
+                                    ?>">
                                 </div>
                             </div>
                         </div>

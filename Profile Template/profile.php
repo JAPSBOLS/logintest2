@@ -154,7 +154,7 @@ include '../admin/auth.php';
 
     <script>
     function redirectToIndex() {
-        window.location.href = '../admin';
+        window.location.href = ' ../admin/';
     }
     </script>
 </body>

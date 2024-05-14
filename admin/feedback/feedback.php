@@ -14,13 +14,13 @@
     <div class="wrapper">
         <button class="close-button" onclick="closeForm()">X</button>
         <div class="wrapper1">
-            <img src="../images/FEEBVACK.png">
+            <img src="../../images/FEEBVACK.png">
             
             <h3>We appreciate your Feedback.</h3>
             <h5>It help us further improve our system through your suggestion.</h5>
         </div>
 
-        <form action="#">
+        <form action="#" onsubmit="event.preventDefault(); submitAlert();">
             <div class="rating">
                 <input type="number" name="rating" hidden>
                 <br><i class='bx bx-star star' style="--i: 0;"></i>
@@ -38,8 +38,8 @@
             <textarea name="opinion" cols="30" rows="5" placeholder="Your suggestion..."></textarea>
            
             <div class="btn-group">
-                <button type="submit" class="btn submit">Submit</button>
-                <button class="btn cancel">Cancel</button>
+                <button onclick="submitAlert()"  type="submit" class="btn submit">Submit</button>
+                <button  onclick="cancelSubmission()" class="btn cancel">Cancel</button>
             </div>
         </form>
     </div>

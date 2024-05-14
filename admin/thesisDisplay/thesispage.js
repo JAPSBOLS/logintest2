@@ -1,6 +1,5 @@
  
  //Filter Button
-
 const toggleButton = document.getElementById('toggleButton');
 const filter = document.getElementById('filter');
 
@@ -16,20 +15,6 @@ toggleButton.addEventListener('click', () => {
     isHidden = !isHidden;
 });
 
- 
- 
-        const reserveLink = document.getElementById("reserve-link");
-        const popupContainer = document.querySelector(".popup-container");
-        reserveLink.addEventListener("click", (event) => {
-        event.preventDefault();
-        popupContainer.style.display = "block";
-        });
-        
-        const closePopup = document.getElementById("closeForm");
-        closePopup.addEventListener("click", (event) => {
-        event.preventDefault();
-        popupContainer.style.display = "none";
-        });
 
 
 function IsNumeric(n) {
@@ -64,11 +49,6 @@ function IsNumeric(n) {
     return false;
   });
   
-  function goBack() {
-    window.history.back();
-}
-
-
 $(document).ready(function() {
     $("#hideContentArea").click(function() {
         $("#contentArea").toggle();

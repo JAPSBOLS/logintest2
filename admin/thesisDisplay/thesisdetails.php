@@ -32,8 +32,11 @@ if (isset($_GET["Th_Code"])) {
 <body style="background-color: #c9d6ff;">
     <div class="container">
         <div class="card">
+
             <button class="back-button" onclick="goBack()">Go Back</button>
             <button class="reserve-button" id='reserve-link'>Reserve</button>
+
+
 
             <!-- Display Thesis -->
             <h2><?php echo $thesis["Th_Title"]; ?></h2>
@@ -109,6 +112,25 @@ if (isset($_GET["Th_Code"])) {
             
         </div>
     </div>
-    <script src='thesispage.js'></script>     
+    <script src='thesispage.js'>
+        document.addEventListener('DOMContentLoaded', function() {
+        const reserveLink = document.getElementById("reserve-link");
+        const popupContainer = document.querySelector(".popup-container");
+        reserveLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            popupContainer.style.display = "block";
+        });
+
+        const closePopup = document.getElementById("closeForm");
+        closePopup.addEventListener("click", (event) => {
+            event.preventDefault();
+            popupContainer.style.display = "none";
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+        });
+    </script>   
 </body>
 </html>

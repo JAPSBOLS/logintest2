@@ -9,24 +9,21 @@
     <meta name="author" content="Ian Arevalo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleforADD.css">
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
     <!-- JavaScript Area-->
     <script src="scripts.js"></script>
-    <script src="/sweetalert.min.js"></script>
-
+    <script src="sweetalert.min.js"></script>
 </head>
+
     <body>
+    
         <div class="container">
             <header>Add Thesis</header>
-            <div class="back">
-                <a href="../index.php" class="fas fa-arrow-left fa-3x"></a>
-            </div>
 
-            <!-- Message Notification -->
             <?php
-                session_start();
-                if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
-                ?>
+            session_start();
+            if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
+            ?>
                     <script>
                         swal({
                             title: '<?php echo $_SESSION['status']; ?>',
@@ -34,10 +31,10 @@
                             button: "OK!",
                         });
                     </script>
-                <?php
-                unset($_SESSION['status']);
-                session_destroy();
-                }
+            <?php
+            unset($_SESSION['status']);
+            session_destroy();
+            }
             ?>
 
             <hr>
@@ -101,13 +98,14 @@
             <form action="remove-thesis.php" method="POST">
                 <button type="submit" class="remove_button" name="remove_btn"> Want to Remove a Thesis?</button>
             </form>
+
             <?php
                 if(isset($_POST['remove_btn'])){
                     header("Location: remove-thesis.php");
                     exit();
                 }
             ?>   
-
+            <script src="scripts.js"></script>
         </div>
     </body>
 </html>

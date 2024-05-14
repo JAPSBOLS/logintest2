@@ -12,7 +12,6 @@ include('includes/navbar.php');
             <div id="content">
 
                 <?php include('includes/topbar.php')?>
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 

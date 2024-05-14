@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTFP-8">
+    <meta name="viewport" content="width=device", initial-scale="1.0">
+    <title>Thesis Reservation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"><!--flatpickr-->
+  </head>
+
+  <body>
+
+    <div class="container"><!--container-->
+      <form class="form-group" action="reservation.php" method="POST" id="form"><!--form-->
+        <h1 class="container text-center">THESIS RESERVATION</h1>
+
+        <div>
+
+            <div>
+              <h3 class="text-white">Reservation Details</h3>
+            </div>
+
+            <div>
+              <input type="text" required id="thesis_title" name="thesis_title" placeholder="Thesis Title">
+              <input type="text" required id="author_name" name="author_name" placeholder="Author's Full Name">
+            </div>
+
+            <div>
+              <input type="text" required id="published_year" name="published_year" placeholder="Year Published">
+              <input type="text" required id="thesis_code" name="thesis_code" placeholder="Thesis Code">
+            </div>
+            
+            <div class="department">
+              <select required class="option-box">
+                <option>DEPARTMENT</option>
+                <option>ENGINEERING</option>
+                <option>NURSING</option>
+                <option>EDUCATION</option>
+                <option>COMPUTER STUDIES</option>
+              </select>
+            </div>
+
+            <span class="reservation" id="reserve" name="reserve"> Reservation Date</span>
+              <input class="select-date" type="date" id="reservation_date" name="reservation_date" placeholder="Select Date">
+            
+            <button id="submit" type="submit" name="submit" class="btn btn-warning text-white">Submit Form</button>
+            <button id="reset" type="reset" class="btn btn-primary text-white" >Reset Form</button>
+
+        </div><!--form-->
+
+      </form><!--form-->
+    </div><!--container-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  </body>
+</html>

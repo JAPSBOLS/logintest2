@@ -156,4 +156,8 @@ include('includes/navbar.php');
   include('includes/scripts.php');
   ?>
   <script src='js/pieChartUsers.js'></script>
+  <script>
+    const active = document.getElementById('Dashboard');
+    active.classList.add('active');
+  </script>
  

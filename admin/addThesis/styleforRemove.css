@@ -1,0 +1,211 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #f8f9fa; 
+  color: #333; 
+}
+
+/* Header Styles */
+header {
+  background-color: #333; 
+  color: #fff; 
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Table Styles */
+
+table {
+  width:95%; 
+  margin: 20px auto; 
+  background-color: #fff; 
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: default;
+}
+
+table th {
+  background-color: #333; 
+  color: #fff; 
+  cursor: default;
+
+}
+
+/* No Record Message Style */
+
+.no-records-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+  justify-content: center
+  
+  ;
+}
+
+
+
+/* Delete Link Style */
+
+.delete-link{
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+.delete-link:hover{
+  text-decoration: underline;
+}
+
+
+
+
+/* Return to Add-Thesis Button Style */
+
+.return-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #f19327; /* Orange button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f1880f; /* Darker orange on hover */
+}
+
+/* Confirmation Dialog Styles */
+.confirmation-dialog {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+}
+
+.confirmation-dialog-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+}
+
+.confirmation-dialog-buttons {
+  margin-top: 20px;
+}
+
+.confirmation-dialog-buttons button {
+  background-color: #f1880f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.confirmation-dialog-buttons button:hover {
+  background-color: #f1880f;
+}
+
+/* Search Form Styles */
+.search-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between search box and table */
+  border-color: #f19327;
+}
+
+.form-outline {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px; /* Space between input and button */
+  border-color: #f19327;
+}
+
+.form-outline input[type="text"] {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 300px; /* Adjust input width as needed */
+  border-color: #f19327;
+}
+
+/* PAGINATION STYLE */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px; 
+}
+
+.page-link {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #f19327; 
+  text-decoration: none;
+  border: 1px solid #f19327; 
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #f8f9fa; 
+}
+
+.page-link.active {
+  background-color: #f19327; 
+  color: #fff;
+  border-color: #f19327; 
+}
+
+.page-link.disabled {
+  pointer-events: none; 
+  color: #6c757d; 
+  border-color: #6c757d;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  border-radius: 5px; 
+}

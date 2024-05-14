@@ -1,0 +1,123 @@
+body{
+  background-image: url(photolib.jpg);
+  background-size: cover;
+}
+#form{
+  background-color: black;
+  height: 550px;
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+  opacity: 0.7;
+  color: white;
+  
+}
+#main-head h1{
+  color: orange;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+  
+  
+ 
+}
+#form h3{
+  border-bottom: 5px solid orange;
+  width: 650px;
+  padding:5px;
+ 
+}
+
+::placeholder{
+  color: white;
+}
+#input #input-group{
+  width: 300px;
+  margin: 5px;
+  background:transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  color: white;
+}
+
+#input #tel{
+  width: 300px;
+  margin: 5px;
+  background:transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+#input #tel:valid{
+  border-color: green;
+}
+#input #tel:focus:invalid{
+  border-color: red;
+}
+
+#input2 #h3{
+  border-bottom: 2px solid orange;
+  width: 650px;
+  padding:5px;
+}
+
+#input3 #input-group{
+    width: 613px;
+    margin: 5px;
+    background:transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+#input4 #input-group{
+  width: 300px;
+  margin: 5px;
+  background:transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.department{
+  padding: 5px;
+  font-size: 15px;
+  background-color: transparent; 
+}
+
+.option-box{
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background:black;
+  color: white;
+  width: 300px;
+}
+.select-date{
+  padding: 5px;
+  font-size: 15px;
+  background-color: white;
+  margin-right: 5px;
+  
+}
+#reserve{
+  margin: 5px;
+}
+
+.reservation{
+  padding: 5px;
+  font-size: 15px;
+  background-color: transparent; 
+}

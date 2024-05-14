@@ -1,6 +1,6 @@
 <?php 
 
-include 'config/dbconn.php';
+include '../config/dbconn.php';
 
 $arr = array();
 

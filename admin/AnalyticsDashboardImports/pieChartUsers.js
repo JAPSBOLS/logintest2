@@ -34,7 +34,7 @@ var myPieChart = new Chart(ctx, {
 });
 
 
-fetch('getStudentsDeptCount.php')
+fetch('AnalyticsDashboardImports/getStudentsDeptCount.php')
   .then(response => response.json())
   .then(data => {
     var totalCount = document.getElementById('userCount')

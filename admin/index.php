@@ -157,7 +157,7 @@ include('includes/navbar.php');
   include('includes/footer.php');
   include('includes/scripts.php');
   ?>
-  <script src='js/pieChartUsers.js'></script>
+  <script src='AnalyticsDashboardImports/pieChartUsers.js'></script>
   <script>
     const active = document.getElementById('Dashboard');
     active.classList.add('active');

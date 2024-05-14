@@ -34,15 +34,41 @@ if (isset($_GET["Th_Code"])) {
     <div class="container">
         <div class="card">
             <button class="back-button" onclick="goBack()">Go Back</button>
-            <button class="reserve-button" onclick="reserveThesis()">Reserve</button>
+            <button class="reserve-button" id='reserve-link'>Reserve</button>
             <script>
-                function goBack() {
-                    window.history.back();
-                }
-                function reserveThesis() {
-                    // Add your reservation logic here
-                }
+                
             </script>
+
+            <!-- this is PopUp Rservation -->
+                <div class="popup-container">
+                    <div class="popup-content">
+                                <h3>Reservation Form </h3>
+                                    <form action="#">
+                                        <input type="number" id="lownumber" value="1000" style="display: none;"/>
+                                        <input type="number" id="highnumber" value="9999" style="display: none;" />
+                                    <div class="data">
+                                        <div id="randomnumber"></div>
+                                    </div>
+                                    <div class="data">
+                                        <label>User Name</label>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="data">
+                                        <label>Reserve Date</label>
+                                        <input type="date" required>
+                                    </div>
+                                    <div class="data">
+                                        <label>Return Date</label>
+                                        <input type="date" required>
+                                    </div>
+                                    <div class="btn">
+                                        <div class="inner"></div>
+                                        <button type="submit">RESERVE</button>
+                                    </div>
+                                        <button type="button" id="closeForm" class="close-btn">Close</button>
+                                    </form>
+                        </div>
+                </div>
             <h2><?php echo $thesis["Th_Title"]; ?></h2>
             <p>
                 <strong>Status:</strong> <?php echo $thesis["Th_ReservStatus"]; ?><br><br><br>
@@ -58,5 +84,6 @@ if (isset($_GET["Th_Code"])) {
             
         </div>
     </div>
+    <script src='scripts.js'></script>     
 </body>
 </html>

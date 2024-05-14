@@ -18,7 +18,7 @@
             <a class="nav-link" href="#" style="margin-right: 20px;">Contacts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../OnePage/aboutUs.html" style="margin-right: 20px;">About Us</a>
+            <a class="nav-link" href="OnePage/aboutUs.html" style="margin-right: 20px;">About Us</a>
           </li>
           <li class="nav-item">
             <a class="btn btn-primary" href="Login/newlogin.php">Login</a>

@@ -43,7 +43,7 @@ include '../admin/auth.php';
                                     } 
                                 } 
                                 ?>
-                                <img src="../../../images/<?php echo $logo; ?>" alt="Profile Logo"
+                                <img src="../images/<?php echo $logo; ?>" alt="Profile Logo"
                                     class="img-profile rounded-circle" style="width: 100px; height: 100px;">
                                 <div class="media-body ml-4">
                                     <label class="btn btn-outline-primary">

@@ -19,7 +19,7 @@
             <h5>It help us further improve our system through your suggestion.</h5>
         </div>
 
-        <form action="#">
+        <form action="#" method="post" id="reviewForm" onsubmit="event.preventDefault(); submitAlert();">
             <div class="rating">
                 <input type="number" name="rating" hidden>
                 <br><i class='bx bx-star star' style="--i: 0;"></i>
@@ -44,5 +44,7 @@
     </div>
 
     <script src="script.js"></script>
-</body>
-</html>
+
+    <?php
+        include('../includes/footer.php');
+    ?>

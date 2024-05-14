@@ -89,7 +89,7 @@
                 <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                 Activity Log
             </a>
-            <a class="dropdown-item"  href="../../feedback/index.php">
+            <a class="dropdown-item"  href="../feedback/index.php">
                 <i class="fas fa-star fa-sm fa-fw mr-2 text-gray-400"></i>
                 Send Feedback
             </a>

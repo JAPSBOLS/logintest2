@@ -11,8 +11,9 @@ include('includes/navbar.php');
             <!-- Main Content -->
             <div id="content">
 
-                <?php include('includes/topbar.php')?>
-
+                <?php include('includes/topbar.php');
+                ?>
+            
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
@@ -156,7 +157,7 @@ include('includes/navbar.php');
   include('includes/footer.php');
   include('includes/scripts.php');
   ?>
-  <script src='js/pieChartUsers.js'></script>
+  <script src='AnalyticsDashboardImports/pieChartUsers.js'></script>
   <script>
     const active = document.getElementById('Dashboard');
     active.classList.add('active');

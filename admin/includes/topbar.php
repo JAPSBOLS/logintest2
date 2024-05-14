@@ -56,7 +56,7 @@
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="mr-2 d-none d-lg-inline text-gray-600 small" >
                 <?php if(isset($_SESSION['user'])){ 
-                        echo $_SESSION['user']['fname'] . " " . $_SESSION['user']['MI'] . " " . $_SESSION['user']['lname'];
+                        echo $_SESSION['user']['fname'] . " " . $_SESSION['user']['MI'] . ". " . $_SESSION['user']['lname'];
                     }else{
                         echo "Not logged in";
                     }
@@ -83,14 +83,14 @@
             </a>
             <a class="dropdown-item" href="#">
                 <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                Settings
+                Manage Password
             </a>
             <a class="dropdown-item" href="#">
                 <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                 Activity Log
             </a>
-            <a class="dropdown-item" href="../../feedback/feedback.php">
-                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+            <a class="dropdown-item" id='feedback_form' href="#">
+                <i class="fas fa-star fa-sm fa-fw mr-2 text-gray-400"></i>
                 Send Feedback
             </a>
             <div class="dropdown-divider"></div>

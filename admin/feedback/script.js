@@ -22,6 +22,15 @@ allStar.forEach((item, idx)=> {
 	})
 })
 
+const feedback_form = document.getElementById("feedback_form")
+const feedbackContainer = document.querySelector ("wrapper")
+feedback_form.addEventListener("click", (event)=>{
+	event.preventDefault();
+	feedbackContainer.style.display = "block";
+});
+
+
+
 function submitAlert(){
 	swal("Success!", 
 			"Feedback Submitted Successfully",

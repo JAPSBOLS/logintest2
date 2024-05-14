@@ -9,7 +9,6 @@
     ?>
 </div>
 
-<!-- niga -->
 <style>
   .bg{
     width: 100%;

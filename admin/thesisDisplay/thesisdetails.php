@@ -45,6 +45,7 @@ if (isset($_GET["Th_Code"])) {
                 <strong>Code:</strong> <?php echo $thesis["Th_Code"]; ?><br><br><br>
                 <strong>Category:</strong> <?php echo $thesis["Th_Category"]; ?><br><br><br>
                 <strong>Thematic Area:</strong> <?php echo $thesis["Th_ThematicArea"]; ?><br><br><br>
+                <strong>Course:</strong> <?php echo $thesis["Th_Course"]; ?><br><br><br>
                 <strong>Department:</strong> <?php echo $thesis["Th_Department"]; ?><br><br><br>
                 <strong>Author:</strong> <?php echo $thesis["Authors"]; ?><br><br><br>
                 <strong>Advisor:</strong> <?php echo $thesis["Th_Advisor"]; ?><br><br><br>

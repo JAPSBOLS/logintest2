@@ -24,6 +24,8 @@ function thesislist($conn, $sql){
                 <div><i>Advisor: " . $row["Th_Advisor"] . "</i></div>
                 <div><i>Date Modified: " . $row["Th_DateModified"] . "</i></div>
             </div>
+            
+            <br><br>
             ".$row["Th_Abstract"]."<br><br>
 
             </p>    

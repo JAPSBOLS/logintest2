@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include('admin/config/dbconn.php');
+    include('../admin/config/dbconn.php');
 ?>
 
 <!DOCTYPE html>
@@ -10,23 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="NEWstyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
     <title>Login Page</title>
 </head>
 <body>
     <div class="container" id="container">
-        <img src="images/BUP2.png" alt="BUP Logo" class="logo">
+        <img src="../images/BUP2.png" alt="BUP Logo" class="logo">
         <div class="form-container sign-in">
-            <form action="php/login_code.php" method="POST">
-                <img src="images/studentLOGO.png" id="userLogo" class="guestLOGO">
+            <form action="login_code.php" method="POST">
+                <img src="../images/studentLOGO.png" id="userLogo" class="guestLOGO">
+                <?php
+                    include('message.php'); // for logout alert
+                ?>
                 <?php if (isset($_SESSION['error'])) { ?>
-                     <div class="alert alert-danger" role="alert" id="error-alert" style="color: darkred;">
+                     <div class="alert alert-danger" role="alert" id="error-alert" style="color: darkred;">  
                         <strong>&times;</strong> <?=$_SESSION['error']?>
                      </div>
                 <?php unset($_SESSION['error']); } ?>
-
                 <div class="input-group">
                     <select name="role" id="user" class="select">
                         <option value="student">Student</option>

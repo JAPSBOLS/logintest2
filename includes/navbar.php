@@ -1,7 +1,8 @@
-<div class="container-fluid" style="background-color: orange; padding-left: 15px; padding-right: 15px;">
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
+  <nav class="navbar navbar-expand-lg" style="background-color:orange">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">WELCOME HOME BUENOS!</a>
+      <img src='images/systemLogo.png' style="height: 50px; width:30%; object-fit:cover" class='mb-3'></img>
+      <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,7 +21,7 @@
             <a class="nav-link" href="#" style="margin-right: 20px;">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-primary" href="newlogin.php">Login</a>
+            <a class="btn btn-primary" href="Login/newlogin.php">Login</a>
           </li>
         </ul>
       </div>

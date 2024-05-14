@@ -7,6 +7,7 @@
         <title>Thesis List</title>
         <link rel="stylesheet" href="thesislist_style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <h1>Thesis List</h1>
@@ -43,7 +44,7 @@
                     <th width="350"><u>Reservation Status</u></th>
                 </tr>
                 <tr align="left">
-
+            
                 <!-- Thematic Area -->
                     <td><input type="checkbox" id="Thematic1" name="Thematic1"/>
                         <label for="Thematic1">Environment and Natural Resources Systems Management and Development</label>

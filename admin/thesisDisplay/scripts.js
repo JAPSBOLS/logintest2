@@ -1,6 +1,6 @@
  
  //Filter Button
- 
+
 const toggleButton = document.getElementById('toggleButton');
 const filter = document.getElementById('filter');
 
@@ -69,3 +69,8 @@ function IsNumeric(n) {
 }
 
 
+$(document).ready(function() {
+    $("#hideContentArea").click(function() {
+        $("#contentArea").toggle();
+    });
+});

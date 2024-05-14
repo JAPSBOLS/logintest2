@@ -80,21 +80,21 @@ if (isset($_GET["Th_Code"])) {
                                         <div id="randomnumber"><?php echo "Reservation ID:" ; ?></div>
                                     </div>
                                     
-                                    <div class="data">User ID: <?php echo $thesis["Th_Code"]; ?></div>
+                                    <div class="data">Thesis Code: <?php echo $thesis["Th_Code"]; ?></div>
                                     <input type="hidden" name="Th_Code" value="<?php echo $thesis["Th_Code"];?>">
 
                                     <div class="data">
-                                        <label>User Name</label>
-                                        <input type="text" required id="User_Name" name="User_Name">
+                                        <label>Username: <?php echo $_SESSION['user']['username']?></label>
+                                        <input type="hidden" id="User_Name" name="User_Name" value="<?php echo $_SESSION['user']['username']?>"></label>
                                     </div>
                                     
                                     <div class="data">
-                                        <label>Reserve Date</label>
+                                        <label>Reserve Date:</label>
                                         <input type="date" required id="Reserv_Date" name="Reserv_Date">
                                     </div>
                                     
                                     <div class="data">
-                                        <label>Return Date</label>
+                                        <label>Return Date:</label>
                                         <input type="date" required id="Return_Date" name="Return_Date">
                                     </div>
                                     

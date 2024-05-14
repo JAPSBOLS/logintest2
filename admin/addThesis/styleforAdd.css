@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
     background: lightblue;
     display: flex;
@@ -102,7 +111,7 @@ form .abstractField .abstract-field{
 
 textarea{
     height: 250px;
-    width: 895px;
+    width: 800px;
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;

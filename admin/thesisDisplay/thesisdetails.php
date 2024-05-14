@@ -17,8 +17,7 @@ function getThesisDetails($conn, $code) {
 if (isset($_GET["Th_Code"])) {
     $thesis = getThesisDetails($conn, $_GET["Th_Code"]);
 } else {
-    echo "No thesis selected.";
-    exit;
+    $thesis = array(); // Initialize the $thesis variable to an empty array
 }
 ?>
 <!DOCTYPE html>
@@ -35,40 +34,8 @@ if (isset($_GET["Th_Code"])) {
         <div class="card">
             <button class="back-button" onclick="goBack()">Go Back</button>
             <button class="reserve-button" id='reserve-link'>Reserve</button>
-            <script>
-                
-            </script>
 
-            <!-- this is PopUp Rservation -->
-                <div class="popup-container">
-                    <div class="popup-content">
-                                <h3>Reservation Form </h3>
-                                    <form action="#">
-                                        <input type="number" id="lownumber" value="1000" style="display: none;"/>
-                                        <input type="number" id="highnumber" value="9999" style="display: none;" />
-                                    <div class="data">
-                                        <div id="randomnumber"></div>
-                                    </div>
-                                    <div class="data">
-                                        <label>User Name</label>
-                                        <input type="text" required>
-                                    </div>
-                                    <div class="data">
-                                        <label>Reserve Date</label>
-                                        <input type="date" required>
-                                    </div>
-                                    <div class="data">
-                                        <label>Return Date</label>
-                                        <input type="date" required>
-                                    </div>
-                                    <div class="btn">
-                                        <div class="inner"></div>
-                                        <button type="submit">RESERVE</button>
-                                    </div>
-                                        <button type="button" id="closeForm" class="close-btn">Close</button>
-                                    </form>
-                        </div>
-                </div>
+            <!-- Display Thesis -->
             <h2><?php echo $thesis["Th_Title"]; ?></h2>
             <p>
                 <strong>Status:</strong> <?php echo $thesis["Th_ReservStatus"]; ?><br><br><br>
@@ -81,6 +48,64 @@ if (isset($_GET["Th_Code"])) {
                 <strong>Abstract:</strong> <?php echo $thesis["Th_Abstract"]; ?><br><br><br>
                 <strong>Date Modified:</strong> <?php echo $thesis["Th_DateModified"]; ?><br><br><br>
             </p>
+
+             <!-- Alert Message after Submit -->
+            <?php
+            session_start();
+            if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
+            ?>
+                    <script>
+                        swal({
+                            title: '<?php echo $_SESSION['status']; ?>',
+                            icon: '<?php echo $_SESSION['status_code']; ?>',
+                            button: "OK!",
+                        });
+                    </script>
+            <?php
+            unset($_SESSION['status']);
+            session_destroy();
+            }
+            ?>
+
+            <!-- this is PopUp Rservation -->
+                <div class="popup-container">
+                    <div class="popup-content">
+                                <h3>Reservation Form </h3>
+                                    <form action="reservation.php" method="POST" name="reservation-form">
+                                        
+                                        <input type="number" id="lownumber" value="1000" style="display: none;"/>
+                                        <input type="number" id="highnumber" value="9999" style="display: none;" />
+                                    
+                                    <div class="data">
+                                        <div id="randomnumber"><?php echo "Reservation ID:" ; ?></div>
+                                    </div>
+                                    
+                                    <div class="data">User ID: <?php echo $thesis["Th_Code"]; ?></div>
+                                    <input type="hidden" name="Th_Code" value="<?php echo $thesis["Th_Code"];?>">
+
+                                    <div class="data">
+                                        <label>User Name</label>
+                                        <input type="text" required id="User_Name" name="User_Name">
+                                    </div>
+                                    
+                                    <div class="data">
+                                        <label>Reserve Date</label>
+                                        <input type="date" required id="Reserv_Date" name="Reserv_Date">
+                                    </div>
+                                    
+                                    <div class="data">
+                                        <label>Return Date</label>
+                                        <input type="date" required id="Return_Date" name="Return_Date">
+                                    </div>
+                                    
+                                    <div class="btn">
+                                        <div class="inner"></div>
+                                        <button type="submit" name="submit">RESERVE</button>
+                                    </d>
+                                        <button type="button" id="closeForm" class="close-btn">Close</button>
+                                    </form>
+                        </div>
+                </div>
             
         </div>
     </div>

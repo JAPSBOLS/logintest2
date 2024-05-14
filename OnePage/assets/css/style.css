@@ -14,7 +14,7 @@ body {
   color: #020202;
 }
 body{
-  background-color: rgb(255, 255, 255);
+  background: #F5F5f5;
 }
 a {
   color: #2487ce;
@@ -116,7 +116,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: lightblue;
+  background: linear-gradient(to left,#fddeaf,#ffc17b,#fa993a);
   z-index: 997;
   padding: 15px 0;
   border-bottom: 1px solid #0b0b0b;
@@ -139,7 +139,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #060606;
+  color: #ffffff;
 }
 
 #header .logo img {
@@ -293,7 +293,7 @@ section {
 }
 
 .section-bg {
-  background-color: #b5c5cd;
+  background-color: #ffffff;
 }
 
 .section-title {
@@ -415,7 +415,11 @@ section {
 
 .portfolio-details .portfolio-description {
   padding-top: 30px; /* Existing padding-top value */
-  background-color: lightblue; /* Change the background color to light blue */
+  background:linear-gradient(to right,#ffc17b,#fa993a) /* Change the background color to light blue */
+  
+}
+.portfolio-description{
+  border-radius: 1.5rem;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -427,6 +431,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 10px;
+  color:white;
 }
 
 /*--------------------------------------------------------------
@@ -436,7 +441,7 @@ section {
   margin-bottom: 20px;
   overflow: hidden;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 1rem;
   background: lightblue;
   box-shadow: 0px 2px 15px rgba(19, 19, 18, 0.568);
 }

@@ -44,7 +44,7 @@
     <hr class="sidebar-divider">
 
     <li class="nav-item">
-        <a class="nav-link" href="thesisDisplay/thesis_list.php">
+        <a class="nav-link" href="thesisDisplay/thesissearchsortandfilter.php">
             <i class="fas fa-landmark"></i>
             <span>Thesis Library</span></a>
     </li>

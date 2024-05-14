@@ -1,3 +1,23 @@
+ 
+ //Filter Button
+
+const toggleButton = document.getElementById('toggleButton');
+const filter = document.getElementById('filter');
+
+let isHidden = true;
+toggleButton.addEventListener('click', () => {
+    if (isHidden) {
+        filter.style.display = 'block';
+        toggleButton.textContent = 'Hide Filters';
+    } else {
+        filter.style.display = 'none';
+        toggleButton.textContent = 'Show Filters';
+    }
+    isHidden = !isHidden;
+});
+
+ 
+ 
         const reserveLink = document.getElementById("reserve-link");
         const popupContainer = document.querySelector(".popup-container");
         reserveLink.addEventListener("click", (event) => {
@@ -49,3 +69,8 @@ function IsNumeric(n) {
 }
 
 
+$(document).ready(function() {
+    $("#hideContentArea").click(function() {
+        $("#contentArea").toggle();
+    });
+});

@@ -52,7 +52,7 @@
                                 <input type="text" placeholder="Enter Author Name" required id="Th_Author" name="Th_Author" onkeyup="checkform()">
                             </div>
                             <div class="input-field">
-                                <label>Date Modified </label>
+                                <label>Date Published </label>
                                 <input type="date" placeholder="Enter Date" required id="Th_DateModified" name="Th_DateModified" onkeyup="checkform()">
                             </div>
                             <div class="input-field">

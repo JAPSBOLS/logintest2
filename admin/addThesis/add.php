@@ -1,7 +1,7 @@
 <script src="scripts.js"></script>
 <?php 
 session_start();
-include('dbcon.php');
+include("../config/dbconn.php");
 
 
 if(isset($_POST['submit'])){

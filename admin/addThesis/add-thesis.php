@@ -19,7 +19,7 @@
     
         <div class="container">
             <header>Add Thesis</header>
-
+        <!-- Alert Message after Submit -->
             <?php
             session_start();
             if (isset($_SESSION['status']) && $_SESSION['status'] !='') {

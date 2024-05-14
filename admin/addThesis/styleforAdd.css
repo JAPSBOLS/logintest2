@@ -8,7 +8,7 @@
 }
 
 body{
-    background: lightblue;
+    background: #c9d6ff;
     display: flex;
     align-items: center;
     justify-content:  center;
@@ -16,7 +16,7 @@ body{
 }
 .container{
    
-    background-color:lightsalmon;
+    background-color:rgb(236, 230, 230);
     max-width: 900px;
     width: 100%;
     border-radius: 10px;

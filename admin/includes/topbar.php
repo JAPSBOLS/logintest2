@@ -89,7 +89,7 @@
                 <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                 Activity Log
             </a>
-            <a class="dropdown-item" id='feedback_form' href="#">
+            <a class="dropdown-item"  href="#"  data-toggle="modal" data-target="#feedbackModal>
                 <i class="fas fa-star fa-sm fa-fw mr-2 text-gray-400"></i>
                 Send Feedback
             </a>

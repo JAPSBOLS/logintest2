@@ -41,7 +41,6 @@ body {
 
 
 .wrapper {
-	display : none;
 	position: relative;
     background: var(--white);
     padding: 1.5rem; /* Adjust padding here */

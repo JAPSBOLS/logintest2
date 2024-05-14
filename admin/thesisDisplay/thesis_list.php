@@ -7,6 +7,8 @@
         <title>Thesis List</title>
         <link rel="stylesheet" href="thesislist_style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" > 
+        
     </head>
     <body>
         <h1>Thesis List</h1>
@@ -142,5 +144,6 @@
     </div>
     
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </body>
 </html>

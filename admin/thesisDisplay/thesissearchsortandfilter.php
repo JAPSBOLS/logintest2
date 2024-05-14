@@ -25,7 +25,9 @@ function thesislist($conn, $sql){
                 <div><i>Date Modified: " . $row["Th_DateModified"] . "</i></div>
             </div>
             ".$row["Th_Abstract"]."<br><br>
-            </p>
+
+            </p>    
+
                 <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\" style='position: absolute;
                     bottom: 10px; right: 10px;'>
                     <button style='background-color: #4CAF50; /* Green */

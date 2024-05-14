@@ -24,9 +24,9 @@
 
             <!-- Message Notification -->
             <?php
-            session_start();
-            if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
-            ?>
+                session_start();
+                if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
+                ?>
                     <script>
                         swal({
                             title: '<?php echo $_SESSION['status']; ?>',
@@ -34,10 +34,10 @@
                             button: "OK!",
                         });
                     </script>
-            <?php
-            unset($_SESSION['status']);
-            session_destroy();
-            }
+                <?php
+                unset($_SESSION['status']);
+                session_destroy();
+                }
             ?>
 
             <hr>

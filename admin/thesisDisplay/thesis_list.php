@@ -11,24 +11,22 @@
     <body>
         <h1>Thesis List</h1>
 
-        <div class="navbar" style="display: flex; justify-content: flex-start; align-items: center;">
-    <form action="thesissearchsortandfilter.php" method="POST" style="flex-grow: 1; display: flex; justify-content: center; align-items: center;">
-        <input type="text" placeholder="Search for..." id="searchTerm" name="searchTerm" 
-        style="width: 40%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: 'Montserrat', sans-serif;">
-        <input type="submit" value="Search" 
-        style="margin-left: 10px; padding: 10px 20px; border: none; background-color: #4CAF50; color: white; cursor: pointer; font-family: 'Montserrat', sans-serif;">
+        <div class="navbar">
+    <form action="thesissearchsortandfilter.php" method="POST" id="search">
+        <input type="text" placeholder="Search for Title..." id="searchTerm" name="searchTerm">
+        <input type="submit" value="Search" id="searchButton">
     </form>
 
-    <button id="toggleButton" style="margin-left: 10px; padding: 10px 20px; border: none; background-color: #4CAF50; color: white; cursor: pointer; font-family: 'Montserrat', sans-serif;">Show Filters</button>
+    <button id="toggleButton">Show Filters</button>
 
-    <form action="thesissearchsortandfilter.php" method="POST" style="margin-left: 10px;">
-        <select id="SortBy" name="SortBy" style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-family: 'Montserrat', sans-serif;">
+    <form action="thesissearchsortandfilter.php" method="POST" id="sort">
+        <select id="SortBy" name="SortBy">
             <option disabled>--Sort By--</option>
-            <option value="Most Relevant" name="Most Relevant">Most Relevant</option>
-            <option value="Last Modified - Ascending" name="Last Modified - Ascending">Last Modified - Ascending</option>
-            <option value="Last Modified - Descending" name="Last Modified - Descending">Last Modified - Descending</option>
-            <option value="Department - Ascending" name="Department - Ascending">Department - Ascending</option>
-            <option value="Department - Descending" name="Department - Descending">Department - Descending</option>
+            <option value="Most Relevant" >Most Relevant</option>
+            <option value="Last Modified - Ascending" >Last Modified - Ascending</option>
+            <option value="Last Modified - Descending" >Last Modified - Descending</option>
+            <option value="Department - Ascending" >Department - Ascending</option>
+            <option value="Department - Descending">Department - Descending</option>
         </select> 
     </form>
     </div>
@@ -45,6 +43,8 @@
                     <th width="350"><u>Reservation Status</u></th>
                 </tr>
                 <tr align="left">
+
+                <!-- Thematic Area -->
                     <td><input type="checkbox" id="Thematic1" name="Thematic1"/>
                         <label for="Thematic1">Environment and Natural Resources Systems Management and Development</label>
                         <br>
@@ -69,6 +69,8 @@
                         <input type="checkbox" id="Thematic8" name="Thematic8"/>
                         <label for="Thematic8">Scientific, Technological Innovations and Techno-Entrepreneurship in Industry, Energy, Emergency Technologies for Global Competitiveness</label>
                         <br></td>
+                        
+                <!-- Course  -->
                     <td><input type="checkbox" id="BEEd" name="BEEd"/>
                         <label for="BEEd">Bachelor of Elementary Education</label>
                         <br>
@@ -117,6 +119,8 @@
                         <input type="checkbox" id="BTLEdh" name="BTLEdh"/>
                         <label for="BTLEdh">Bachelor of Technology and Livelihood Education Major in Home Economics</label>
                         <br></td>
+
+                <!-- Thesis Category -->
                     <td><input type="checkbox" id="Research" name="Research"/>
                         <label for="Research">Research</label>
                         <br>
@@ -126,6 +130,8 @@
                         <input type="checkbox" id="RnD" name="RnD"/>
                         <label for="RnD">R & D</label>
                         <br></td>
+
+                <!-- Reserve  -->
                     <td><input type="checkbox" id="Available" name="Available"/>
                         <label for="Available">Available</label>
                         <br>
@@ -141,6 +147,6 @@
     </form>
     </div>
     
-    <script src="index.js"></script>
+    <script src="scripts.js"></script>
     </body>
 </html>

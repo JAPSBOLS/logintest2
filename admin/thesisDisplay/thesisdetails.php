@@ -109,6 +109,6 @@ if (isset($_GET["Th_Code"])) {
             
         </div>
     </div>
-    <script src='scripts.js'></script>     
+    <script src='thesispage.js'></script>     
 </body>
 </html>

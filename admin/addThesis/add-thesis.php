@@ -56,8 +56,17 @@
                                 <input type="date" placeholder="Enter Date" required id="Th_DateModified" name="Th_DateModified" onkeyup="checkform()">
                             </div>
                             <div class="input-field">
-                                <label>Department Name </label>
-                                <input type="text" placeholder="Enter Department Name" required id="Th_Department" name="Th_Department" onkeyup="checkform()">
+                                <label for="Th_Department">Department Name </label>
+                                <select id="Th_Department" name="Th_Department" required onkeyup="checkform()">
+                                    <option  value="" disabled selected ></option>
+                                    <option value="Engineering Department" >Engineering Department</option>
+                                    <option value="Computer Studies Department">Computer Studies Department</option>
+                                    <option value="Entreprenuer Department">Entreprenuer Department</option>
+                                    <option value="Education Department">Education Department</option>
+                                    <option value="Nursing Department">Nursing Department</option>
+                                    <option value="Technical Vocational Department">Technical Vocational Department</option>
+                                    <option value="Technology Department">Technology Department</option>
+                                </select>
                             </div>
                             <div class="input-field">
                                 <label>Course </label>
@@ -75,9 +84,16 @@
                                 <label>Thesis Code</label>
                                 <input type="text" placeholder="CNH198" required id="Th_Code" name="Th_Code" onkeyup="checkform()">
                             </div>
+                            
                             <div class="input-field">
-                                <label> Category </label>
-                                <input type="text" placeholder="basta" required id="Th_Category" name="Th_Category" onkeyup="checkform()">
+                                <label for="Th_Category">Category</label>
+                                <select required id="Th_Category" name="Th_Category" onkeyup="checkform()">
+                                <option  value="" disabled selected ></option>
+                                    <option value="Development" >Development</option>
+                                    <option value="Research" >Research</option>
+                                    <option value="Research and Development">Research and Development</option>
+                                    
+                                </select>
                             </div>
                         </div>
                         <div class="abstractField">

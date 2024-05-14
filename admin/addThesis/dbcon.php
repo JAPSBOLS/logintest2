@@ -1,5 +1,5 @@
 <?php 
-$conn = mysqli_connect("localhost","root","","thesis_information");
+$conn = mysqli_connect("localhost","root","","archive system 2");
   
 // Check connection
 if (mysqli_connect_errno()) {

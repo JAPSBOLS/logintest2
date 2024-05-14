@@ -12,17 +12,17 @@
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- JavaScript Area-->
     <script src="scripts.js"></script>
-    <script src="sweetalert.min.js"></script>
-</head>
+    <script src="/sweetalert.min.js"></script>
 
+</head>
     <body>
-    
         <div class="container">
             <header>Add Thesis</header>
             <div class="back">
                 <a href="../index.php" class="fas fa-arrow-left fa-3x"></a>
             </div>
 
+            <!-- Message Notification -->
             <?php
             session_start();
             if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
@@ -101,14 +101,13 @@
             <form action="remove-thesis.php" method="POST">
                 <button type="submit" class="remove_button" name="remove_btn"> Want to Remove a Thesis?</button>
             </form>
-
             <?php
                 if(isset($_POST['remove_btn'])){
                     header("Location: remove-thesis.php");
                     exit();
                 }
             ?>   
-            <script src="scripts.js"></script>
+
         </div>
     </body>
 </html>

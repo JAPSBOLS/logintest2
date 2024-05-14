@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: #c9d6ff;
+    font-family: 'Montserrat';
+}
+#Search{
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+button{
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+.filter{
+    background-color: whitesmoke;
+    border: 1px solid silver;
+    border-radius: 3px;
+    display: none;
+}
+u{
+    text-decoration-color: yellow;
+}
+#SortBy{
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-body {
+    padding: 2px 16px;
+}
+.navbar{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.submit-button {
+    background-color: #c9d6ff; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s; /* Adds a smooth transition */
+}
+
+.submit-button:hover {
+    background-color: #c9d6ff; /* Darker green */
+}

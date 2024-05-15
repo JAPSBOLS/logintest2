@@ -33,7 +33,7 @@ if (isset($_GET["Th_Code"])) {
     <div class="container">
         <div class="card">
 
-            <button class="back-button" onclick="goBack()">Go Back</button>
+            <a class="back-button" href="thesissearchsortandfilter.php">Go Back</a>
             <button class="reserve-button" id='reserve-link'>Reserve</button>
 
 

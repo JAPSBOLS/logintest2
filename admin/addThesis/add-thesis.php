@@ -9,7 +9,7 @@
     <meta name="author" content="Ian Arevalo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleforADD.css">
-
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- JavaScript Area-->
     <script src="scripts.js"></script>
     <script src="sweetalert.min.js"></script>
@@ -19,6 +19,9 @@
     
         <div class="container">
             <header>Add Thesis</header>
+            <div class="back">
+                <a href="../index.php" class="fas fa-arrow-left fa-3x"></a>
+            </div>
         <!-- Alert Message after Submit -->
             <?php
             session_start();

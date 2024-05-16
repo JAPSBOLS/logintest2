@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #f5f5f5;
+  color: #141414;
 }
 body{
   background-color: rgb(255, 255, 255);
@@ -116,7 +116,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: lightblue;
+  background: linear-gradient(to right, #ff8710, #fcad5f,#fec48a);
   z-index: 997;
   padding: 15px 0;
   border-bottom: 1px solid #0b0b0b;
@@ -293,7 +293,9 @@ section {
 }
 
 .section-bg {
-  background-color: #b5c5cd;
+  background:linear-gradient(to right,#47acd3, #87CEEB,lightblue);
+  border-radius: 20px;
+
 }
 
 .section-title {
@@ -307,7 +309,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #000000;
+  color: #0b0b0b;
 }
 
 .section-title p {
@@ -356,15 +358,16 @@ section {
 .portfolio-details .portfolio-details-slider {
   position: relative;
   width:100%;
-  margin:0 ;
+  margin: 0;
   box-shadow: 0px 2px 15px rgba(2, 2, 2, 0.568);
+  border-radius: 20px;
+  float: left;
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
   display:block;
   margin-right:25%;
   margin-left: 0;
-  
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -415,7 +418,10 @@ section {
 
 .portfolio-details .portfolio-description {
   padding-top: 30px; /* Existing padding-top value */
-  background-color: lightblue; /* Change the background color to light blue */
+  padding-left: 10px;
+  background:linear-gradient(to right, #ff8710, #fcad5f,#fec48a);
+  border-radius: 20px;
+  float: left;
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -423,10 +429,15 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   margin-left: 140px;
+  color: rgb(0, 0, 0);
+  justify-content: center;
 }
 
 .portfolio-details .portfolio-description p {
-  padding: 10px;
+  padding: 14px;
+  color:rgb(3, 3, 3);
+  text-align: justify;
+  justify-content: center;
 }
 
 /*--------------------------------------------------------------
@@ -436,8 +447,8 @@ section {
   margin-bottom: 20px;
   overflow: hidden;
   text-align: center;
-  border-radius: 4px;
-  background: lightblue;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff8710, #fcad5f,#fec48a);
   box-shadow: 0px 2px 15px rgba(19, 19, 18, 0.568);
 }
 
@@ -520,9 +531,10 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #18abcb;
+  background:linear-gradient(to right,#47acd3, #87CEEB);
   min-height: 40px;
   margin-top: 72px;
+  
 }
 
 @media (max-width: 992px) {

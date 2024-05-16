@@ -72,12 +72,12 @@
                 } 
             ?>
             <img class="img-profile rounded-circle"
-                src="../images/<?php echo $logo; ?>">
+                src="<?php echo GROOT;?>../images/<?php echo $logo; ?>">
         </a>
         <!-- Dropdown - User Information -->
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
             aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="../Profile Template/profile.php">
+            <a class="dropdown-item" href="<?php echo GROOT;?>../Profile Template/profile.php">
                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                 Profile
             </a>
@@ -89,7 +89,7 @@
                 <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                 Activity Log
             </a>
-            <a class="dropdown-item"  href="../feedback/index.php">
+            <a class="dropdown-item"  href="<?php echo GROOT;?>../feedback/index.php">
                 <i class="fas fa-star fa-sm fa-fw mr-2 text-gray-400"></i>
                 Send Feedback
             </a>

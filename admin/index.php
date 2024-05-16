@@ -1,9 +1,11 @@
 <?php
-// Check if user is not logged in or is not an admin, redirect to login page
-include('auth.php');
-include('config/dbconn.php');
-include('includes/header.php');
-include('includes/navbar.php');
+    define("GROOT","");
+
+    // Check if user is not logged in or is not an admin, redirect to login page
+    include('auth.php');
+    include('config/dbconn.php');
+    include('includes/header.php');
+    include('includes/navbar.php');
 ?>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -156,10 +158,10 @@ include('includes/navbar.php');
 <?php
   include('includes/footer.php');
   include('includes/scripts.php');
-  ?>
-  <script src='AnalyticsDashboardImports/pieChartUsers.js'></script>
-  <script>
+?>
+<script src='AnalyticsDashboardImports/pieChartUsers.js'></script>
+<script>
     const active = document.getElementById('Dashboard');
     active.classList.add('active');
-  </script>
+</script>
  

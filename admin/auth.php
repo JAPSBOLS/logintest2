@@ -4,7 +4,7 @@ session_start();
 if(!isset($_SESSION['auth'])){
 
   $_SESSION['error'] = "Invalid Login";
-  header("Location: ../Login/newlogin.php");
+  header("Location: ".GROOT."../Login/newlogin.php");
   exit(0);
 }
 

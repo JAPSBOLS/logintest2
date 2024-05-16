@@ -25,7 +25,7 @@ fetch('AnalyticsDashboardImports/getThesisDeptCount.php')
     new Chart(ctx, {
       type: 'pie',
       data: {
-        labels: data.map(item => item.Th_Course),
+        labels: data.map(item => item.Th_Department),
         datasets: [{
           data: data.map(item => item.count),
           backgroundColor: bgcolors,

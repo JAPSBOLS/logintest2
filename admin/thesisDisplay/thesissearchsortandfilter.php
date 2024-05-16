@@ -24,12 +24,9 @@ function thesislist($conn, $sql){
                 <div><i>Advisor: " . $row["Th_Advisor"] . "</i></div>
                 <div><i>Date Modified: " . $row["Th_DateModified"] . "</i></div>
             </div>
-            
             <br><br>
             ".$row["Th_Abstract"]."<br><br>
-
             </p>    
-
                 <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\" style='position: absolute;
                     bottom: 10px; right: 10px;'>
                     <button style='background-color: #4CAF50; /* Green */
@@ -45,9 +42,7 @@ function thesislist($conn, $sql){
                         cursor: pointer;'>View</button>
                 </a>
              </div>
-            </div><br>";
-
-        
+            </div><br>";        
             $Total_Resultscounter++; // Increment the counter
         }
     } 

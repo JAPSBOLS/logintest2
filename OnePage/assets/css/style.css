@@ -14,7 +14,7 @@ body {
   color: #141414;
 }
 body{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(214, 214, 214);
 }
 a {
   color: #2487ce;
@@ -116,7 +116,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: linear-gradient(to right, #ff8710, #fcad5f,#fec48a);
+  background: linear-gradient(to right, #fc9127, #fcad5f,#fec48a);
   z-index: 997;
   padding: 15px 0;
   border-bottom: 1px solid #0b0b0b;
@@ -139,9 +139,17 @@ h6 {
 }
 
 #header .logo a {
-  color: #060606;
+  color: #000000;
 }
-
+#header .back a{
+  color: rgb(37, 37, 37);
+  display: inline-block; /* Ensure the link behaves as a block element */
+  padding: 5px 10px; /* Add padding inside the button */
+  border: 1px solid black; /* Add a border around the button */
+  border-radius: 5px; /* Add rounded corners to the button */
+  text-decoration: none; /* Remove underline from the link */
+  background:linear-gradient(to right,#47acd3, #87CEEB);
+}
 #header .logo img {
   max-height: 40px;
 }
@@ -292,6 +300,7 @@ section {
   overflow: hidden;
 }
 
+
 .section-bg {
   background:linear-gradient(to right,#47acd3, #87CEEB,lightblue);
   border-radius: 20px;
@@ -355,6 +364,7 @@ section {
   position:relative;
  
 }
+
 .portfolio-details .portfolio-details-slider {
   position: relative;
   width:100%;
@@ -419,7 +429,7 @@ section {
 .portfolio-details .portfolio-description {
   padding-top: 30px; /* Existing padding-top value */
   padding-left: 10px;
-  background:linear-gradient(to right, #ff8710, #fcad5f,#fec48a);
+  background:linear-gradient(to right, #fc9127, #fcad5f,#fec48a);
   border-radius: 20px;
   float: left;
 }
@@ -448,7 +458,7 @@ section {
   overflow: hidden;
   text-align: center;
   border-radius: 10px;
-  background: linear-gradient(to right, #ff8710, #fcad5f,#fec48a);
+  background: linear-gradient(to right, #fc9127, #fcad5f,#fec48a);
   box-shadow: 0px 2px 15px rgba(19, 19, 18, 0.568);
 }
 
@@ -531,7 +541,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background:linear-gradient(to right,#47acd3, #87CEEB);
+  background:linear-gradient(to right,#47acd3, #87CEEB,lightblue);
   min-height: 40px;
   margin-top: 72px;
   

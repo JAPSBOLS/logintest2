@@ -88,7 +88,7 @@
                 </div>
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
-                    <form action="logout.php" method="POST">
+                    <form action="<?php echo GROOT;?>logout.php" method="POST">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                         <button class="btn btn-primary" name="logout_btn" type="submit">Logout</button>
                     </form>

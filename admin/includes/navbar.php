@@ -17,7 +17,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item" id="Dashboard">
-        <a class="nav-link" href="<?php echo GROOT;?>index.php">
+        <a class="nav-link" href="<?php echo GROOT;?>index.php" style="z-index:5;">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>

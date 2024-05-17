@@ -1,5 +1,6 @@
 <?php
 include("../config/dbconn.php");
+session_start();
 
 function getThesisDetails($conn, $code) {
     $code = mysqli_real_escape_string($conn, $code); // Sanitize the input
@@ -55,19 +56,14 @@ if (isset($_GET["Th_Code"])) {
 
              <!-- Alert Message after Submit -->
             <?php
-            session_start();
             if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
             ?>
                     <script>
-                        swal({
-                            title: '<?php echo $_SESSION['status']; ?>',
-                            icon: '<?php echo $_SESSION['status_code']; ?>',
-                            button: "OK!",
-                        });
+                        alert("<?php echo  $_SESSION['status']; ?>");
                     </script>
             <?php
             unset($_SESSION['status']);
-            session_destroy();
+            // session_destroy(); GINAGAWA NETO?
             }
             ?>
 
@@ -113,24 +109,26 @@ if (isset($_GET["Th_Code"])) {
             
         </div>
     </div>
-    <script src='thesispage.js'>
+    <script src='thesispage.js'></script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const reserveLink = document.getElementById("reserve-link");
-        const popupContainer = document.querySelector(".popup-container");
-        reserveLink.addEventListener("click", (event) => {
-            event.preventDefault();
-            popupContainer.style.display = "block";
-        });
+            const reserveLink = document.getElementById("reserve-link");
+            const popupContainer = document.querySelector(".popup-container");
+            reserveLink.addEventListener("click", (event) => {
+                // console.log("Reserve pressed");
+                event.preventDefault();
+                popupContainer.style.display = "block";
+            });
 
-        const closePopup = document.getElementById("closeForm");
-        closePopup.addEventListener("click", (event) => {
-            event.preventDefault();
-            popupContainer.style.display = "none";
-        });
+            const closePopup = document.getElementById("closeForm");
+            closePopup.addEventListener("click", (event) => {
+                event.preventDefault();
+                popupContainer.style.display = "none";
+            });
 
-        function goBack() {
-            window.history.back();
-        }
+            function goBack() {
+                window.history.back();
+            }
         });
     </script>   
 </body>

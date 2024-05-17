@@ -1,5 +1,5 @@
   <!-- Sidebar -->
-  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" style="position:fixed">
 
     <!-- Sidebar - ADD LOGO HERE-->
     <a class="sidebar-brand d-flex align-items-center justify-content-center">
@@ -43,7 +43,7 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <li class="nav-item">
+    <li class="nav-item" id="thesisLibrary">
         <a class="nav-link" href="<?php echo GROOT;?>thesisDisplay/thesissearchsortandfilter.php">
             <i class="fas fa-landmark"></i>
             <span>Thesis Library</span></a>

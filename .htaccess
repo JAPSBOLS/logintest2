@@ -1,0 +1,3 @@
+#To show 404 error
+
+ErrorDocument 404 /404.php

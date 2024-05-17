@@ -48,7 +48,7 @@ u{
 }
 
 .submit-button {
-    background-color: #4CAF50; 
+    background-color: #5b6992; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -63,7 +63,7 @@ u{
 }
 
 .submit-button:hover {
-    background-color: #4CAF50; /* Darker green */
+    background-color: #4e73df; /* Darker green */
 }
 .navbar2{
     display: flex; 
@@ -87,7 +87,7 @@ u{
     margin-left: 10px; 
     padding: 10px 20px; 
     border: none; 
-    background-color: #4CAF50; 
+    background-color: #4e73df; 
     color: white; 
     cursor: pointer; 
     font-family: 'Montserrat', sans-serif;
@@ -96,7 +96,7 @@ u{
     margin-left: 10px; 
     padding: 10px 20px; 
     border: none; 
-    background-color: #4CAF50; 
+    background-color: #4e73df; 
     color: white; 
     cursor: pointer; 
     font-family: 'Montserrat', sans-serif;

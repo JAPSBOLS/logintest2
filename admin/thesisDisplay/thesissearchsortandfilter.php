@@ -33,7 +33,7 @@
                 </p>    
                     <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\" style='position: absolute;
                         bottom: 10px; right: 10px;'>
-                        <button style='background-color: #4CAF50; /* Green */
+                        <button style='background-color: #4e73df; /* Blue */
                             border: none;
                             font-family: Montserrat;
                             color: white;

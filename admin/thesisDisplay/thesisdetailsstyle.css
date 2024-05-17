@@ -15,7 +15,7 @@ body {
     position: relative; /* Add this line */
 }
 .back-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4e73df; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -37,7 +37,7 @@ p{
     margin-right: 12%;
 }
 .reserve-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4e73df; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -79,7 +79,7 @@ p{
   .popup-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #4e73df;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;

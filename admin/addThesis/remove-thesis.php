@@ -1,5 +1,5 @@
 <?php
-        include('dbcon.php');
+        include('../config/dbconn.php');
         $query = "SELECT thesis.*, thesis_author.Th_Author 
                 FROM thesis 
                 INNER JOIN thesis_author ON thesis.Th_Code = thesis_author.Th_Code";

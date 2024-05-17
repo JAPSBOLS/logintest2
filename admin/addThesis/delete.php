@@ -1,5 +1,5 @@
 <?php
-include('dbcon.php');
+include('../config/dbconn.php');
 
 if (isset($_GET['Th_ID'])) {
     $Thesis_ID = $_GET['Th_ID'];

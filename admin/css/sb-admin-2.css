@@ -9800,7 +9800,7 @@ a:focus {
   background-color: #f8f9fc;
   width: 100%;
   overflow-x: hidden;
-  margin-left: 14rem;
+  margin-left: 6.5rem;
 }
 
 #wrapper #content-wrapper #content {
@@ -10509,6 +10509,13 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+  #wrapper #content-wrapper {
+    background-color: #f8f9fc;
+    width: 100%;
+    overflow-x: hidden;
+    margin-left: 14rem;
+  }
+
   .sidebar {
     width: 14rem !important;
   }

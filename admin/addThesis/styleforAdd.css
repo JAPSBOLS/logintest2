@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
-body{
+/* body{
     background: #c9d6ff;
     display: flex;
     align-items: center;
     justify-content:  center;
     min-height: 100vh;
-}
-.container{
+} */
+/* .container{
    
     background-color:rgb(236, 230, 230);
     max-width: 900px;
@@ -23,7 +23,7 @@ body{
     padding: 50px;
     margin: 0 15px;
     box-shadow: 0 5px 10px gray;
-}
+} */
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -48,7 +48,6 @@ body{
 }
 
 .container form .details{
-     
     margin-top:  20px;
 }
 
@@ -68,10 +67,19 @@ body{
     flex-wrap: wrap;
 }
 
+.fields{
+    background: #c9d6ff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:  space-around;
+    min-height: auto;
+    padding: 10px;
+}
+
 form .fields .input-field{
     display: flex;
     flex-direction: column;
-    margin: 4px 0;
 }
 
 .input-field input{
@@ -111,7 +119,7 @@ form .abstractField .abstract-field{
 
 textarea{
     height: 250px;
-    width: 800px;
+    width: auto;
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;

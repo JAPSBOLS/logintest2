@@ -5,6 +5,7 @@
     include "../includes/navbar.php";
 ?>
         <!-- Content Wrapper -->
+        <link rel="stylesheet" href="styleforADD.css">
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
@@ -13,7 +14,9 @@
 
                 <!-- Begin Content -->
                 <div class="container-fluid">
-                    <header>Add Thesis</header>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    </div>
 
                     <!-- <div class="back">
                         <a href="../index.php" class="fas fa-arrow-left fa-3x"></a>

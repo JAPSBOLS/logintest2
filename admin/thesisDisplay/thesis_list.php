@@ -4,31 +4,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Thesis List</title>
         <link rel="stylesheet" href="thesislist_style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     </head>
-    <body>
-        <h1>Thesis List</h1>
 
-        <div class="navbar">
-    <form action="thesissearchsortandfilter.php" method="POST" id="search">
-        <input type="text" placeholder="Search for Title..." id="searchTerm" name="searchTerm">
-        <input type="submit" value="Search" id="searchButton">
-    </form>
 
-    <button id="toggleButton">Show Filters</button>
+    <div class="navbar2">
+        <form action="thesissearchsortandfilter.php" method="POST" id="search">
+            <input type="text" placeholder="Search for Title..." id="searchTerm" name="searchTerm">
+            <input type="submit" value="Search" id="searchButton">
+        </form>
 
-    <form action="thesissearchsortandfilter.php" method="POST" id="sort">
-        <select id="SortBy" name="SortBy">
-            <option disabled>--Sort By--</option>
-            <option value="Most Relevant" >Most Relevant</option>
-            <option value="Last Modified - Ascending" >Last Modified - Ascending</option>
-            <option value="Last Modified - Descending" >Last Modified - Descending</option>
-            <option value="Department - Ascending" >Department - Ascending</option>
-            <option value="Department - Descending">Department - Descending</option>
-        </select> 
-    </form>
+        <button id="toggleButton">Show Filters</button>
+
+        <form action="thesissearchsortandfilter.php" method="POST" id="sort">
+            <select id="SortBy" name="SortBy">
+                <option disabled>--Sort By--</option>
+                <option value="Most Relevant" >Most Relevant</option>
+                <option value="Last Modified - Ascending" >Last Modified - Ascending</option>
+                <option value="Last Modified - Descending" >Last Modified - Descending</option>
+                <option value="Department - Ascending" >Department - Ascending</option>
+                <option value="Department - Descending">Department - Descending</option>
+            </select> 
+        </form>
     </div>
 
 

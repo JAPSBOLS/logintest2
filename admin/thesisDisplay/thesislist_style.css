@@ -46,11 +46,7 @@ u{
 .card-body {
     padding: 2px 16px;
 }
-.navbar{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-}
+
 .submit-button {
     background-color: #4CAF50; 
     border: none;
@@ -69,7 +65,7 @@ u{
 .submit-button:hover {
     background-color: #4CAF50; /* Darker green */
 }
-.navbar{
+.navbar2{
     display: flex; 
     justify-content: flex-start; 
     align-items: center;

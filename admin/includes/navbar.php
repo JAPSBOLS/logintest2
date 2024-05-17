@@ -43,7 +43,7 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-    <li class="nav-item">
+    <li class="nav-item" id="thesisLibrary">
         <a class="nav-link" href="<?php echo GROOT;?>thesisDisplay/thesissearchsortandfilter.php">
             <i class="fas fa-landmark"></i>
             <span>Thesis Library</span></a>

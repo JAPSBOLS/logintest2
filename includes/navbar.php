@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo GROOT;?>index.php" style="margin-right: 20px;">Home</a>
+            <a class="nav-link" id="home" aria-current="page" href="<?php echo GROOT;?>index.php" style="margin-right: 20px;">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" style="margin-right: 20px;">Features</a>
@@ -18,7 +18,7 @@
             <a class="nav-link" href="#" style="margin-right: 20px;">Contacts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo GROOT;?>OnePage/aboutUs.php" style="margin-right: 20px;">About Us</a>
+            <a class="nav-link" id="aboutUS" href="<?php echo GROOT;?>OnePage/aboutUs.php" style="margin-right: 20px;">About Us</a>
           </li>
           <li class="nav-item">
             <a class="btn btn-primary" href="<?php echo GROOT;?>Login/newlogin.php">Login</a>

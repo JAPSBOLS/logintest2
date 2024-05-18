@@ -19,3 +19,7 @@
   }
   
 </style>
+<script>
+  var active = document.getElementById("home");
+  active.classList.add("active");
+</script>

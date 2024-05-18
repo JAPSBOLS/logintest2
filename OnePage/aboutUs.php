@@ -354,6 +354,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var active =document.getElementById("aboutUS");
+    active.classList.add("active");
+  </script>
 
 <?php
   include("../includes/footer.php");

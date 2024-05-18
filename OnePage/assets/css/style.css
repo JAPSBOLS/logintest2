@@ -543,15 +543,9 @@ section {
   padding: 15px 0;
   background:linear-gradient(to right,#47acd3, #87CEEB,lightblue);
   min-height: 40px;
-  margin-top: 72px;
-  
 }
 
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 58px;
-  }
-}
+
 
 .breadcrumbs h2 {
   font-size: 24px;

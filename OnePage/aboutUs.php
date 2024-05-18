@@ -39,25 +39,19 @@
 </head>
 
 <body>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <?php
+    define("GROOT","../");
+    include('../includes/header.php');
+    include("../includes/navbar.php");
+  ?>
 
-      <h1 class="logo"><a href="index.html">ABOUT US</a></h1>
-      <div class="back">
-        <a href="../index.php"class="fas fa-arrow-left fa-3x"></a>
-      </div>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      
 
-    </div>
-  </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
@@ -103,24 +97,28 @@
           <div class="col-lg-4">
            
             <div class="portfolio-description">
-              <h2> About Us</h2>
+              <h2>About Us</h2>
               <p>
-                    Thesis Library System is a modern cloud-based application designed
-                   to streamline student's administration processes of Bicol University Polangui's 
-                   higher education institutions and programs. We dream of enhancing the students journey 
-                   by offering this design as their cloud data depot and storage, and to help aid their needs, 
-                   along with achieving clientele satisfaction. Our system design is committed in ensuring the
-                    truth, trust, integrity, transparency, and sustainability (TTITS) in all operations.</p>
-
-<div><p>  Comprised of expertise with diverse educational backgrounds, our team is dedicated to ignite a new spark of 
-  change in the higher education institutions platform, while offering a functional, efficient, and transformative
-   Thesis Library System.
-</p></div>
-<div><p>  Discover and meet our passionate and dedicated individuals behind this system as we uncover the future that lies
-  beyond our grasp.</p></div>
-
-  
-              
+                  Thesis Library System is a modern cloud-based application designed
+                to streamline student's administration processes of Bicol University Polangui's 
+                higher education institutions and programs. We dream of enhancing the students journey 
+                by offering this design as their cloud data depot and storage, and to help aid their needs, 
+                along with achieving clientele satisfaction. Our system design is committed in ensuring the
+                truth, trust, integrity, transparency, and sustainability (TTITS) in all operations.
+              </p>
+              <div>
+                <p>  
+                  Comprised of expertise with diverse educational backgrounds, our team is dedicated to ignite a new spark of 
+                change in the higher education institutions platform, while offering a functional, efficient, and transformative
+                Thesis Library System.
+                </p>
+              </div>
+              <div>
+                <p>  
+                  Discover and meet our passionate and dedicated individuals behind this system as we uncover the future that lies
+                beyond our grasp.
+                </p>
+              </div>
             </div>
           </div>
     <!-- ======= Team Section ======= -->
@@ -129,7 +127,9 @@
 
         <div class="section-title">
           <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
         </div>
 
         <div class="row">
@@ -355,6 +355,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
-
-</html>
+<?php
+  include("../includes/footer.php");
+?>

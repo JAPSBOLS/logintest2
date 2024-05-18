@@ -3,6 +3,7 @@
 
     <div class="bg">
   <?php
+    define("GROOT","");
     include('includes/header.php');
     include('includes/navbar.php');
     include('includes/footer.php');

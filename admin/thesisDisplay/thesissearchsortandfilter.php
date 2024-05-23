@@ -17,7 +17,7 @@
             while ($row = mysqli_fetch_assoc($result)) {
                 $thesislist .= "<div class='card' style='width: 90%; margin:0 auto; position: relative;'>
                 <div class='card-body'>
-                    <u><h2 class='card-title'>". $row["Th_Title"] . "</h2></u>
+                    <h2 class='card-title'>". $row["Th_Title"] . "</h2>
                     <p class='card-text'>
 
                 <h2><mark>" . $row["Th_ReservStatus"] . "<br></mark></h2>
@@ -178,7 +178,7 @@
     $output_list = GetSearchTerm($conn);
 
 ?>
-
+<title>BU Online Library</title>
 <!-- Content Wrapper -->
 <div id="content-wrapper" class="d-flex flex-column">
 

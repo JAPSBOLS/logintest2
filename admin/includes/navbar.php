@@ -49,14 +49,14 @@
             <span>Thesis Library</span></a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">
+    <li class="nav-item" id="Contacts">
+        <a class="nav-link" href="<?php echo GROOT;?>../ContactPage-FAQs/Contact Page.php">
             <i class="fas fa-user-friends"></i>
             <span>Contacts</span></a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">
+    <li class="nav-item" id="FAQ">
+        <a class="nav-link" href="<?php echo GROOT;?>../ContactPage-FAQs/FAQs.php">
             <i class="fas fa-question"></i>
             <span>FAQ</span></a>
     </li>

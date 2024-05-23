@@ -24,6 +24,14 @@
 
     <!-- Nav Item - Add/Remove Thesis Collapse Menu -->
     <?php if ($_SESSION['auth_role'] !== 'student'): ?>
+
+        <li class="nav-item" id="Pendings">
+            <a class="nav-link" href="<?php echo GROOT;?>PendingReservesRequest" style="z-index:5;">
+                <i class="fas fa-cubes"></i>
+                <span>Pending Requests</span>
+            </a>
+        </li>
+
         <li class="nav-item" id="ManagementSidebar">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                 aria-expanded="true" aria-controls="collapseUtilities">

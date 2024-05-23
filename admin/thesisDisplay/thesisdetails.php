@@ -135,3 +135,7 @@
     include('../includes/footer.php');
     include('../includes/scripts.php');
 ?>
+<script>
+    var active =document.getElementById("thesisLibrary");
+    active.classList.add("active");
+</script>

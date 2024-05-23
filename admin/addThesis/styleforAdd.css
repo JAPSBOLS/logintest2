@@ -33,12 +33,14 @@
   'opsz' 48
 }
 
-
-
 .container header{
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 20px;
+    
+}
+.container-fluid{
+    background-color:rgb(255, 255, 255)
 }
 
 .container form{
@@ -57,6 +59,7 @@
     font-size: large;
     font-weight: 600;
     display: block;
+    
 }
 
 .container form .fields{
@@ -65,10 +68,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .fields{
-    background: linear-gradient(to right, #fc9127, #fcad5f);;
+    background: linear-gradient(to right, #fc9127, #fcad5f);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -76,6 +80,7 @@
     min-height: auto;
     padding: 10px;
     border-radius: 10px;
+    color: black;
 }
 
 form .fields .input-field{
@@ -85,7 +90,7 @@ form .fields .input-field{
 
 .input-field input{
     height: 30px;
-    width: px;
+    width: 220px;
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;
@@ -96,7 +101,7 @@ form .fields .input-field{
 }
 
 .input-field input:is(:focus, :valid){
-    box-shadow: 0 3px 3px rgb(64, 65, 112);
+    box-shadow: 0 3px 3px black;
 } /*to be studied*/
 
 .container form .abstractField{
@@ -136,27 +141,28 @@ form .button, .remove_button {
     height: 55px;
     border-radius: 5px;
     width: 100%;
-    background: linear-gradient(to right, #fc9127, #fcad5f,#fec48a);
+    background:linear-gradient(to right, #fc9127, #fcad5f);
     margin-top: 20px; /* Add margin top for spacing */
     border: none; /* Remove default button border */
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 16px; /* Set font size */
-    font-weight: bold; /* Set font weight */   
+    font-weight: bold; /* Set font weight */ 
+    color: black;  
 }
 
 form .button:hover, .remove_button:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: darkcyan;
 }
 
 .alert {
     padding: 20px;
-    background-color: rgb(198, 53, 28);
-    color: rgb(150, 17, 17);
+    background-color: darkcyan;
+    color: white;
   }
   
 .closebtn {
     margin-left: 15px;
-    color: rgb(215, 13, 13);
+    color: white;
     font-weight: bold;
     float: right;
     font-size: 22px;
@@ -167,5 +173,5 @@ form .button:hover, .remove_button:hover{
   }
   
   .closebtn:hover {
-    color: rgb(0, 0, 0);
+    color: black;
   }

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: #FF8602;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(255, 138, 29),rgb(255, 255, 255), rgb(37, 117, 255));
+    /*background: url("background.jpg") no-repeat center center/cover;*/
+}
+
+.container form{
+    width: 770px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.container form h1{
+    color: #000000;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    background: none;
+    border-bottom: 2px solid #000000;
+}
+
+.container form input::placeholder{
+    color: #000000;
+
+}
+
+.container form #lastname,
+.container form #firstname,
+.container form #email,
+.container form #mobile{
+    background: whitesmoke;
+    margin-left: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+}
+
+.container form h4{
+    color: #000000;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container form textarea{
+    background: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    border-bottom: 2px solid #fff;
+    color: #000000;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1rem;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(90, 90, 90, 0.713);
+    border-radius: 15px;
+}
+
+.container form #button{
+    border: none;
+    background: whitesmoke;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.container form #button:hover{
+    opacity: 0.7;
+}

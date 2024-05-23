@@ -1,9 +1,4 @@
-*{
-    font-family: 'Montserrat';
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -11,7 +6,6 @@ body {
     margin: auto;
     border-radius: 5px;
     padding: 20px;
-    background-color: #f2f2f2;
     position: relative; /* Add this line */
 }
 .back-button {
@@ -29,8 +23,6 @@ body {
 h2{
     margin-left: 10%;
     margin-right: 10%;
-    text-decoration: underline;
-    text-decoration-color: red;
 }
 p{
     margin-left: 12%;

@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-body{
-    background-color: #c9d6ff;
-    font-family: 'Montserrat';
-}
 #Search{
     border: 1px solid silver;
     border-radius: 3px;
@@ -21,9 +17,7 @@ button{
     border-radius: 3px;
     display: none;
 }
-u{
-    text-decoration-color: yellow;
-}
+
 #SortBy{
     border: 1px solid silver;
     border-radius: 3px;

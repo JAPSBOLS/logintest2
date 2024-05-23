@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #4e73df; 
+  background: linear-gradient(to right,#47acd3, #87CEEB,lightblue);
   color: #fff; 
   font-size: 2rem;
   text-align: center;
@@ -28,7 +28,7 @@ header {
 table {
   width:95%; 
   margin: 20px auto; 
-  background-color: #fff; 
+  background:linear-gradient(to right,#47acd3, #87CEEB,lightblue);
   border-collapse: collapse;
 }
 
@@ -40,7 +40,7 @@ table td {
 }
 
 table th {
-  background-color: #FF8602; 
+  background: linear-gradient(to right, #f69330, #fcad5f);
   color: #fff; 
   cursor: default;
 
@@ -84,7 +84,7 @@ table th {
 }
 
 .btn {
-  background-color: #FF8602; /* Orange button color */
+  background: linear-gradient(to right, #fc9127, #fcad5f); /* Orange button color */
   color: #fff;
   border: none;
   border-radius: 5px;

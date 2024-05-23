@@ -85,8 +85,8 @@
                                     <input type="hidden" name="Th_Code" value="<?php echo $thesis["Th_Code"];?>">
 
                                     <div class="data">
-                                        <label>Username: <?php echo $_SESSION['user']['username']?></label>
-                                        <input type="hidden" id="User_Name" name="User_Name" value="<?php echo $_SESSION['user']['username']?>"></label>
+                                        <label>Name: <?php echo $_SESSION['user']['fname']." ". $_SESSION['user']['lname']?></label>
+                                        <input type="hidden" id="User_Name" name="User_Name" value="<?php echo $_SESSION['user']['fname']." ". $_SESSION['user']['lname']?>"></label>
                                     </div>
                                     
                                     <div class="data">

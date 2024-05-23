@@ -7,6 +7,7 @@
     include('includes/header.php');
     include('includes/navbar.php');
 ?>
+<title>BU Online Library Dashboard</title>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 

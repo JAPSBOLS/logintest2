@@ -24,6 +24,7 @@
         $thesis = array(); // Initialize the $thesis variable to an empty array
     }
 ?>
+<title><?php echo $thesis["Th_Title"]; ?></title>
 <!-- Content Wrapper -->
 <div id="content-wrapper" class="d-flex flex-column">
 

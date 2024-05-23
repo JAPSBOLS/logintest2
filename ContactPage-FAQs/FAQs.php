@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FAQs</title>
-        <link rel="stylesheet" href="style2.css" />       
-    </head>
-    <body>
+<?php
+   define("GROOT","../admin/");
+   include(GROOT."auth.php");
+   include(GROOT."includes/header.php");
+   include(GROOT."includes/navbar.php");
+?>
+<title>FAQs</title>
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+   <!-- Main Content -->
+   <div id="content">
+
+      <?php include(GROOT.'includes/topbar.php');?>
+
+       <link rel="stylesheet" href="style2.css" />       
         <div class="box">
             <p class="heading">FAQs</p>
             <div class="faqs">
@@ -41,5 +47,13 @@
              </details>
             </div>
          </div>
-    </body>
-
+<?php
+  include(GROOT.'includes/footer.php');
+  include(GROOT.'includes/scripts.php');
+?>
+<script src='AnalyticsDashboardImports/pieChartUsers.js'></script>
+<script>
+    const active = document.getElementById('FAQ');
+    active.classList.add('active');
+</script>
+ 

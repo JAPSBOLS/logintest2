@@ -4,6 +4,7 @@
     include "../includes/header.php";
     include "../includes/navbar.php";
 ?>
+<title>BU Online Library Add Thesis</title>
         <!-- Content Wrapper -->
         <link rel="stylesheet" href="styleforADD.css">
         <div id="content-wrapper" class="d-flex flex-column">

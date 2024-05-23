@@ -1,13 +1,21 @@
-o
-    <head>
-        <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Contacts Page</title>
+<?php
+   define("GROOT","../admin/");
+   include(GROOT."auth.php");
+   include(GROOT."includes/header.php");
+   include(GROOT."includes/navbar.php");
+?>
+<title>Contact Us</title>
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+   <!-- Main Content -->
+   <div id="content">
+
+      <?php include(GROOT.'includes/topbar.php');?>
+
+
             <link rel="stylesheet" href="style.css" />
-        </head>
-        <body>
-            <div class="container"> 
+            <div class="box"> 
                     <form>
                         <h1>Contact Us</h1>
                         <input type="text" id="firstname" placeholder="First Name" required>
@@ -18,5 +26,14 @@ o
                         <textarea required></textarea>
                         <input type="submit" value="Send" id="button">
                     </form>
-        </body>
-</html>
+            </div>
+<?php
+  include(GROOT.'includes/footer.php');
+  include(GROOT.'includes/scripts.php');
+?>
+<script src='AnalyticsDashboardImports/pieChartUsers.js'></script>
+<script>
+    const active = document.getElementById('Contacts');
+    active.classList.add('active');
+</script>
+ 

@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-*{
-    font-family: "poppins",sans-serif;
-}
-body{
-    background: #2b2b2b;
 
-  
-}
+#content-wrapper{
+    background-color: #b8b8b8 !important; 
+} 
 
 .box{
    width: 770px;

@@ -178,7 +178,7 @@
     $output_list = GetSearchTerm($conn);
 
 ?>
-
+<title>BU Online Library</title>
 <!-- Content Wrapper -->
 <div id="content-wrapper" class="d-flex flex-column">
 

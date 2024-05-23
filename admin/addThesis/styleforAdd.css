@@ -95,7 +95,7 @@ form .fields .input-field{
 }
 
 .input-field input:is(:focus, :valid){
-    box-shadow: 0 3px 3px black;
+    box-shadow: 0 3px 3px rgb(64, 65, 112);
 } /*to be studied*/
 
 .container form .abstractField{

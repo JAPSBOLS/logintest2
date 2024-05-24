@@ -29,13 +29,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: OnePage
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -128,7 +122,7 @@
         <div class="section-title">
           <h2>Team</h2>
           <p>
-            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+          "The dedicated and collaborative team, who worked diligently together, was responsible for the development of this system."
           </p>
         </div>
 
@@ -145,7 +139,7 @@
               </div>
               <div class="member-info">
                 <h4>Lawrence Faith Escaño</h4>
-                <span>Chief Executive Officer</span>
+                
               </div>
             </div>
           </div>
@@ -162,7 +156,7 @@
               </div>
               <div class="member-info">
                 <h4>Jasper Talangan</h4>
-                <span>Chief Executive Officer</span>
+                
               </div>
             </div>
           </div>
@@ -178,7 +172,7 @@
               </div>
               <div class="member-info">
                 <h4>Klyde Jordan Albaniel</h4>
-                <span>Chief Executive Officer</span>
+                
               </div>
             </div>
           </div>
@@ -194,7 +188,7 @@
               </div>
               <div class="member-info">
                 <h4>John Jacob San Francisco</h4>
-                <span>Chief Executive Officer</span>
+                
               </div>
             </div>
           </div>
@@ -210,7 +204,7 @@
               </div>
               <div class="member-info">
                 <h4>Yazze Kiero Campo</h4>
-                <span>Chief Executive Officer</span>
+                
               </div>
             </div>
           </div>
@@ -227,7 +221,7 @@
               </div>
               <div class="member-info">
                 <h4>Nabelah Dimaocom</h4>
-                <span>Chief Executive Officer</span>
+              
               </div>
             </div>
           </div>
@@ -244,7 +238,7 @@
               </div>
               <div class="member-info">
                 <h4>Francis Ian Arevalo</h4>
-                <span>Chief Executive Officer</span>
+                
               </div>
             </div>
           </div>
@@ -260,7 +254,7 @@
               </div>
               <div class="member-info">
                 <h4>Janice Sabaybay</h4>
-                <span>Chief Executive Officer</span>
+               
               </div>
             </div>
           </div>
@@ -276,7 +270,7 @@
               </div>
               <div class="member-info">
                 <h4>Alexandra Fragio</h4>
-                <span>Chief Executive Officer</span>
+             
               </div>
             </div>
           </div>
@@ -292,7 +286,7 @@
               </div>
               <div class="member-info">
                 <h4>Rainer Fresado</h4>
-                <span>Product Manager</span>
+                
               </div>
             </div>
           </div>
@@ -308,7 +302,7 @@
               </div>
               <div class="member-info">
                 <h4>Jann Ed Gabriel Masujer</h4>
-                <span>THE GOAT</span>
+                
               </div>
             </div>
           </div>
@@ -324,7 +318,7 @@
               </div>
               <div class="member-info">
                 <h4>Aga Natanuan</h4>
-                <span>Accountant</span>
+               
               </div>
             </div>
           </div>

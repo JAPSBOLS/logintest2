@@ -18,15 +18,16 @@
         <button id="toggleButton">Show Filters</button>
 
         <form action="thesissearchsortandfilter.php" method="POST" id="sort">
-            <select id="SortBy" name="SortBy">
-                <option disabled>--Sort By--</option>
-                <option value="Most Relevant" >Most Relevant</option>
-                <option value="Last Modified - Ascending" >Last Modified - Ascending</option>
-                <option value="Last Modified - Descending" >Last Modified - Descending</option>
-                <option value="Department - Ascending" >Department - Ascending</option>
-                <option value="Department - Descending">Department - Descending</option>
-            </select> 
-        </form>
+        <select id="SortBy" name="SortBy">
+            <option disabled>--Sort By--</option>
+            <option value="Most Relevant" >Most Relevant</option>
+            <option value="Last Modified - Ascending" >Last Modified - Ascending</option>
+            <option value="Last Modified - Descending" >Last Modified - Descending</option>
+            <option value="Department - Ascending" >Department - Ascending</option>
+            <option value="Department - Descending">Department - Descending</option>
+        </select> 
+        <button type="submit">Sort</button>
+    </form>
     </div>
 
 

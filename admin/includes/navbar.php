@@ -24,6 +24,22 @@
 
     <!-- Nav Item - Add/Remove Thesis Collapse Menu -->
     <?php if ($_SESSION['auth_role'] !== 'student'): ?>
+
+        <li class="nav-item" id="Reviews">
+            <a class="nav-link" href="#" style="z-index:5;">
+                <i class="fas fa-thumbs-up"></i>
+                <span>Users Reviews</span>
+            </a>
+        </li>
+
+
+        <li class="nav-item" id="Pendings">
+            <a class="nav-link" href="<?php echo GROOT;?>PendingReservesRequest/" style="z-index:5;">
+                <i class="fas fa-cubes"></i>
+                <span>Pending Requests</span>
+            </a>
+        </li>
+
         <li class="nav-item" id="ManagementSidebar">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                 aria-expanded="true" aria-controls="collapseUtilities">
@@ -49,23 +65,12 @@
             <span>Thesis Library</span></a>
     </li>
 
-    <li class="nav-item" id="Contacts">
-        <a class="nav-link" href="<?php echo GROOT;?>../ContactPage-FAQs/Contact Page.php">
-            <i class="fas fa-user-friends"></i>
-            <span>Contacts</span></a>
-    </li>
-
     <li class="nav-item" id="FAQ">
         <a class="nav-link" href="<?php echo GROOT;?>../ContactPage-FAQs/FAQs.php">
             <i class="fas fa-question"></i>
             <span>FAQ</span></a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="#">
-            <i class="fas fa-laugh"></i>
-            <span>About Us</span></a>
-    </li>
 </ul>
 
 <!-- End of Sidebar -->

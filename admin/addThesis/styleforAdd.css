@@ -33,12 +33,14 @@
   'opsz' 48
 }
 
-
-
 .container header{
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 20px;
+    
+}
+.container-fluid{
+    background-color:rgb(255, 255, 255)
 }
 
 .container form{
@@ -57,6 +59,7 @@
     font-size: large;
     font-weight: 600;
     display: block;
+    
 }
 
 .container form .fields{
@@ -65,16 +68,19 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 .fields{
-    background: #c9d6ff;
+    background: linear-gradient(to right, #fc9127, #fcad5f);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content:  space-around;
     min-height: auto;
     padding: 10px;
+    border-radius: 10px;
+    color: black;
 }
 
 form .fields .input-field{
@@ -84,7 +90,7 @@ form .fields .input-field{
 
 .input-field input{
     height: 30px;
-    width: 240px;
+    width: 220px;
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;
@@ -135,12 +141,13 @@ form .button, .remove_button {
     height: 55px;
     border-radius: 5px;
     width: 100%;
-    background-color: lightblue;
+    background:linear-gradient(to right, #fc9127, #fcad5f);
     margin-top: 20px; /* Add margin top for spacing */
     border: none; /* Remove default button border */
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 16px; /* Set font size */
-    font-weight: bold; /* Set font weight */   
+    font-weight: bold; /* Set font weight */ 
+    color: black;  
 }
 
 form .button:hover, .remove_button:hover{

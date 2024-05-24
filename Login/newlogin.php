@@ -25,7 +25,7 @@
                 ?>
                 <?php if (isset($_SESSION['error'])) { ?>
                      <div class="alert alert-danger" role="alert" id="error-alert" style="color: darkred;">  
-                        <strong>&times;</strong> <?=$_SESSION['error']?>
+                        <?=$_SESSION['error']?>
                      </div>
                 <?php unset($_SESSION['error']); } ?>
                 <div class="input-group">

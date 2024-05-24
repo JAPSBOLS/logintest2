@@ -73,14 +73,16 @@
 
 .fields{
     background: linear-gradient(to right, #fc9127, #fcad5f);
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content:  space-around;
     min-height: auto;
     padding: 10px;
     border-radius: 10px;
-    color: black;
+    color: rgb(1, 1, 1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
 }
 
 form .fields .input-field{
@@ -95,10 +97,27 @@ form .fields .input-field{
     padding: 2px;
     margin: 8px 0;
     outline: none;
+    background-color:rgb(237, 237, 237);
 }
+/* Category Box */
+#Th_Category {
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    padding: 2px;
+    width: 220px;
+  }
+  
+  /* Department Name Box */
+  #Th_Department {
+    background-color:  rgb(237, 237, 237);
+    border-radius: 5px;
+    padding: 2px;
+    width: 220px;
+  }
 .input-field label{
     font-size: 15px;
 }
+
 
 .input-field input:is(:focus, :valid){
     box-shadow: 0 3px 3px black;
@@ -110,6 +129,7 @@ form .fields .input-field{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 form .abstractField .abstract-field{
@@ -121,6 +141,7 @@ form .abstractField .abstract-field{
 
 .abstract-field label{
     font-size: 15px;
+    
 }
 
 textarea{
@@ -131,6 +152,8 @@ textarea{
     margin: 8px 0;
     outline: none;
     resize: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 237, 237);
    }
 
 textarea:is(:focus, :valid){

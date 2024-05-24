@@ -10,8 +10,18 @@
         // Delete the thesis record
         $deleteThesis = "DELETE FROM reservation WHERE Reserv_ID = '$Thesis_ID'";
         $runThesisDelete = mysqli_query($conn, $deleteThesis);
-        $updateThesis = "UPDATE thesis SET Th_ReservStatus='Available' WHERE Th_Code = '$Thesis_ID'";
-        $runThesis = mysqli_query($conn, $updateThesis);
+
+        $pendings = "SELECT * FROM thesis WHERE Th_Code = '$Thesis_ID'";
+        $runnn = mysqli_query($conn, $pendings);
+        $ddaattaa = mysqli_fetch_assoc($runnn);
+
+        if($ddaattaa['Th_ReservStatus'] == 'Pending'){
+            $updateThesis = "UPDATE thesis SET Th_ReservStatus='Available' WHERE Th_Code = '$Thesis_ID'";
+            $runThesis = mysqli_query($conn, $updateThesis);
+        }
+        
+
+        
         $msg = "Reservation Successfully Declined";
         $_SESSION['msg'] = $msg;
         header('location: index.php');

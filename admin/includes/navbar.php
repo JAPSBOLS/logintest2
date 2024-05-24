@@ -25,7 +25,7 @@
     <!-- Nav Item - Add/Remove Thesis Collapse Menu -->
     <?php if ($_SESSION['auth_role'] !== 'student'): ?>
 
-        <li class="nav-item" id="Pendings">
+        <li class="nav-item" id="Reviews">
             <a class="nav-link" href="#" style="z-index:5;">
                 <i class="fas fa-thumbs-up"></i>
                 <span>Users Reviews</span>

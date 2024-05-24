@@ -5,7 +5,6 @@
                 INNER JOIN thesis_author ON thesis.Th_Code = thesis_author.Th_Code";
 
         $run = mysqli_query($conn, $query);
-
         if(isset($_POST['btn'])){
             header("Location: add-thesis.php");
             exit();
@@ -17,7 +16,7 @@
     <head>
         <meta charset="utf-8">
         <title>Thesis List</title>
-        <link rel="stylesheet" type="text/css" href="styleforRemove.css">
+        
         <link href="DataTables/datatables.min.css" rel="stylesheet">
 
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>

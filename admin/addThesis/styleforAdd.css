@@ -72,19 +72,19 @@
 }
 
 .fields{
-    background: linear-gradient(to right, #fc9127, #fcad5f);
+    background: radial-gradient(circle at center,#fdb56d, #f7a95b,#ff8e1d);
     flex-wrap: wrap;
     align-items: center;
     justify-content:  space-around;
     padding:20px;
     padding-right: 0px;
-    padding-left: 120px;
+    padding-left: 10px;
     border-radius: 10px;
-    color: rgb(1, 1, 1);
+    color: rgb(39, 39, 39);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
-    width: 65%;
+        
 }
 
 form .fields .input-field{
@@ -94,19 +94,20 @@ form .fields .input-field{
 
 .input-field input{
     height: 30px;
-    width: 220px;
+    width: 500px;
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;
     outline: none;
     background-color:rgb(237, 237, 237);
+    
 }
 /* Category Box */
 #Th_Category {
     background-color: rgb(237, 237, 237);
     border-radius: 5px;
     padding: 2px;
-    width: 220px;
+    width: 500px;
   }
   
   /* Department Name Box */
@@ -114,7 +115,7 @@ form .fields .input-field{
     background-color:  rgb(237, 237, 237);
     border-radius: 5px;
     padding: 2px;
-    width: 220px;
+    width: 500px;
   }
 .input-field label{
     font-size: 15px;
@@ -142,7 +143,8 @@ form .abstractField .abstract-field{
 }
 
 .abstract-field label{
-    font-size: 15px;
+    font-size: 20px;
+    color: rgb(88, 88, 88);
     
 }
 

@@ -27,7 +27,11 @@ body{
     max-width: 200%;
     min-height: 600px;
 }
-
+.back-button{
+    float:right;
+    margin: 20px;
+    font-size:30px;
+}
 .container button{
     background-color: #0F6FC5;
     color: #fff;

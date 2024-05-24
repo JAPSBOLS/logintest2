@@ -82,6 +82,26 @@ table th {
   align-items: center;
   margin-top: 20px;
 }
+/* Delete Button Style */
+.delete-link {
+  background-color: #da190b; 
+  color: white; 
+  border: none; 
+  cursor: pointer;
+  padding: 8px 16px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px;
+  transition-duration: 0.4s; 
+  border-radius: 5px;
+}
+
+/* Change background color on hover */
+.delete-link:hover {
+  background-color: #da190b;
+}
 
 .btn {
   background: linear-gradient(to right, #fc9127, #fcad5f); /* Orange button color */

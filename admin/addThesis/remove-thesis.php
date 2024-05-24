@@ -9,7 +9,6 @@
                 INNER JOIN thesis_author ON thesis.Th_Code = thesis_author.Th_Code";
 
         $run = mysqli_query($conn, $query);
-
         if(isset($_POST['btn'])){
             header("Location: add-thesis.php");
             exit();
@@ -30,13 +29,13 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <!DOCTYPE html>
-                <html>
-                    <head>
-                        <meta charset="utf-8">
-                        <title>Thesis List</title>
-                        <link rel="stylesheet" type="text/css" href="styleforRemove.css">
-                        <link href="DataTables/datatables.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Thesis List</title>
+        <link rel="stylesheet" type="text/css" href="styleforRemove.css">
+        <link href="DataTables/datatables.min.css" rel="stylesheet">
 
                         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
                         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

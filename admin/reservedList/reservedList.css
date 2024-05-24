@@ -1,0 +1,11 @@
+form .available_link{
+    cursor: pointer;
+}
+
+form .notAvailable_link{
+    cursor: pointer;
+}
+
+.notAvailable_link, .available_link{
+    text-decoration: underline;
+}

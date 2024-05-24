@@ -84,7 +84,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
-    width: 200%;    
+        
 }
 
 form .fields .input-field{

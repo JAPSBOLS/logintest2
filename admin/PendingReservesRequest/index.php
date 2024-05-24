@@ -49,7 +49,7 @@
                                     <td><?php echo $row['Reserv_Date'];?></td>
                                     <td><?php echo $row['Return_Date'];?></td>
                                     <td><span class="btn btn-danger btn-sm" onclick="declineReserve('<?php echo $row['Reserv_ID'];?>')">Decline</span></td>
-                                    <td><span class="btn btn-success btn-sm" onclick="acceptReserve('<?php echo $row['Th_Code'];?>')">Accept</span></td>
+                                    <td><span class="btn btn-success btn-sm" onclick="acceptReserve('<?php echo $row['Th_Code'];?>','<?php echo $row['Reserv_ID'];?>')">Accept</span></td>
                                 </tr>
                                 <?php
                                 }

@@ -30,6 +30,7 @@
                 <?php unset($_SESSION['error']); } ?>
                 <div class="input-group">
                     <select name="role" id="user" class="select">
+                        <option disabled>--Select Role--</option>
                         <option value="student">Student</option>
                         <option value="admin">Admin</option>
                     </select>

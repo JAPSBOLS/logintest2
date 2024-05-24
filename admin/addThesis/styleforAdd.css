@@ -80,7 +80,7 @@
     min-height: auto;
     padding: 10px;
     border-radius: 10px;
-    color: black;
+    color: rgb(1, 1, 1);
 }
 
 form .fields .input-field{
@@ -95,7 +95,21 @@ form .fields .input-field{
     padding: 2px;
     margin: 8px 0;
     outline: none;
+    background-color: rgb(230, 230, 230);
 }
+/* Category Box */
+#Th_Category {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  /* Department Name Box */
+  #Th_Department {
+    background-color:  rgb(230, 230, 230);
+    border-radius: 5px;
+    padding: 2px
+  }
 .input-field label{
     font-size: 15px;
 }
@@ -110,6 +124,7 @@ form .fields .input-field{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 form .abstractField .abstract-field{
@@ -121,6 +136,7 @@ form .abstractField .abstract-field{
 
 .abstract-field label{
     font-size: 15px;
+    
 }
 
 textarea{
@@ -131,6 +147,8 @@ textarea{
     margin: 8px 0;
     outline: none;
     resize: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 230, 230);
    }
 
 textarea:is(:focus, :valid){

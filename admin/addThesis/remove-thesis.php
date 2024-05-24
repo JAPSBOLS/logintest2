@@ -29,20 +29,6 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-<!-- Pinag try ko ayusin to para parehas yung design sa ibang function kaso nawala yung search tsaka sa pagination -->
-<title>BU Online Library Dashboard</title>
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <?php include('../includes/topbar.php');
-                ?>
-            
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
 <!DOCTYPE html>
 <html>
     <head>

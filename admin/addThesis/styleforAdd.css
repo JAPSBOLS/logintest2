@@ -198,3 +198,8 @@ form .button:hover, .remove_button:hover{
   .closebtn:hover {
     color: black;
   }
+  @media (max-width: 600px) {
+    .fields {
+        grid-template-columns: 1fr; /* Change to single column */
+    }
+}

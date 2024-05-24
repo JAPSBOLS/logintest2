@@ -2,8 +2,9 @@ function closeDialog() {
     document.getElementById('confirmModal').style.display = 'none';
 }
 
-function acceptReserve(id){
-    console.log(id);
+function acceptReserve(id,rid){
+    window.location.href = 'accept.php?Th_ID=' + id +'&ReservID='+rid;
+
 }
 
 function declineReserve(id){

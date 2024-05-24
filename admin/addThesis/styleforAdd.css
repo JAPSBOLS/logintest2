@@ -76,13 +76,15 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content:  space-around;
-    min-height: auto;
-    padding: 10px;
+    padding:20px;
+    padding-right: 0px;
+    padding-left: 120px;
     border-radius: 10px;
     color: rgb(1, 1, 1);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 8px;
+    grid-gap: 5px;
+    width: 65%;
 }
 
 form .fields .input-field{

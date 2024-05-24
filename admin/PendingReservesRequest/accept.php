@@ -14,10 +14,10 @@
         $thesis = mysqli_fetch_assoc($runThesis);
         if($numRows == 0){
             $_SESSION['msg'] = "Code not found";
-        }else if($numRows > 1){
+        }elseif($numRows > 1){
             $_SESSION["msg"] = "Multiple thesis ERROR";
 
-        }else if($thesis['Th_ReservStatus'] == "Unavailable"){
+        }elseif($thesis['Th_ReservStatus'] == "Unavailable"){
             $_SESSION["msg"] = "Unavailable for reservation";
  
         }else{

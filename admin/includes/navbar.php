@@ -26,7 +26,7 @@
     <?php if ($_SESSION['auth_role'] !== 'student'): ?>
 
         <li class="nav-item" id="Reviews">
-            <a class="nav-link" href="#" style="z-index:5;">
+            <a class="nav-link" href="<?php echo GROOT;?>user_reviews/" style="z-index:5;">
                 <i class="fas fa-thumbs-up"></i>
                 <span>Users Reviews</span>
             </a>

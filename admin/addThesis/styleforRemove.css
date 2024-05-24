@@ -35,7 +35,7 @@ table {
 table th,
 table td {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #5e5e5e;
   cursor: default;
 }
 

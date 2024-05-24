@@ -46,44 +46,46 @@
                     </head>
                     <body>
                         <header>THESIS LIST</header>
-                        <table id="myTable" class="display">
-                            <thead>
-                                <tr class="heading">
-                                    <th>Thesis Code</th>
-                                    <th>Thesis Title</th>
-                                    <th>Author Name</th>
-                                    <th>Course</th>
-                                    <th>Advisor</th>
-                                    <th>Category</th>
-                                    <th>Thematic Area</th>
-                                    <th>Reserve Status</th>
-                                    <th>Date Modified</th>
-                                    <th>Department</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                while ($row = mysqli_fetch_assoc($run)) {
-                                ?>
-                                <tr class="data">
-                                    <td><?php echo $row['Th_Code'];?></td>
-                                    <td><?php echo $row['Th_Title'];?></td>
-                                    <td><?php echo $row['Th_Author'];?></td>
-                                    <td><?php echo $row['Th_Course'];?></td>
-                                    <td><?php echo $row['Th_Advisor'];?></td>
-                                    <td><?php echo $row['Th_Category'];?></td>
-                                    <td><?php echo $row['Th_ThematicArea'];?></td>
-                                    <td><?php echo $row['Th_ReservStatus'];?></td>
-                                    <td><?php echo $row['Th_DateModified'];?></td>
-                                    <td><?php echo $row['Th_Department'];?></td>
-                                    <td><span class="delete-link" onclick="confirmDelete(<?php echo $row['Th_ID'];?>)">Delete</span></td>
-                                </tr>
-                                <?php
-                                }
-                                ?>
-                            </tbody>
-                        </table>
+                        <div class="table-container" style="overflow-x: auto;">
+                            <table id="myTable" class="display">
+                                <thead>
+                                    <tr class="heading">
+                                        <th>Thesis Code</th>
+                                        <th>Thesis Title</th>
+                                        <th>Author Name</th>
+                                        <th>Course</th>
+                                        <th>Advisor</th>
+                                        <th>Category</th>
+                                        <th>Thematic Area</th>
+                                        <th>Reserve Status</th>
+                                        <th>Date Modified</th>
+                                        <th>Department</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    while ($row = mysqli_fetch_assoc($run)) {
+                                    ?>
+                                    <tr class="data">
+                                        <td><?php echo $row['Th_Code'];?></td>
+                                        <td><?php echo $row['Th_Title'];?></td>
+                                        <td><?php echo $row['Th_Author'];?></td>
+                                        <td><?php echo $row['Th_Course'];?></td>
+                                        <td><?php echo $row['Th_Advisor'];?></td>
+                                        <td><?php echo $row['Th_Category'];?></td>
+                                        <td><?php echo $row['Th_ThematicArea'];?></td>
+                                        <td><?php echo $row['Th_ReservStatus'];?></td>
+                                        <td><?php echo $row['Th_DateModified'];?></td>
+                                        <td><?php echo $row['Th_Department'];?></td>
+                                        <td><span class="delete-link" onclick="confirmDelete(<?php echo $row['Th_ID'];?>)">Delete</span></td>
+                                    </tr>
+                                    <?php
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
+                        </div>
                         <form class="return-form" action="add-thesis.php" method="POST">
                             <button type="submit" class="btn" name="btn">
                                 RETURN TO ADDTHESIS TAB ?

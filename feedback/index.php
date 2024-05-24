@@ -19,22 +19,23 @@
             <h5>It help us further improve our system through your suggestion.</h5>
         </div>
 
-        <form action="#" method="post" id="reviewForm" onsubmit="event.preventDefault(); submitAlert();">
+        <form action="submit_feedback.php" method="POST" id="reviewForm" onsubmit="submitForm(event)">
             <div class="rating">
-                <input type="number" name="rating" hidden>
+                <input type="number" id="rating" name="rating" hidden>
                 <br><i class='bx bx-star star' style="--i: 0;"></i>
                 <i class='bx bx-star star' style="--i: 1;"></i>
                 <i class='bx bx-star star' style="--i: 2;"></i>
                 <i class='bx bx-star star' style="--i: 3;"></i>
                 <i class='bx bx-star star' style="--i: 4;"></i>
             </div>
-             <select name="dropdown" class="dropdown">
+             <select  id="subject_type" name="subject_type" class="dropdown">
+                <option disabled>--Select Subject Type--</option>
                 <option value="option1">Other</option>
                 <option value="option2">Comment</option>
                 <option value="option3">Bugs</option>
             </select>
 
-            <textarea name="opinion" cols="30" rows="5" placeholder="Your suggestion..."></textarea>
+            <textarea name="user_review" id="user_review" cols="30" rows="5" placeholder="Your suggestion..."></textarea>
            
             <div class="btn-group">
                 <button onclick="submitAlert()" type="submit" class="btn submit">Submit</button>

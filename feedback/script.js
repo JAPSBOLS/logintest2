@@ -22,13 +22,28 @@ allStar.forEach((item, idx)=> {
 	})
 })
 
-function submitAlert(){
-	swal("Success!", 
-			"Feedback Submitted Successfully",
-	 		"success");
-}
-
 function cancelSubmission() {
 	// Redirect the user to another page or perform any other action
 	window.location.href = "../admin/index.php";
+}
+
+function submitForm(event) {
+	event.preventDefault(); // Prevent form submission
+	var rating = document.getElementById('rating').value;
+	var subjectType = document.getElementById('subject_type').value;
+	var comment = document.getElementById('user_review').value;
+
+	// Check if the rating, subject type, and comment are filled out
+	if (rating === "" || subjectType === "" || comment === "") {
+			swal("Error!", "Please fill out all fields.", "error");
+	} else {
+			// Display success message using SweetAlert
+			swal("Success!", "Feedback Submitted Successfully", "success")
+					.then((value) => {
+							// If user clicks OK, submit the form
+							if (value) {
+									document.getElementById('reviewForm').submit();
+							}
+					});
+	}
 }

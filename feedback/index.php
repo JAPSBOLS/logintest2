@@ -30,9 +30,9 @@
             </div>
              <select  id="subject_type" name="subject_type" class="dropdown">
                 <option disabled>--Select Subject Type--</option>
-                <option value="option1">Other</option>
-                <option value="option2">Comment</option>
-                <option value="option3">Bugs</option>
+                <option value="Other">Other</option>
+                <option value="Comment">Comment</option>
+                <option value="Bugs">Bugs</option>
             </select>
 
             <textarea name="user_review" id="user_review" cols="30" rows="5" placeholder="Your suggestion..."></textarea>

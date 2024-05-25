@@ -28,7 +28,7 @@ header {
 table {
   width:95%; 
   margin: 20px auto; 
-  background:linear-gradient(to right,#47acd3, #87CEEB,lightblue);
+  background:linear-gradient(to right,#bebebe, #e0e0e0,rgb(251, 252, 252));
   border-collapse: collapse;
 }
 
@@ -231,3 +231,4 @@ table th {
 .page-item:last-child .page-link {
   border-radius: 5px; 
 }
+

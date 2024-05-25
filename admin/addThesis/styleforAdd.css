@@ -101,9 +101,16 @@ form .fields .input-field{
     padding: 2px;
     margin: 8px 0;
     background-color:#ffffff;
-    /* box-shadow: white; */
+    box-shadow: none;
     outline: none;
+    border: none;
 }
+
+.input-field input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 /* Category Box */
 #Th_Category {
     background-color:#ffffff ;

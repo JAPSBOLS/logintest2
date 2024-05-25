@@ -62,6 +62,12 @@ include '../admin/auth.php';
                                     </div>
                                 <?php endif; ?>
                                 <div class="form-group">
+                                    <?php if ($_SESSION['auth_role'] !== 'student'): ?>
+                                        <div class="form-group">
+                                            <label class="form-label">Employee Number</label>
+                                            <input type="text" class="form-control mb-1" value="<?php echo $_SESSION['user']['employeeNum']; ?>">
+                                        </div>
+                                    <?php endif; ?>
                                     <label class="form-label">Username</label>
                                     <input type="text" class="form-control mb-1" value="<?php
                                     echo $_SESSION['user']['username'];

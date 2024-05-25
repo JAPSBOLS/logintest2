@@ -25,12 +25,7 @@
     <!-- Nav Item - Add/Remove Thesis Collapse Menu -->
     <?php if ($_SESSION['auth_role'] !== 'student'): ?>
 
-        <li class="nav-item" id="Reviews">
-            <a class="nav-link" href="<?php echo GROOT;?>user_reviews/" style="z-index:5;">
-                <i class="fas fa-thumbs-up"></i>
-                <span>User Reviews</span>
-            </a>
-        </li>
+        
 
 
         <li class="nav-item" id="Pendings">
@@ -72,11 +67,20 @@
             <span>Thesis Library</span></a>
     </li>
     
-    <li class="nav-item" id="thesisLibrary">
-        <a class="nav-link" href="<?php echo GROOT;?>thesisDisplay/thesissearchsortandfilter.php">
+    <li class="nav-item" id="myReservations">
+        <a class="nav-link" href="<?php echo GROOT;?>my_reservations/my_reservations.php">
             <i class="fas fa-bookmark""></i>
             <span>My Reservations</span></a>
     </li>
+
+
+    <li class="nav-item" id="Reviews">
+        <a class="nav-link" href="<?php echo GROOT;?>user_reviews/" style="z-index:5;">
+            <i class="fas fa-thumbs-up"></i>
+            <span>User Reviews</span>
+        </a>
+    </li>
+
 
     <li class="nav-item" id="FAQ">
         <a class="nav-link" href="<?php echo GROOT;?>../ContactPage-FAQs/FAQs.php">

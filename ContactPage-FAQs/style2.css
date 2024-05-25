@@ -1,49 +1,62 @@
-
 #content-wrapper{
-    background-color: #b8b8b8 !important; 
+   background-color: #F7F8FB!important; 
 } 
 
 .box{
-   width: 770px;
-   height: 800px;
+   width: 90%;
+   max-width: 800px;
    margin: 100px auto;
-   background: rgb(245, 245, 245);
-   border-radius: 7px;
-   box-shadow: 20px 20px 50px rgba(0,0,0,.5);
+   background: url(FAQS.png);
+   background-size: cover;
+   background-position: 100%; /* Adjust the background-position property */
+   border-radius: 15px;
+   box-shadow: 5px 5px 8px rgba(117, 117, 117, 0.5);
    backdrop-filter: blur(10px);
+
 }
 
 .box .heading{
-   background: whitesmoke;
-   border-radius: 7px 7px 0px 0px;
-   padding: 10px;
-   color: #000000;
-   text-align: center;
-   font-size: 24px;
-   
+  background:linear-gradient(to right, #FFAE44, #ffd582);
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;  
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  font-style:initial;
+  font-weight:bolder;
+  
 }
 
 .faqs{
-   padding: 0px 20px 20px;
+  padding: 0px 20px 20px;
 }
 
 ::-webkit-details-marker{
-   float: right;
-   margin-top: 3px;
+  float: right;
+  margin-top: 3px;
 }
 
 details{
-   background: #ffffff;
-   padding: 10px 20px;
-   border-radius: 7px;
-   margin-top: 20px;
-   box-shadow: 3px 3px 10px rgba(0,0,0,.2);
-   backdrop-filter: blur(2px);
-   font-size: 16px;
-   letter-spacing: 1px;
-   cursor: pointer;
+  background: #fafafa;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  backdrop-filter: blur(2px);
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: justify;
+  color:#5e5e5e;
 }
 
 details summary{
-   outline: none;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+     width: 90%;
+     margin: 50px auto;
+  }
 }

@@ -12,6 +12,7 @@
 <!-- Magg add na ika ning incrementation puonsa 1000 para sa User_ID -->
 
 <title>Reservation</title>
+<link rel="stylesheet" type="text/css" href="myStylemyattitude.css">
 <script src="ok.js"></script>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">

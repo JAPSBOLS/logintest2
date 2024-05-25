@@ -13,17 +13,15 @@
         $Total_Resultscounter = 0; // Initialize the counter
 
         if (mysqli_num_rows($result) > 0) {
-            // Output data of each row
             while ($row = mysqli_fetch_assoc($result)) {
                 $thesislist .= "<div class='card' style='width: 100%; margin:0 auto; position: relative;'>
                 <div class='card-body'>
                 <h2 class='card-title'>". $row["Th_Title"] . "</h2>
                 <p class='card-text'>
-
                 <h2><mark>" . $row["Th_ReservStatus"] . "<br></mark></h2>
-
                 Code: " . $row["Th_Code"] . "<br>
                 Author: " . $row["Authors"] . "<br>
+                Department: " . $row["Th_Department"] . "<br>
                 <div style=\"display: flex; justify-content: space-between;\">
                     <div><i>Advisor: " . $row["Th_Advisor"] . "</i></div>
                     <div><i>Date Modified: " . $row["Th_DateModified"] . "</i></div>
@@ -31,25 +29,14 @@
                 <br><br><p>
                 ".$row["Th_Abstract"]."</p><br><br>
                 </p>    
-                    <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\" style='position: absolute;
-                        bottom: 10px; right: 10px;'>
-                        <button style='background-color: #4e73df; /* Blue */
-                            border: none;
-                            font-family: Montserrat;
-                            color: white;
-                            padding: 15px 32px;
-                            text-align: center;
-                            text-decoration: none;
-                            display: inline-block;
-                            font-size: 16px;
-                            margin: 4px 2px;
-                            cursor: pointer;'>View</button>
+                    <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\" style='position: absolute; bottom: 10px; right: 10px;'>
+                        <button style='background-color: #4e73df; border: none; font-family: Montserrat; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;'>View</button>
                     </a>
                 </div>
                 </div><br>";        
                 $Total_Resultscounter++; // Increment the counter
             }
-        } 
+        }
         mysqli_close($conn);
         return array($thesislist, $Total_Resultscounter); // Return the list and the count
     }
@@ -64,9 +51,9 @@
         if(isset($_POST['Available'])){
             $filters[] = "thesis.Th_ReservStatus = 'Available'";
         }
-        if(isset($_POST['On-Hold'])){
-            $filters[] = "thesis.Th_ReservStatus = 'On-Hold'";
-        }
+        // if(isset($_POST['On-Hold'])){
+        //     $filters[] = "thesis.Th_ReservStatus = 'On-Hold'";
+        // }
         if(isset($_POST['Unavailable'])){
             $filters[] = "thesis.Th_ReservStatus = 'Unavailable'";
         }
@@ -77,7 +64,7 @@
             $filters[] = "thesis.Th_Category = 'Development'";
         }
         if(isset($_POST['RnD'])){
-            $filters[] = "thesis.Th_Category = 'R & D'";
+            $filters[] = "thesis.Th_Category = 'Research and Development'";
         }
         if(isset($_POST['BEEd'])){
             $filters[] = "thesis.Th_Course = 'Bachelor of Elementary Education'";

@@ -29,8 +29,9 @@ body{
 }
 .back-button{
     float:right;
-    margin: 20px;
+    margin: 10px;
     font-size:30px;
+    float: right;
 }
 .container button{
     background-color: #0F6FC5;
@@ -172,5 +173,13 @@ body{
 .bi {
     width: 2em; /* Adjust the width as needed */
     height: 2em; /* Adjust the height as needed */
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    margin-right: 10px; /* Adjust the margin as needed */
 }
 

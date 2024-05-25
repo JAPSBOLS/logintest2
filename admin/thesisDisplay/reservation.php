@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
     $reserve_data = $conn->prepare("INSERT INTO reservation (Th_Code, User_Name, Reserv_Date, Return_Date) VALUES (?, ?, ?, ?)");
     $reserve_data->bind_param("ssss", $thesis_code, $user_name, $reserve_date, $return_date);
 
-    
+    $reserve_data->execute();
 
     $_SESSION['status'] = "Thesis Reserved";
     $_SESSION['status_code'] = "success";

@@ -86,7 +86,7 @@ $run = mysqli_query($con, $query);
                             <td><?php echo $row['Th_ReservStatus'];?></td>  
                             <td><?php echo $row['Th_DateModified'];?></td>    
                             <td><?php echo $row['Th_Department'];?></td>  
-                            <td><span class="delete-link" onclick="confirmDelete(<?php echo $row['Th_ID'];?>)">Delete</span></td>
+                            <td><span class="delete-link" onclick="confirmDelete(<?php echo $row['Th_ID'];?>)"><i class="fas fa-trash"></i>Delete</span></td>
                         </tr>
                     <?php
                         }
@@ -108,8 +108,8 @@ $run = mysqli_query($con, $query);
                 <div class="confirmation-dialog-content">
                     <p>Are you sure you want to delete this thesis?</p>
                     <div class="confirmation-dialog-buttons">
-                        <button onclick="" id="delete-button">Delete</button>
-                        <button onclick="closeDialog()">Cancel</button>
+                        <button onclick="" id="delete-button"><i class="fas fa-trash"></i> Delete</button>
+                        <button onclick="closeDialog()"><i class="fas fa-times"></i> Cancel</button>
                     </div>
                 </div>
             </div>

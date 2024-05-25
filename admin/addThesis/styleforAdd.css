@@ -40,7 +40,7 @@
     
 }
 .container-fluid{
-    background-color:rgb(255, 255, 255)
+    background-color:#F5F5F5;
 }
 
 .container form{
@@ -100,12 +100,12 @@ form .fields .input-field{
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;
-    background-color:rgb(237, 237, 237);
+    background-color:#ffffff;
     box-shadow: white;
 }
 /* Category Box */
 #Th_Category {
-    background-color: rgb(237, 237, 237);
+    background-color:#ffffff ;
     border-radius: 5px;
     padding: 2px;
     width: 500px;
@@ -113,7 +113,7 @@ form .fields .input-field{
   
   /* Department Name Box */
   #Th_Department {
-    background-color:  rgb(237, 237, 237);
+    background-color:  #ffffff;
     border-radius: 5px;
     padding: 2px;
     width: 500px;
@@ -155,10 +155,11 @@ textarea{
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;
-    outline: none;
+    outline: rgb(255, 255, 255);
     resize: none;
     color: rgb(0, 0, 0);
-    background-color: rgb(237, 237, 237);
+    background-color:#ffffff;
+
    }
 
 textarea:is(:focus, :valid){
@@ -169,22 +170,22 @@ form .button, .remove_button {
     height: 55px;
     border-radius: 5px;
     width: 100%;
-    background:linear-gradient(to right, #f8aa3e, #faba5b, #fcbf81);
+    background:#3278FF;
     margin-top: 20px; /* Add margin top for spacing */
     border: none; /* Remove default button border */
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 16px; /* Set font size */
     font-weight: bold; /* Set font weight */ 
-    color: black;  
+    color: rgb(255, 255, 255);  
 }
 
 form .button:hover, .remove_button:hover{
-    background-color: darkcyan;
+    background-color: #276fff;
 }
 
 .alert {
     padding: 20px;
-    background-color: darkcyan;
+    background-color: #276fff;
     color: white;
   }
   

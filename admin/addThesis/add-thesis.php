@@ -16,7 +16,7 @@
                 <!-- Begin Content -->
                 <div class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Add Thesis</h1>
+                        <h1 class="h3 mb-0 text-gray-800">ADD THESIS</h1>
                     </div>
 
                     <!-- <div class="back">
@@ -44,7 +44,7 @@
                     <form action="add.php" method="POST" name="thesis-form">
                         <div class="form">
                             <div class="details">
-                                <span class="title">INFORMATION FORM</span>
+                                <span class="title">INFORMATION FORM</span><br><br>
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Thesis Title </label>
@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="abstractField">
                                     <div class="abstract-field">
-                                        <label>Abstract </label>
+                                        <br><label>Abstract </label>
                                         <textarea type="text" placeholder="" required id="Th_Abstract" name="Th_Abstract" onkeyup="checkform()"></textarea>
                                     </div>
                                 </div>

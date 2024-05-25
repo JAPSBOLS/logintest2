@@ -19,32 +19,43 @@
             <div class="faqs">
                <details>
                   <summary>What is this System?</summary>
-                  <p class="text">The Library System is a comprehensive solution for managing thesis information. It allows for the storage and organization of thesis details such as title, author, date published, advisor, and unique thesis code. The system facilitates author and advisor management, ensuring accurate attribution and tracking. It generates unique thesis codes for easy identification and retrieval. Users can search and retrieve theses based on various criteria. The system ensures data security and implements user access control. It offers reporting and analytics capabilities for insights into thesis-related metrics. With a user-friendly interface, the system provides scalability, performance, and efficient data management. Overall, the Library System streamlines thesis information management, enhancing productivity and organization within a library setting.</p>
+                  <p class="text">-The Library System is a comprehensive solution for managing thesis information. 
+                     It allows for the storage and organization of thesis details such as title, author, date published, 
+                     advisor, and unique thesis code. The system facilitates author and advisor management, 
+                     ensuring accurate attribution and tracking. It generates unique thesis codes for easy identification 
+                     and retrieval. Users can search and retrieve theses based on various criteria. 
+                     The system ensures data security and implements user access control. 
+                     It offers reporting and analytics capabilities for insights into thesis-related metrics. 
+                     With a user-friendly interface, the system provides scalability, performance, and efficient 
+                     data management. Overall, the Library System streamlines thesis information management, 
+                     enhancing productivity and organization within a library setting.</p>
                </details>
                <details>
                   <summary>Who can use this System?</summary>
-                  <p class="text">Exclusive to BUPC students and administrator only</p>
+                  <p class="text">-Exclusive to BUPC students and administrator only.</p>
                </details>
                <details>
                   <summary>How can I search for a specific book or thesis in the library system?</summary>
-                  <p class="text">To search for a specific book or thesis in the library system, you can utilize the search functionality provided. Simply enter relevant keywords, such as the title, author, or thesis code, into the search bar. The system will then retrieve and display the matching results based on your search criteria. You can further refine your search using filters or advanced search options, if available, to narrow down the results. This allows you to efficiently locate the desired book or thesis within the library system.</p>
+                  <p class="text">-To search for a specific book or thesis in the library system, you can utilize the search functionality provided. Simply enter relevant keywords, such as the title, author, or thesis code, into the search bar. The system will then retrieve and display the matching results based on your search criteria. You can further refine your search using filters or advanced search options, if available, to narrow down the results. This allows you to efficiently locate the desired book or thesis within the library system.</p>
                </details>
                <details>
                 <summary>How can I log in to the system?</summary>
-                <p class="text">To access the system, students are required to enter their student number and default password.</p>
+                <p class="text">-To access the system, students are required to enter their student number and default password.</p>
              </details>
              <details>
                 <summary>Can the thesis book be borrowed and taken home?</summary>
-                <p class="text">The book can be borrowed as long as it remains within the campus premises, meaning that the thesis is available for borrowing but must not be taken off-campus.</p>
+                <p class="text">-The book can be borrowed as long as it remains within the campus premises, meaning that the thesis is available for borrowing but must not be taken off-campus.</p>
              </details>
              <details>
                 <summary>How to add or remove a thesis in the system?</summary>
-                  <p class="text">To add or remove a thesis from the system, it is necessary to directly request the administrator to handle the addition or removal process. 
+                  <p class="text">-To add or remove a thesis from the system, it is necessary to directly request the administrator to handle the addition or removal process. 
                      The administrator holds exclusive authority to add theses into the system.</p>
              </details>
              <details>
-                <summary>Tngnamo</summary>
-                <p class="text">I don't know</p>
+                <summary> Can I access the library system remotely or from off-campus?</summary>
+                <p class="text">-Yes, in many cases, library systems offer remote access or off-campus access to their 
+                  resources. Check the library's website or contact the library staff to inquire about remote access options. They will provide you with the necessary instructions or login credentials 
+                  to access the library system and its thesis collection from any location outside the campus.</p>
              </details>
             </div>
          </div>

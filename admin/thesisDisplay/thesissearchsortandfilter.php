@@ -18,7 +18,7 @@
                 <div class='card-body'>
                 <h2 class='card-title'>". $row["Th_Title"] . "</h2>
                 <p class='card-text'>
-                <h2><mark>" . $row["Th_ReservStatus"] . "<br></mark></h2>
+                <h2>" . $row["Th_ReservStatus"] . "<br></h2>
                 Code: " . $row["Th_Code"] . "<br>
                 Author: " . $row["Authors"] . "<br>
                 Department: " . $row["Th_Department"] . "<br>

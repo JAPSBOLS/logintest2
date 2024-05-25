@@ -136,10 +136,6 @@
                 <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                 Manage Password
             </a>
-            <a class="dropdown-item" href="#">
-                <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                Activity Log
-            </a>
             <a class="dropdown-item"  href="<?php echo GROOT;?>../feedback/index.php">
                 <i class="fas fa-star fa-sm fa-fw mr-2 text-gray-400"></i>
                 Send Feedback

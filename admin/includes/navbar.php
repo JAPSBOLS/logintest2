@@ -67,8 +67,8 @@
             <span>Thesis Library</span></a>
     </li>
     
-    <li class="nav-item" id="thesisLibrary">
-        <a class="nav-link" href="<?php echo GROOT;?>thesisDisplay/thesissearchsortandfilter.php">
+    <li class="nav-item" id="myReservations">
+        <a class="nav-link" href="<?php echo GROOT;?>my_reservations/my_reservations.php">
             <i class="fas fa-bookmark""></i>
             <span>My Reservations</span></a>
     </li>

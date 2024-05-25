@@ -1,24 +1,24 @@
 #content-wrapper{
-   background-color: #b8b8b8 !important; 
+   background-color: #F7F8FB!important; 
 } 
 
 .box{
   width: 90%;
   max-width: 800px;
   margin: 100px auto;
-  background: rgb(249, 248, 248);
+  background:linear-gradient(to right, #f8aa3e, #faba5b, #fcbf81);
   border-radius: 7px;
   box-shadow: 20px 20px 50px rgba(0,0,0,.5);
   backdrop-filter: blur(10px);
 }
 
 .box .heading{
-  background: whitesmoke;
+  background: linear-gradient(to right, #f8aa3e, #faba5b, #fcbf81);
   border-radius: 7px 7px 0px 0px;
   padding: 10px;
   color: #000000;
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   
 }
 
@@ -43,6 +43,7 @@ details{
   cursor: pointer;
   justify-content: center;
   text-align: justify;
+  color:#000000;
 }
 
 details summary{

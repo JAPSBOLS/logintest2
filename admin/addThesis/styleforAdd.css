@@ -83,7 +83,7 @@
     padding-right: 0px;
     padding-left: 10px;
     border-radius: 10px;
-    color: rgb(39, 39, 39);
+    /* color: rgb(39, 39, 39); */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;   
@@ -101,7 +101,8 @@ form .fields .input-field{
     padding: 2px;
     margin: 8px 0;
     background-color:#ffffff;
-    box-shadow: white;
+    /* box-shadow: white; */
+    outline: none;
 }
 /* Category Box */
 #Th_Category {
@@ -124,7 +125,7 @@ form .fields .input-field{
 
 
 .input-field input:is(:focus, :valid){
-    box-shadow: 0 3px 3px black;
+    /* box-shadow: 0 3px 3px black; */
 } /*to be studied*/
 
 .container form .abstractField{
@@ -155,15 +156,15 @@ textarea{
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;
-    outline: rgb(255, 255, 255);
+    /* outline: rgb(255, 255, 255); */
     resize: none;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     background-color:#ffffff;
 
    }
 
 textarea:is(:focus, :valid){
-    box-shadow: 0 3px 3px black;
+    /* box-shadow: 0 3px 3px black; */
 } /*to be studied*/
 
 form .button, .remove_button {

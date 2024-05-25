@@ -147,8 +147,8 @@ include '../admin/auth.php';
                         </div>
  
         <div class="text-right mt-3">
-            <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
-            <button type="button" class="btn btn-default"   onclick="redirectToIndex()">Cancel</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button>&nbsp; -->
+            <button type="button" class="btn btn-primary"   onclick="redirectToIndex()">Cancel</button>
         </div>
     </div>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

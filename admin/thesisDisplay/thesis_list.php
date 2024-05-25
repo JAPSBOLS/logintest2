@@ -147,10 +147,10 @@
                     <td><input type="checkbox" id="Available" name="Available"/>
                         <label for="Available">Available</label>
                         <br>
-                        <input type="checkbox" id="On-Hold" name="On-Hold"/>
-                        <label for="On-Hold">On-Hold</label>
-                        <br>
-                        <input type="checkbox" id="Unavailable"/>
+                        <!-- <input type="checkbox" id="On-Hold" name="On-Hold"/>
+                        <label for="On-Hold">On-Hold</label> -->
+                        <!-- <br> -->
+                        <input type="checkbox" id="Unavailable" name="Unavailable"/>
                         <label for="Unavailable">Unavailable</label>
                         <br></td>
                 </tr>

@@ -40,6 +40,13 @@
             </a>
         </li>
 
+        <li class="nav-item" id="ReservedList">
+            <a class="nav-link" href="<?php echo GROOT;?>reservedList/" style="z-index:5;">
+                <i class="fas fa-cubes"></i>
+                <span>Reservation List</span>
+            </a>
+        </li>
+
         <li class="nav-item" id="ManagementSidebar">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                 aria-expanded="true" aria-controls="collapseUtilities">

@@ -1,6 +1,6 @@
 <?php
         include('../config/dbconn.php');
-        $query = "SELECT * from reservation";
+        $query = "SELECT * from reservation WHERE Status = 'Accepted'";
         $run = mysqli_query($conn, $query);
         define("GROOT","../");
         include(GROOT."auth.php");
@@ -11,20 +11,8 @@
 ?>
 <!-- Magg add na ika ning incrementation puonsa 1000 para sa User_ID -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reservedList.css">
-        <link href="DataTables/datatables.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="DataTables/datatables.min.js"></script>
-        <script src='scripts.js'></script>
-        
-    <title>Reservation</title>
-</head>
+<title>Reservation</title>
+<script src="ok.js"></script>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -38,41 +26,60 @@
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Reservation Requests</h1>
+                    <h1 class="h3 mb-0 text-gray-800">Reserved Thesis</h1>
                 </div>
-                    <body>
-                        <header>Reserved List</header>
-                            <form class="form" action="">
-                                <table id="myTable" class="display">
-                                    <thead>
-                                        <tr class="heading">
-                                            <th>Thesis Code</th>
-                                            <th>Username</th>
-                                            <th>Reserve Date</th>
-                                            <th>Return Date</th>
-                                            <th>Change Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php
-                                        while ($row = mysqli_fetch_assoc($run)) {
-                                        ?>
-                                        <tr class="data">
-                                            <td><?php echo $row['Th_Code'];?></td>
-                                            <td><?php echo $row['User_Name'];?></td>
-                                            <td><?php echo $row['Reserv_Date'];?></td>
-                                            <td><?php echo $row['Return_Date'];?></td>
-                                            <td><span class="available_link" onclick="">To Available</span>
-                                                <span class="notAvailable_link" onclick="">Not Available</span>
-                                            </td>
-                                        </tr>
-                                        <?php
-                                        }
-                                        ?>
-                                    </tbody>
-                            </table>
-                            </form>
-                    </body>
+
+                <div class="card p-3">
+                        <table id="myTable" class="display">
+                            <thead>
+                                <tr class="heading">
+                                    <th>Thesis Code</th>
+                                    <th>Reserved By</th>
+                                    <th>Reserve Date</th>
+                                    <th>Return Date</th>
+                                    <th>Remove reservation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                while ($row = mysqli_fetch_assoc($run)) {
+                                ?>
+                                <tr class="data">
+                                    <td><a href="../thesisDisplay/thesisdetails.php?Th_Code=<?php echo $row['Th_Code'];?>">
+                                        <?php echo $row['Th_Code'];?>
+                                    </a></td>
+                                    <td><?php echo $row['User_Name'];?></td>
+                                    <td><?php echo $row['Reserv_Date'];?></td>
+                                    <td><?php echo $row['Return_Date'];?></td>
+                                    <td><span class="btn btn-danger btn-sm" 
+                                    onclick="removeReserve('<?php echo $row['Th_Code'];?>','<?php echo $row['Reserv_ID'];?>')">
+                                        <i class="fas fa-trash"></i>
+                                    </span></td>
+                                </tr>
+                                <?php
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                        
+                        <?php if(isset($_SESSION['msg'])){ ?>
+                        <!-- Confirmation-->
+                        <div class="modal fade show" id="confirmModal" tabindex="-1" role="dialog" style="display:block;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="warningTitle">Notice</h5>
+                                    </div>
+                                    <div class="modal-body" id="warningText"><?php echo $_SESSION['msg']; ?></div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" type="button" onclick="closeDialog()">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php unset($_SESSION['msg']); } ?>
+                        <!-- Confirmation end -->
+                </div>
 <?php
     include(GROOT.'includes/footer.php');
     include(GROOT.'includes/scripts.php');

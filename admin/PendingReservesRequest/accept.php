@@ -21,8 +21,8 @@
             $_SESSION["msg"] = "Unavailable for reservation";
  
         }else{
-            $deleteThesis = "DELETE FROM reservation WHERE Reserv_ID = '$Reserv_ID'";
-            $runThesisDelete = mysqli_query($conn, $deleteThesis);
+            $setStatus = "UPDATE reservation SET Status = 'Accepted' WHERE Reserv_ID = '$Reserv_ID'";
+            $runsetStatus = mysqli_query($conn, $setStatus);
             $updateThesis = "UPDATE thesis SET Th_ReservStatus='Unavailable' WHERE Th_Code = '$Thesis_ID'";
             $runThesis = mysqli_query($conn, $updateThesis);
 

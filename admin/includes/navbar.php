@@ -42,7 +42,7 @@
 
         <li class="nav-item" id="ReservedList">
             <a class="nav-link" href="<?php echo GROOT;?>reservedList/" style="z-index:5;">
-                <i class="fas fa-cubes"></i>
+                <i class="fas fa-dragon"></i>
                 <span>Reservation List</span>
             </a>
         </li>

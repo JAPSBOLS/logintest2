@@ -174,4 +174,12 @@ body{
     width: 2em; /* Adjust the width as needed */
     height: 2em; /* Adjust the height as needed */
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
 

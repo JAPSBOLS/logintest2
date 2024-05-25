@@ -32,11 +32,11 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="content">
-                    <h3>Thesis Search and Browsing</h3>
-                    <p>Browse thesis list with advanced search options, filters, and sorting capabilities</p>
+                    <h3>User Dashboard</h3>
+                    <p>View user dashboard</p>
                 </div>
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="2.mp4" loop autoplay muted></video>
                 </div>
             </div>
         </section>

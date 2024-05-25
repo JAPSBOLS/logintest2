@@ -72,7 +72,7 @@
 }
 
 .fields{
-    background: url(img/img.png);
+    background: url(img/ADDBG2.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -196,12 +196,12 @@ form .button, .remove_button {
 }
 
 form .button:hover, .remove_button:hover{
-    background-color: #276fff;
+    background-color: #4478FF;
 }
 
 .alert {
     padding: 20px;
-    background-color: #276fff;
+    background-color: #4478FF;
     color: white;
   }
   

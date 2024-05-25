@@ -29,8 +29,9 @@ body{
 }
 .back-button{
     float:right;
-    margin: 20px;
+    margin: 10px;
     font-size:30px;
+    float: right;
 }
 .container button{
     background-color: #0F6FC5;

@@ -20,11 +20,11 @@
             <h1 class="heading"><span>User </span>Features</h1>
             <div class="row">
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="1.mp4" loop autoplay muted></video>
                 </div>
                 <div class="content">
-                    <h3>User Registration and Authentication</h3>
-                    <p>Secure log-in and sign-up and access account based on role</p>
+                    <h3>User Log-in</h3>
+                    <p>Secure log-in access account based on role</p>
                 </div>
             </div>
         </section>

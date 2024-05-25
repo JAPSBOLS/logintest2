@@ -2,7 +2,7 @@
 
 include("../config/dbconn.php");
 
-$query = "SELECT COUNT(*) as total from reservation";
+$query = "SELECT COUNT(*) as total from reservation WHERE Status = 'None'";
 $result = mysqli_query($conn, $query);
 $total = mysqli_fetch_assoc($result);
 

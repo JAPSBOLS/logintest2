@@ -33,10 +33,10 @@
             <div class="row">
                 <div class="content">
                     <h3>User Dashboard</h3>
-                    <p>Browse thesis and sort all listed thesis</p>
+                    <p>View user dashboard</p>
                 </div>
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="2.mp4" loop autoplay muted></video>
                 </div>
             </div>
         </section>

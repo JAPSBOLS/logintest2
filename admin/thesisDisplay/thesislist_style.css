@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 #Search{
-    border: 1px solid silver;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 3px;
 }
 .container h2{

@@ -124,6 +124,7 @@ form .fields .input-field{
 }
 
 
+
 .input-field input:is(:focus, :valid){
     /* box-shadow: 0 3px 3px black; */
 } /*to be studied*/
@@ -135,6 +136,10 @@ form .fields .input-field{
     align-items: center;
     flex-wrap: wrap;
     
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
 }
 
 form .abstractField .abstract-field{
@@ -166,6 +171,7 @@ textarea{
 textarea:is(:focus, :valid){
     /* box-shadow: 0 3px 3px black; */
 } /*to be studied*/
+
 
 form .button, .remove_button {
     height: 55px;

@@ -24,32 +24,16 @@ $run = mysqli_query($con, $query);
             
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-        <link rel="stylesheet" type="text/css" href="styleforRemove.css">  
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        
-        <link href="DataTables/datatables.min.css" rel="stylesheet">
-    
-        <script src="DataTables/datatables.min.js"></script>
+                <link rel="stylesheet" type="text/css" href="styleforRemove.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.bootstrap5.css">
 
-    
-
-        <script>
-            $(document).ready( function () {
-                $('#myTable').DataTable();
-            });
-            function confirmDelete(id) {
-                document.getElementById('confirmation-dialog').style.display = 'block';
-                document.getElementById('delete-button').onclick = function() {
-                window.location.href = 'delete.php?Th_ID=' + id;
-                };
-            }
-            function closeDialog() {
-                document.getElementById('confirmation-dialog').style.display = 'none';
-            }
-        </script>
-
-
+                <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+                <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                <script defer src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+                <script defer src="https://cdn.datatables.net/2.0.7/js/dataTables.bootstrap5.js"></script>
+                <script defer src='scripts.js'></script>
+                        
     </head>  
         <body>  
             <header>THESIS LIST</header>  
@@ -95,14 +79,6 @@ $run = mysqli_query($con, $query);
                 </table>
             </div>
 
-            <!--Return to Add-Thesis-->
-            
-            <form class="return-form" action="add-thesis.php" method="POST">  
-                <button type="submit" class="btn" name="btn">
-                    RETURN TO ADD THESIS TAB ?
-                </button>
-            </form>
-
             <!-- Confirmation Dialog -->
             <div id="confirmation-dialog" class="confirmation-dialog">
                 <div class="confirmation-dialog-content">
@@ -121,14 +97,9 @@ $run = mysqli_query($con, $query);
             }
             ?>
         </body>  
-
-        <script>
-            $(document).ready( function () {
-                $('#myTable').DataTable();
-            } );
-        </script>
+</html>
 <?php
-    // Kapag ininclude to scripts nawawala yung serach and pagination
+    
     include "../includes/scripts.php";
     include "../includes/footer.php";
 ?>>

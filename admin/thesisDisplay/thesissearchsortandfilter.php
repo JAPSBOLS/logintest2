@@ -15,12 +15,12 @@
         if (mysqli_num_rows($result) > 0) {
             // Output data of each row
             while ($row = mysqli_fetch_assoc($result)) {
-                $thesislist .= "<div class='card' style='width: 90%; margin:0 auto; position: relative;'>
+                $thesislist .= "<div class='card' style='width: 100%; margin:0 auto; position: relative;'>
                 <div class='card-body'>
-                    <h2 class='card-title'>". $row["Th_Title"] . "</h2>
-                    <p class='card-text'>
+                <h2 class='card-title'>". $row["Th_Title"] . "</h2>
+                <p class='card-text'>
 
-                <h2>" . $row["Th_ReservStatus"] . "<br></h2>
+                <h2><mark>" . $row["Th_ReservStatus"] . "<br></mark></h2>
 
                 Code: " . $row["Th_Code"] . "<br>
                 Author: " . $row["Authors"] . "<br>
@@ -28,8 +28,8 @@
                     <div><i>Advisor: " . $row["Th_Advisor"] . "</i></div>
                     <div><i>Date Modified: " . $row["Th_DateModified"] . "</i></div>
                 </div>
-                <br><br>
-                ".$row["Th_Abstract"]."<br><br>
+                <br><br><p>
+                ".$row["Th_Abstract"]."</p><br><br>
                 </p>    
                     <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\" style='position: absolute;
                         bottom: 10px; right: 10px;'>
@@ -151,18 +151,44 @@
         if(isset($_POST['Thematic8'])){
             $filters[] = "thesis.Th_ThematicArea = 'Scientific, Technological Innovations and Techno-Entrepreneurship in Industry, Energy, Emergency Technologies for Global Competitiveness'";
         }
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            if (isset($_POST['sortBy'])) {
+                $sortBy = $_POST['sortBy'];
+            }
+        }
+        $sortBy = 'Last Modified - Descending';
 
-
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['SortBy'])) {
+            $sortBy = filter_var($_POST['SortBy'], FILTER_SANITIZE_STRING);   
+        }
+    
         // Convert the filters array into a string
         $filterString = implode(' OR ', $filters);
-
+    
         // If there are any filters, add them to the WHERE clause
         $sql = "SELECT thesis.*, GROUP_CONCAT(thesis_author.Th_Author SEPARATOR ', ') as Authors
             FROM thesis 
             JOIN thesis_author ON thesis.Th_Code = thesis_author.Th_Code
             WHERE thesis.Th_Title LIKE '%$searchTerm%'" . (empty($filters) ? '' : " AND ($filterString)") . "
             GROUP BY thesis.Th_Code";
-
+    
+            switch ($sortBy) {
+                case 'Last Modified - Ascending':
+                    $sql .= " ORDER BY Th_DateModified ASC";
+                    break;
+                case 'Last Modified - Descending':
+                    $sql .= " ORDER BY Th_DateModified DESC";
+                    break;
+                case 'Department - Ascending':
+                    $sql .= " ORDER BY Th_Department ASC";
+                    break;
+                case 'Department - Descending':
+                    $sql .= " ORDER BY Th_Department DESC";
+                    break;
+                default:
+                    $sql .= " ORDER BY Th_Title DESC";
+                    break;
+            }
         return thesislist($conn, $sql);
     }
 
@@ -194,13 +220,13 @@
 
             <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 class="h3 mb-0 text-gray-800">THESIS LIBRARY</h1>
+                <h1 class="h3 mb-0 text-gray-800">Thesis Library</h1>
             </div>
 
             <?php include("thesis_list.php");?>
 
             <div class="container">
-                <h2>RESULTS: <?php echo $output_list[1]; ?> </h2>
+                <br><br><h2>Results: <?php echo $output_list[1]; ?> </h2>
                 <p><?php echo $output_list[0]; ?></p>
             </div>
         </div>

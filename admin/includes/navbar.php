@@ -28,7 +28,7 @@
         <li class="nav-item" id="Reviews">
             <a class="nav-link" href="<?php echo GROOT;?>user_reviews/" style="z-index:5;">
                 <i class="fas fa-thumbs-up"></i>
-                <span>Users Reviews</span>
+                <span>User Reviews</span>
             </a>
         </li>
 

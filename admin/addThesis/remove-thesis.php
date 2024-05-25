@@ -59,7 +59,7 @@ $run = mysqli_query($con, $query);
         <body>  
             <header>THESIS LIST</header>  
 
-            
+            <div class="table-container" style="overflow-x: auto;">
                 <table id="myTable" class="display">
                     <thead>
                         <tr class="heading">   
@@ -98,6 +98,7 @@ $run = mysqli_query($con, $query);
                     ?>
                     </tbody>
                 </table>
+            </div>
 
             <!--Return to Add-Thesis-->
             

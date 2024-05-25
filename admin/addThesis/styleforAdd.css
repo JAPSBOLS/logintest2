@@ -72,15 +72,21 @@
 }
 
 .fields{
-    background: linear-gradient(to right, #fc9127, #fcad5f);
-    display: flex;
+    background: url(img/img.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
     flex-wrap: wrap;
     align-items: center;
     justify-content:  space-around;
-    min-height: auto;
-    padding: 10px;
+    padding:20px;
+    padding-right: 0px;
+    padding-left: 10px;
     border-radius: 10px;
-    color: black;
+    color: rgb(39, 39, 39);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;   
 }
 
 form .fields .input-field{
@@ -90,15 +96,32 @@ form .fields .input-field{
 
 .input-field input{
     height: 30px;
-    width: 220px;
+    width: 500px;
     border-radius: 5px;
     padding: 2px;
     margin: 8px 0;
-    outline: none;
+    background-color:rgb(237, 237, 237);
+    box-shadow: white;
 }
+/* Category Box */
+#Th_Category {
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    padding: 2px;
+    width: 500px;
+  }
+  
+  /* Department Name Box */
+  #Th_Department {
+    background-color:  rgb(237, 237, 237);
+    border-radius: 5px;
+    padding: 2px;
+    width: 500px;
+  }
 .input-field label{
     font-size: 15px;
 }
+
 
 .input-field input:is(:focus, :valid){
     box-shadow: 0 3px 3px black;
@@ -110,6 +133,7 @@ form .fields .input-field{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 
 form .abstractField .abstract-field{
@@ -120,7 +144,9 @@ form .abstractField .abstract-field{
 }
 
 .abstract-field label{
-    font-size: 15px;
+    font-size: 20px;
+    color: rgb(88, 88, 88);
+    
 }
 
 textarea{
@@ -131,6 +157,8 @@ textarea{
     margin: 8px 0;
     outline: none;
     resize: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(237, 237, 237);
    }
 
 textarea:is(:focus, :valid){
@@ -141,7 +169,7 @@ form .button, .remove_button {
     height: 55px;
     border-radius: 5px;
     width: 100%;
-    background:linear-gradient(to right, #fc9127, #fcad5f);
+    background:linear-gradient(to right, #f8aa3e, #faba5b, #fcbf81);
     margin-top: 20px; /* Add margin top for spacing */
     border: none; /* Remove default button border */
     cursor: pointer; /* Change cursor to pointer on hover */
@@ -175,3 +203,8 @@ form .button:hover, .remove_button:hover{
   .closebtn:hover {
     color: black;
   }
+  @media (max-width: 600px) {
+    .fields {
+        grid-template-columns: 1fr; /* Change to single column */
+    }
+}

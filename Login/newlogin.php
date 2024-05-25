@@ -15,9 +15,11 @@
     <title>Login Page</title>
 </head>
 <body>
+
     <div class="container" id="container">
         <img src="../images/BUP2.png" alt="BUP Logo" class="logo">
         <div class="form-container sign-in">
+            <a href="../index.php" class="back-button"><i class="fas fa-arrow-left"></i> </a>
             <form action="login_code.php" method="POST">
                 <img src="../images/studentLOGO.png" id="userLogo" class="guestLOGO">
                 <?php
@@ -30,6 +32,7 @@
                 <?php unset($_SESSION['error']); } ?>
                 <div class="input-group">
                     <select name="role" id="user" class="select">
+                        <option disabled>--Select Role--</option>
                         <option value="student">Student</option>
                         <option value="admin">Admin</option>
                     </select>

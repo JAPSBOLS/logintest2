@@ -28,14 +28,14 @@ header {
 table {
   width:95%; 
   margin: 20px auto; 
-  background:linear-gradient(to right,#47acd3, #87CEEB,lightblue);
+  background:linear-gradient(to right,#bebebe, #e0e0e0,rgb(251, 252, 252));
   border-collapse: collapse;
 }
 
 table th,
 table td {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #5e5e5e;
   cursor: default;
 }
 
@@ -81,6 +81,26 @@ table th {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+/* Delete Button Style */
+.delete-link {
+  background-color: #da190b; 
+  color: white; 
+  border: none; 
+  cursor: pointer;
+  padding: 8px 16px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px;
+  transition-duration: 0.4s; 
+  border-radius: 5px;
+}
+
+/* Change background color on hover */
+.delete-link:hover {
+  background-color: #da190b;
 }
 
 .btn {
@@ -211,3 +231,4 @@ table th {
 .page-item:last-child .page-link {
   border-radius: 5px; 
 }
+

@@ -6,6 +6,8 @@
     include("getReserveList.php")
 ?>
 <title>Pending Reserve Requests</title>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+<script src="myJsScrip.js"></script>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -30,7 +32,6 @@
                                     <th>Reserve ID</th>
                                     <th>Thesis Code</th>
                                     <th>Username</th>
-                                    <th>User ID</th>
                                     <th>Reserve Date</th>
                                     <th>Return Date</th>
                                 </tr>
@@ -41,19 +42,39 @@
                                 ?>
                                 <tr class="data">
                                     <td><?php echo $row['Reserv_ID'];?></td>
-                                    <td><?php echo $row['Th_Code'];?></td>
+                                    <td><a href="../thesisDisplay/thesisdetails.php?Th_Code=<?php echo $row['Th_Code'];?>">
+                                        <?php echo $row['Th_Code'];?>
+                                    </a></td>
                                     <td><?php echo $row['User_Name'];?></td>
-                                    <td><?php echo $row['User_ID'];?></td>
                                     <td><?php echo $row['Reserv_Date'];?></td>
                                     <td><?php echo $row['Return_Date'];?></td>
-                                    <td><span class="delete-link">Decline</span></td>
-                                    <td><span class="delete-link">Accept</span></td>
+                                    <td><span class="btn btn-danger btn-sm" onclick="declineReserve('<?php echo $row['Reserv_ID'];?>')">Decline</span></td>
+                                    <td><span class="btn btn-success btn-sm" onclick="acceptReserve('<?php echo $row['Th_Code'];?>','<?php echo $row['Reserv_ID'];?>')">Accept</span></td>
                                 </tr>
                                 <?php
                                 }
                                 ?>
                             </tbody>
                         </table>
+                        
+                        <?php if(isset($_SESSION['msg'])){ ?>
+                        <!-- Confirmation-->
+                        <div class="modal fade show" id="confirmModal" tabindex="-1" role="dialog" style="display:block;">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="warningTitle">Notice</h5>
+                                    </div>
+                                    <div class="modal-body" id="warningText"><?php echo $_SESSION['msg']; ?></div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-secondary" type="button" onclick="closeDialog()">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php unset($_SESSION['msg']); } ?>
+                        <!-- Confirmation end -->
+                        
                     </div>
                 </div>
             </div>

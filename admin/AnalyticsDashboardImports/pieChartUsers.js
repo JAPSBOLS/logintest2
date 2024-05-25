@@ -109,3 +109,22 @@ fetch('AnalyticsDashboardImports/getStudentsDeptCount.php')
     });
   })
 
+
+fetch('AnalyticsDashboardImports/getAvailablePercentage.php')
+  .then(response => response.json())
+  .then(data =>{
+    data = Math.round(data * 100)/100
+    var APText = document.getElementById("APText");
+    APText.innerHTML = (data*100) + "%";
+
+    var APBar = document.getElementById("APBar");
+    APBar.style.width = (data*100) + "%";
+  })
+
+  fetch('AnalyticsDashboardImports/getReservRequestCount.php')
+  .then(response => response.json())
+  .then(data =>{
+
+    var PRText = document.getElementById("PRText");
+    PRText.innerHTML = data;
+  })

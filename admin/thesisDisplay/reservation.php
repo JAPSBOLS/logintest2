@@ -11,33 +11,15 @@ if (isset($_POST['submit'])) {
     $reserve_data = $conn->prepare("INSERT INTO reservation (Th_Code, User_Name, Reserv_Date, Return_Date) VALUES (?, ?, ?, ?)");
     $reserve_data->bind_param("ssss", $thesis_code, $user_name, $reserve_date, $return_date);
 
-    
-    if ($reserve_data->execute()) {
-    
-        $status = "Pending";
+    $reserve_data->execute();
 
-        $reservation_status = $conn->prepare("UPDATE thesis SET Th_ReservStatus = ? WHERE Th_Code = ?");
-        $reservation_status->bind_param("ss", $status, $thesis_code);
-
-        
-        if ($reservation_status->execute()) {
-            $_SESSION['status'] = "Thesis Reserved";
-            $_SESSION['status_code'] = "success";
-            header("Location: thesisdetails.php?Th_Code=$thesis_code");
-            exit(); 
-        } else {
-            echo "Error updating thesis status: " . $reservation_status->error;
-        }
-
-        $reservation_status->close();
-    } else {
-        echo "Error inserting reservation: " . $reserve_data->error;
-    }
-
+    $_SESSION['status'] = "Thesis Reserved";
+    $_SESSION['status_code'] = "success";
+    header("Location: thesisdetails.php?Th_Code=$thesis_code");
     $reserve_data->close();
 
     $conn->close();
+    exit(); 
 } else {
     echo "Error";
 }
-?>

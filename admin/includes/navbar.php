@@ -4,7 +4,7 @@
     <!-- Sidebar - ADD LOGO HERE-->
     <a class="sidebar-brand d-flex align-items-center justify-content-center">
         <div class="sidebar-brand-text ml-3 mb-3">
-            <img src='<?php echo GROOT;?>../images/systemLogo.png' width=280></img>
+            <img src='<?php echo GROOT;?>../images/SIDELOGO.png' height= 35 width=210 style="margin-left: -10px;">  </img>
         </div>
     </a>
 
@@ -17,7 +17,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item" id="Dashboard">
-        <a class="nav-link" href="<?php echo GROOT;?>index.php" style="z-index:5;">
+        <a class="nav-link" href="<?php echo GROOT;?>index.php" style="z-index:;">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -26,7 +26,7 @@
     <?php if ($_SESSION['auth_role'] !== 'student'): ?>
 
         <li class="nav-item" id="Reviews">
-            <a class="nav-link" href="#" style="z-index:5;">
+            <a class="nav-link" href="<?php echo GROOT;?>user_reviews/" style="z-index:5;">
                 <i class="fas fa-thumbs-up"></i>
                 <span>Users Reviews</span>
             </a>

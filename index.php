@@ -11,10 +11,13 @@
   .bg{
     width: 100%;
     height: 100%;
-    background-image: url(images/BU.jpeg);
+    background-image: url(images/HOMEBG3.png);
     background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
   }
-  
+
 </style>
 <script>
   var active = document.getElementById("home");

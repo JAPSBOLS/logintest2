@@ -35,6 +35,11 @@ button{
     background-color:rgb(255, 255, 255);
     padding: 20px;
     margin-bottom: 20px;
+    background-image: url(GRAYBG.png);
+    background-size: cover; /* Ensures the image covers the whole viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    color: #4b4b4b;
 }
 
 .card:hover {
@@ -44,7 +49,7 @@ button{
 
 
 .submit-button {
-    background-color: #5b6992; 
+    background-color: #4478FF; 
     border: none;
     color: white;
     padding: 15px 32px;

@@ -46,10 +46,10 @@ include '../admin/auth.php';
                                 <img src="../images/<?php echo $logo; ?>" alt="Profile Logo"
                                     class="img-profile rounded-circle" style="width: 100px; height: 100px;">
                                 <div class="media-body ml-4">
-                                    <label class="btn btn-outline-primary">
+                                    <!-- <label class="btn btn-outline-primary">
                                         Upload new photo
                                         <input type="file" class="account-settings-fileinput">
-                                    </label> &nbsp;
+                                    </label> &nbsp; -->
                                     <div class="text-light small mt-1">Allowed JPG, GIF or PNG. Max size of 800K</div>
                                 </div>
                             </div>

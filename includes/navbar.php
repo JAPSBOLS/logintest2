@@ -15,10 +15,10 @@
             <a class="nav-link" id="home" aria-current="page" href="<?php echo GROOT;?>index.php" style="margin-right: 30px;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="margin-right: 30px;">Features</a>
+            <a class="nav-link" href="<?php echo GROOT;?>Features/features.php" style="margin-right: 30px;">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="margin-right: 30px;">Contacts</a>
+            <a class="nav-link" id="features" href="#" style="margin-right: 30px;">Contacts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="aboutUS" href="<?php echo GROOT;?>OnePage/aboutUs.php" style="margin-right: 30px;">About Us</a>

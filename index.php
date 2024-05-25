@@ -11,7 +11,7 @@
   .bg{
     width: 100%;
     height: 100%;
-    background-image: url(images/HOMEBG5.png);
+    background-image: url(images/HOMEBG3.png);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 

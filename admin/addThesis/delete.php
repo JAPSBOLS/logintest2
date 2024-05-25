@@ -10,6 +10,10 @@ if (isset($_GET['Th_ID'])) {
     $deleteAuthor = "DELETE FROM thesis_author WHERE Th_ID = '$Thesis_ID'";
     $Authordelete = mysqli_query($conn, $deleteAuthor);
 
+    // Delete reservations on this thesis
+    $deleteReservation = "DELETE FROM reservation WHERE Th_Code IN (SELECT Th_Code FROM thesis WHERE Th_ID = '$Thesis_ID')";
+    $Reservationdelete = mysqli_query($conn, $deleteReservation);
+
     // Delete the thesis record
     $deleteThesis = "DELETE FROM thesis WHERE Th_ID = '$Thesis_ID'";
     $runThesisDelete = mysqli_query($conn, $deleteThesis);

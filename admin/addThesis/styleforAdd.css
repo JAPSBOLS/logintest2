@@ -117,6 +117,7 @@ form .fields .input-field{
     border-radius: 5px;
     padding: 2px;
     width: 500px;
+    border: none;
   }
   
   /* Department Name Box */
@@ -125,6 +126,7 @@ form .fields .input-field{
     border-radius: 5px;
     padding: 2px;
     width: 500px;
+    border: none;
   }
 .input-field label{
     font-size: 15px;

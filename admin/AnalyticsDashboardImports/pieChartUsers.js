@@ -113,7 +113,7 @@ fetch('AnalyticsDashboardImports/getStudentsDeptCount.php')
 fetch('AnalyticsDashboardImports/getAvailablePercentage.php')
   .then(response => response.json())
   .then(data =>{
-
+    data = Math.round(data * 100)/100
     var APText = document.getElementById("APText");
     APText.innerHTML = (data*100) + "%";
 

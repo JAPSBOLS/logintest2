@@ -24,11 +24,6 @@ $run = mysqli_query($con, $query);
             
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-<!DOCTYPE html>  
-<html>  
-    <head>  
-        <meta charset="utf-8">  
-        <title>Thesis List</title>  
         <link rel="stylesheet" type="text/css" href="styleforRemove.css">  
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -139,20 +134,6 @@ $run = mysqli_query($con, $query);
     include "../includes/scripts.php";
     include "../includes/footer.php";
 ?>>
-     <script>
-            $(document).ready( function () {
-                $('#myTable').DataTable();
-            });
-            function confirmDelete(id) {
-                document.getElementById('confirmation-dialog').style.display = 'block';
-                document.getElementById('delete-button').onclick = function() {
-                window.location.href = 'delete.php?Th_ID=' + id;
-                };
-            }
-            function closeDialog() {
-                document.getElementById('confirmation-dialog').style.display = 'none';
-            }
-        </script>
 <script>
     const Management = document.getElementById('ManagementSidebar');
     const AddThesis = document.getElementById('RemoveThesisSidebar');

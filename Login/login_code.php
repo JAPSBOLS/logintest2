@@ -57,8 +57,13 @@ if (isset($_POST['studNum']) && isset($_POST['password']) && isset($_POST['role'
                 $_SESSION['auth_role'] = $role;
                 $_SESSION['user'] = $row; // Storing user data in session
                 
-                header("Location: ../admin/index.php");
+                if ($role === "admin") {
+                    header("Location: ../admin/index.php");
+                } else {
+                    header("Location: ../admin/thesisDisplay/thesissearchsortandfilter.php");
+                }
                 exit();
+                
             } else {
                 //User authentication failed
                 if ($role === "admin") {

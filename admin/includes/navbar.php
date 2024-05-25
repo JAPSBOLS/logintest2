@@ -71,6 +71,12 @@
             <i class="fas fa-landmark"></i>
             <span>Thesis Library</span></a>
     </li>
+    
+    <li class="nav-item" id="thesisLibrary">
+        <a class="nav-link" href="<?php echo GROOT;?>thesisDisplay/thesissearchsortandfilter.php">
+            <i class="fas fa-bookmark""></i>
+            <span>My Reservations</span></a>
+    </li>
 
     <li class="nav-item" id="FAQ">
         <a class="nav-link" href="<?php echo GROOT;?>../ContactPage-FAQs/FAQs.php">

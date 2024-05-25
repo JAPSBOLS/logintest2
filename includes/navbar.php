@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
   <nav class="navbar navbar-expand-lg" style="background-color:ivory">
     <div class="container-fluid">
@@ -20,9 +23,13 @@
           <li class="nav-item">
             <a class="nav-link" id="aboutUS" href="<?php echo GROOT;?>OnePage/aboutUs.php" style="margin-right: 30px;">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="btn btn-primary" href="<?php echo GROOT;?>Login/newlogin.php">Login</a>
-          </li>
+        <li class="nav-item">
+          <?php if (isset($_SESSION['auth']) && $_SESSION['auth'] === true): ?>
+            <a class="btn btn-primary" href="<?php echo GROOT; ?>admin/index.php">Back to Dashboard</a>
+          <?php else: ?>
+            <a class="btn btn-primary" href="<?php echo GROOT; ?>Login/newlogin.php">Login</a>
+          <?php endif; ?>
+        </li>
         </ul>
       </div>
     </div>

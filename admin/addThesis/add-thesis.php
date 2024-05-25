@@ -36,7 +36,7 @@
                         </script>
                     <?php
                         unset($_SESSION['status']);
-                        session_destroy();
+                        // session_destroy(); haHAHAHAHAH
                         }
                     ?>
 

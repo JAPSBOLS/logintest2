@@ -44,11 +44,11 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="3.mp4" loop autoplay muted></video>
                 </div>
                 <div class="content">
-                    <h3>Thesis Abstract Access and Download</h3>
-                    <p>Download or view thesis abstract</p>
+                    <h3>Thesis search and sort</h3>
+                    <p>View how search and sort works.</p>
                 </div>
             </div>
         </section>
@@ -56,11 +56,11 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="content">
-                    <h3>User Dashboard</h3>
-                    <p>Personalize dashboard that has borrowed theses history and receive notifications for approval status</p>
+                    <h3>User Filter</h3>
+                    <p>Observe the functioning of the filter, which examines whether a thesis is available or unavailable, and then proceeds to filter the theses based on their department.</p>
                 </div>
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="4.mp4" loop autoplay muted></video>
                 </div>
             </div>
         </section>
@@ -68,11 +68,11 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="5.mp4" loop autoplay muted></video>
                 </div>
                 <div class="content">
-                    <h3>Interactive Features</h3>
-                    <p>Rate and comment about your experience with the system</p>
+                    <h3>User Reservation</h3>
+                    <p>Observe the process of reserving a thesis.</p>
                 </div>
             </div>
         </section>
@@ -81,11 +81,11 @@
             <h1 class="heading"><span>Administrative </span>Features</h1>
             <div class="row">
                 <div class="content">
-                    <h3>Thesis Management</h3>
-                    <p>Edit and update thesis metadata</p>
+                    <h3>Administrative Log-in</h3>
+                    <p>Observe how admins log-in to the system.</p>
                 </div>
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="login.mp4" loop autoplay muted></video>
                 </div>
             </div>
         </section>
@@ -93,11 +93,11 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="dashboard.mp4" loop autoplay muted></video>
                 </div>
                 <div class="content">
-                    <h3>User Management</h3>
-                    <p>Manage user roles and permissions, monitor user activity and generate reports</p>
+                    <h3>Administrative Dashboard</h3>
+                    <p>Take a look at the distinct features of the admin dashboard and how it differs from the user dashboard.</p>
                 </div>
             </div>
         </section>
@@ -105,11 +105,11 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="content">
-                    <h3>Analytics and Reporting</h3>
-                    <p>Detail analytics on thesis downloads, views, and user interactions</p>
+                    <h3>Remove Thesis</h3>
+                    <p>Observe how admins remove thesis from the system.</p>
                 </div>
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="REMOVE.mp4" loop autoplay muted></video>
                 </div>
             </div>
         </section>
@@ -117,11 +117,11 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="ADD.mp4" loop autoplay muted></video>
                 </div>
                 <div class="content">
-                    <h3>Communication Tools</h3>
-                    <p>Built-in messaging system for user communication</p>
+                    <h3>Add Thesis</h3>
+                    <p>Observe how admins add a theis into the system.</p>
                 </div>
             </div>
         </section>
@@ -129,11 +129,24 @@
         <section class="feature0" id="feature0">
             <div class="row">
                 <div class="content">
-                    <h3>Technical Support</h3>
-                    <p>Be guided by helpdesk, technical support options, user guides, and FAQs</p>
+                    <h3>Thesis Library</h3>
+                    <p>Discover the functionality of the thesis library feature and understand its operation.</p>
                 </div>
                 <div class="video-container">
-                    <video src="" loop autoplay muted></video>
+                    <video src="THESIS LIB.mp4" loop autoplay muted></video>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="feature0" id="feature0">
+            <div class="row">
+                <div class="video-container">
+                    <video src="RESERVE.mp4" loop autoplay muted></video>
+                </div>
+                <div class="content">
+                    <h3>Accept Reserve Thesis</h3>
+                    <p>Take a closer look at how administrators process and approve pending requests to receive theses, and observe how these theses are added to the reservation list once reserved.</p>
                 </div>
             </div>
         </section>

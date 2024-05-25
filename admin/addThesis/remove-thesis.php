@@ -127,8 +127,6 @@ $run = mysqli_query($con, $query);
                 $('#myTable').DataTable();
             } );
         </script>
-
-</html>
 <?php
     // Kapag ininclude to scripts nawawala yung serach and pagination
     include "../includes/scripts.php";

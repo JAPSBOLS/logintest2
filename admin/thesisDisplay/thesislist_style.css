@@ -4,6 +4,10 @@
     border: 1px solid silver;
     border-radius: 3px;
 }
+.container h2{
+    margin-left: 50px;
+    margin-top: 25px;
+}
 button{
     font-size: 1em;
     font-weight: normal;
@@ -28,7 +32,7 @@ button{
     width: 90%;
     margin: 0 auto;
     border-radius: 5px;
-    background-color: #fff;
+    background-color:rgb(130, 188, 191);
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -37,9 +41,7 @@ button{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card-body {
-    padding: 2px 16px;
-}
+
 
 .submit-button {
     background-color: #5b6992; 

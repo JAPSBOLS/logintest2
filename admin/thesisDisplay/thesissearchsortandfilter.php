@@ -20,7 +20,7 @@
                     <h2 class='card-title'>". $row["Th_Title"] . "</h2>
                     <p class='card-text'>
 
-                <h2><mark>" . $row["Th_ReservStatus"] . "<br></mark></h2>
+                <h2>" . $row["Th_ReservStatus"] . "<br></h2>
 
                 Code: " . $row["Th_Code"] . "<br>
                 Author: " . $row["Authors"] . "<br>
@@ -194,13 +194,13 @@
 
             <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <h1 class="h3 mb-0 text-gray-800">Thesis Library</h1>
+                <h1 class="h3 mb-0 text-gray-800">THESIS LIBRARY</h1>
             </div>
 
             <?php include("thesis_list.php");?>
 
             <div class="container">
-                <h2>Results: <?php echo $output_list[1]; ?> </h2>
+                <h2>RESULTS: <?php echo $output_list[1]; ?> </h2>
                 <p><?php echo $output_list[0]; ?></p>
             </div>
         </div>

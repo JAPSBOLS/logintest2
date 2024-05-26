@@ -28,7 +28,7 @@ section {
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 153, .05);
+    background: rgba(255, 176, 29, 0.13);
 }
 .heading span {
     color: var(--blue);
@@ -36,6 +36,7 @@ section {
 .features {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Add this line */
     min-height: 100vh;
     background: url(../images/) no-repeat;
     background-size: cover;
@@ -44,7 +45,13 @@ section {
 }
 .features .content {
     max-width: 50rem;
+
 }
+.features img {
+        max-width: 57%; /* Adjust the width as needed */
+        height: auto;
+}
+
 .features .content h3 {
     font-size: 6rem;
     color: #333;

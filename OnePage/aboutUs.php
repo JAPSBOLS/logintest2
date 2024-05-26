@@ -68,7 +68,7 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                  <img src="assets/img/portfolio/portfolio-1.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
@@ -107,6 +107,16 @@
                 <div class="swiper-slide">
                   <img src="assets/img/portfolio/portfolio-10.jpg" alt="">
                 </div>
+
+                  
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-11.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-12.jpg" alt="">
+                </div>
+
 
               </div>
               <div class="swiper-pagination"></div>

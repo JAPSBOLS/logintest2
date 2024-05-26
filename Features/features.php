@@ -14,6 +14,7 @@
                 <span>Management System</span>
                 <p>Bicol University Polangui Online Thesis Library in One Management System </p>
             </div>
+            <img src="FEATURES.png" alt="Features" class="feature-image">
         </section>
 
         <section class="feature0" id="feature0">

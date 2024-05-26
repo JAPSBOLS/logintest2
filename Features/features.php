@@ -1,3 +1,5 @@
+<link rel="icon" href="../images/websiteLOGO.png" type="image/png">
+<title>BUP Thesis Library</title>
 <?php
     define("GROOT","../");
     include('../includes/header.php');

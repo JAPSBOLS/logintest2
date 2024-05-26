@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Features</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="contacts.css"/>
+        <link rel="icon" href="../images/websiteLOGO.png" type="image/png">
+        <title>BUP Thesis Library</title>
     </head>
     <body>
 

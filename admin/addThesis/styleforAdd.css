@@ -139,10 +139,9 @@ form .fields .input-field{
 }
 
 
-
-.input-field input:is(:focus, :valid){
-    /* box-shadow: 0 3px 3px black; */
-} /*to be studied*/
+/*input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 3px black;}
+*/
 
 .container form .abstractField{
     margin-top: 20px;
@@ -183,9 +182,9 @@ textarea{
 
    }
 
-textarea:is(:focus, :valid){
-    /* box-shadow: 0 3px 3px black; */
-} /*to be studied*/
+/* textarea:is(:focus, :valid){
+     box-shadow: 0 3px 3px black; 
+} */
 
 
 form .button, .remove_button {

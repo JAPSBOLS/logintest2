@@ -148,7 +148,7 @@ include '../admin/auth.php';
                         </div>
  
         <div class="text-right mt-3">
-            <!-- <button type="button" class="btn btn-primary">Save changes</button>&nbsp; -->
+            <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
             <button type="button" class="btn btn-primary"   onclick="redirectToIndex()">Cancel</button>
         </div>
     </div>

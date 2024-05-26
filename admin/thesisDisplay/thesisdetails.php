@@ -37,6 +37,11 @@
 
                 <a class="back-button" href="thesissearchsortandfilter.php">Go Back</a>
                 <button class="reserve-button" id='reserve-link'>Reserve</button>
+                <!-- <div>
+                    <form method='POST' action='generate_pdf.php'>
+                            <button type='submit' name='thesis' style='background-color: #ff574b; border: none; font-family: Montserrat; color: white; padding: 15px 32px; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;'>Export As PDF</button>
+                    </form>
+                </div> -->
 
 
 

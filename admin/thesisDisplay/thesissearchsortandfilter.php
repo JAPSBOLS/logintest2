@@ -30,7 +30,8 @@
                 ".$row["Th_Abstract"]."</p><br><br>
                 </p>  
                 <div style='display: flex; justify-content: space-between;'>
-                    <button style='background-color: #ff574b; border: none; font-family: Montserrat; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;'>Export As PDF</button>
+                    <form method='POST' action='generate_pdf.php'>
+                    </form>
                     <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\">
                         <button style='background-color: #4e73df; border: none; font-family: Montserrat; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;'>View</button>
                     </a>

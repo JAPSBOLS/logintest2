@@ -18,6 +18,7 @@ button{
 .filter{
     background-color: whitesmoke;
     border: 1px solid silver;
+    padding: 15px; 
     border-radius: 3px;
     display: none;
 }
@@ -110,4 +111,39 @@ button{
     border: 1px solid #ccc; 
     border-radius: 4px; 
     font-family: 'Montserrat', sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    vertical-align: top; 
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    vertical-align: top; 
+}
+td div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+td div label {
+    margin-left: 5px; 
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.checkbox-container label {
+    margin-left: 5px; 
 }

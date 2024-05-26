@@ -24,9 +24,7 @@
         $thesis = array(); // Initialize the $thesis variable to an empty array
     }
 ?>
-
 <title><?php echo $thesis["Th_Title"]; ?></title>
-<head><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script></head>
 <!-- Content Wrapper -->
 <div id="content-wrapper" class="d-flex flex-column">
 
@@ -48,7 +46,7 @@
 
 
                 <!-- Display Thesis -->
-                <h2><?php echo $thesis["Th_Title"]; ?></h2>
+                <h2><br><br><?php echo $thesis["Th_Title"]; ?><br><br></h2>
                 <p>
                     <strong>Status:</strong> <?php echo $thesis["Th_ReservStatus"]; ?><br><br><br>
                     <strong>Code:</strong> <?php echo $thesis["Th_Code"]; ?><br><br><br>
@@ -63,21 +61,17 @@
                 </p>
 
              <!-- Alert Message after Submit -->
-             <?php
+            <?php
             if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
             ?>
-                <script>
-                    Swal.fire({
-                        title: "<?php echo $_SESSION['status']; ?>",
-                        icon: "success",
-                        button: "OK!",
-                    });
-                </script>
+                    <script>
+                        alert("<?php echo  $_SESSION['status']; ?>");
+                    </script>
             <?php
             unset($_SESSION['status']);
+            // session_destroy(); GINAGAWA NETO?
             }
             ?>
-           
 
             <!-- this is PopUp Rservation -->
                 <div class="popup-container">

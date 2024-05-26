@@ -27,7 +27,7 @@
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacts.html">
                 </form>
                 <div class="image">
-                    <img src="images/buplib.jpg" alt="">
+                    <img src="ctcs.png" alt="">
                 </div>
             </div>
         </section>

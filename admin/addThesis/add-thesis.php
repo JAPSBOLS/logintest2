@@ -113,16 +113,17 @@
                     <script src="scripts.js"></script>
 
                     <!-- Remove Thesis Tab -->
-                    <form action="remove-thesis.php" method="POST">
+                    <!-- <form action="remove-thesis.php" method="POST">
                         <button type="submit" class="remove_button" name="remove_btn"> Want to Remove a Thesis?</button>
                     </form>
 
-                    <?php
+                    <?php /*
                         if(isset($_POST['remove_btn'])){
                             header("Location: remove-thesis.php");
                             exit();
                         }
-                    ?>   
+                    */  
+                     ?>  -->
                     <script src="scripts.js"></script>
 
                 </div>

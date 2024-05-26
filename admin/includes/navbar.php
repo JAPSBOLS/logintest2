@@ -83,7 +83,7 @@
 
 
     <li class="nav-item" id="FAQ">
-        <a class="nav-link" href="<?php echo GROOT;?>../ContactPage-FAQs/FAQs.php">
+        <a class="nav-link" href="<?php echo GROOT;?>../FAQs/FAQs.php">
             <i class="fas fa-question"></i>
             <span>FAQ</span></a>
     </li>

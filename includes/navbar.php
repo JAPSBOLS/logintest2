@@ -21,7 +21,7 @@
             <a class="nav-link" id="ContactUS" href="<?php echo GROOT;?>Contacts/contacts.php" style="margin-right: 30px;">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="aboutUS" href="<?php echo GROOT;?>OnePage/aboutUs.php" style="margin-right: 30px;">About Us</a>
+            <a class="nav-link" id="aboutUS" href="<?php echo GROOT;?>AboutUS/aboutUs.php" style="margin-right: 30px;">About Us</a>
           </li>
         <li class="nav-item">
           <?php if (isset($_SESSION['auth']) && $_SESSION['auth'] === true): ?>

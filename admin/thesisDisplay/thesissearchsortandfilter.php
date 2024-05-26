@@ -28,10 +28,14 @@
                 </div>
                 <br><br><p>
                 ".$row["Th_Abstract"]."</p><br><br>
-                </p>    
-                    <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\" style='position: absolute; bottom: 10px; right: 10px;'>
+                </p>  
+                <div style='display: flex; justify-content: space-between;'>
+                    <form method='POST' action='generate_pdf.php'>
+                    </form>
+                    <a href=\"thesisdetails.php?Th_Code=" . $row["Th_Code"] . "\">
                         <button style='background-color: #4e73df; border: none; font-family: Montserrat; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;'>View</button>
                     </a>
+                </div>
                 </div>
                 </div><br>";        
                 $Total_Resultscounter++; // Increment the counter

@@ -1,6 +1,6 @@
-<!-- DI PA TO TAPOS DI KO PA NADODOWNLOAD TCPDF -->
 <?php
-require_once('path/to/tcpdf.php'); // Adjust the path to your TCPDF installation
+include('auth.php');
+require_once('../tcpdf/tcpdf.php'); // Adjust the path if you're not using Composer
 
 // Database connection
 $con = new mysqli('localhost', 'root', '', 'archive system 2');
@@ -11,8 +11,8 @@ $query = "SELECT thesis.*, thesis_author.Th_Author
 
 $run = mysqli_query($con, $query);
 
-// Create new PDF document
-$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+// Create new PDF document with legal size paper
+$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, 'LEGAL', true, 'UTF-8', false);
 
 // Set document information
 $pdf->SetCreator(PDF_CREATOR);
@@ -60,7 +60,6 @@ $html = '<h1>Thesis List</h1>
                  <th>Advisor</th>
                  <th>Category</th>
                  <th>Thematic Area</th>
-                 <th>Reserve Status</th>
                  <th>Date Modified</th>
                  <th>Department</th>
              </tr>
@@ -76,7 +75,6 @@ while ($row = mysqli_fetch_assoc($run)) {
                  <td>' . $row['Th_Advisor'] . '</td>
                  <td>' . $row['Th_Category'] . '</td>
                  <td>' . $row['Th_ThematicArea'] . '</td>
-                 <td>' . $row['Th_ReservStatus'] . '</td>
                  <td>' . $row['Th_DateModified'] . '</td>
                  <td>' . $row['Th_Department'] . '</td>
              </tr>';

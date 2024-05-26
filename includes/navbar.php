@@ -18,7 +18,7 @@
             <a class="nav-link" id="features" href="<?php echo GROOT;?>Features/features.php" style="margin-right: 30px;">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#" style="margin-right: 30px;">Contacts</a>
+            <a class="nav-link" id="ContactUS" href="<?php echo GROOT;?>Contacts/contacts.php" style="margin-right: 30px;">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="aboutUS" href="<?php echo GROOT;?>OnePage/aboutUs.php" style="margin-right: 30px;">About Us</a>

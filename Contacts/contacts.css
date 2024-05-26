@@ -14,7 +14,7 @@
     transition: .2s linear;
 }
 html {
-    font-size: 62.5%;
+    
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden;
@@ -142,7 +142,7 @@ section {
     height: 600px;
 }
 .contact .row .image {
-    flex: 1 1 40rem;
+    flex: 1 1 20rem;
 }
 .contact .row .image img {
     width: 100%;
@@ -248,5 +248,15 @@ body{
     }
     .heading {
         font-size: 3rem;
+    }
+}
+@media (max-width: 768px) {
+    .contact .row {
+        flex-direction: column; /* Stack items in a column on smaller screens */
+    }
+
+    .contact .row .image,
+    .contact .row form {
+        flex: 1 1 auto; /* Reset flex values for stacking */
     }
 }

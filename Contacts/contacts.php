@@ -18,6 +18,9 @@
         <section class="contact" id="contact">
             <h1 class="heading"><span>Contact </span>Us</h1>
             <div class="row">
+                <div class="image">
+                    <img src="ctcs.png" alt="">
+                </div>
                 <form action="https://formsubmit.co/a4cee74016fcbd521883d8d05f8913a0" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" placeholder="name" class="box">
                     <input type="email" name="email" placeholder="email" class="box">
@@ -27,9 +30,7 @@
                     <button type="submit" class="btn" onclick="openPopup()">Send Message</button>
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacts.html">
                 </form>
-                <div class="image">
-                    <img src="ctcs.png" alt="">
-                </div>
+                
             </div>
         </section>
         

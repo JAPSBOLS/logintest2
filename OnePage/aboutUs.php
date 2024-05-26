@@ -80,7 +80,32 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-4.jpeg" alt="">
+                  <img src="assets/img/portfolio/portfolio-4.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-5.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-6.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-7.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-8.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-9.jpg" alt="">
+                </div>
+
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-10.jpg" alt="">
                 </div>
 
               </div>
@@ -93,26 +118,14 @@
             <div class="portfolio-description">
               <h2>About Us</h2>
               <p>
-                  Thesis Library System is a modern cloud-based application designed
-                to streamline student's administration processes of Bicol University Polangui's 
-                higher education institutions and programs. We dream of enhancing the students journey 
-                by offering this design as their cloud data depot and storage, and to help aid their needs, 
-                along with achieving clientele satisfaction. Our system design is committed in ensuring the
-                truth, trust, integrity, transparency, and sustainability (TTITS) in all operations.
+              The successful implementation of this system was achieved through the collaborative efforts of a diverse team with varied skills. The team consisted of coding enthusiasts who developed intricate algorithms and detail-oriented members who managed paperwork. This division of labor streamlined workflow, leading to a faster development process and ensuring the system's functionality and efficiency.
               </p>
               <div>
                 <p>  
-                  Comprised of expertise with diverse educational backgrounds, our team is dedicated to ignite a new spark of 
-                change in the higher education institutions platform, while offering a functional, efficient, and transformative
-                Thesis Library System.
-                </p>
+                Our team's expertise and collaborative effort led to creative solutions, effective communication, and efficient resource utilization. The combination of coding proficiency and organizational skills ensured a robust system and meticulous paperwork. This successful implementation is a testament to our shared vision, commitment to excellence, and innovative spirit. By valuing both coding and paperwork, we maximized efficiency and utilized our resources effectively. Overall the achievement system is all because of the power of teamwork.
+
               </div>
-              <div>
-                <p>  
-                  Discover and meet our passionate and dedicated individuals behind this system as we uncover the future that lies
-                beyond our grasp.
-                </p>
-              </div>
+              
             </div>
           </div>
     <!-- ======= Team Section ======= -->

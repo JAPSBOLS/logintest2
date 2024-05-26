@@ -7,6 +7,13 @@
         <link rel="stylesheet" href="contacts.css"/>
     </head>
     <body>
+
+    <?php
+        define("GROOT","../");
+        include('../includes/header.php');
+        include("../includes/navbar.php");
+    ?>
+
         <section class="contact" id="contact">
             <h1 class="heading"><span>Contact </span>Us</h1>
             <div class="row">
@@ -45,5 +52,12 @@
             }
         </script>
 
-    </body>
-</html>
+    <script src="assets/js/main.js"></script>
+    <script>
+    var active =document.getElementById("ContactUS");
+    active.classList.add("active");
+  </script>
+
+<?php
+  include("../includes/footer.php");
+?>

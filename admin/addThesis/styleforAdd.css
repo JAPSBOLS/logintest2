@@ -32,6 +32,9 @@
   'GRAD' 0,
   'opsz' 48
 }
+.details .title{
+    color:rgb(79, 79, 79);
+}
 
 .container header{
     font-weight: 700;
@@ -41,6 +44,7 @@
 }
 .container-fluid{
     background-color:#F5F5F5;
+    color:rgb(255, 255, 255);
 }
 
 .container form{
@@ -72,7 +76,7 @@
 }
 
 .fields{
-    background: url(img/img.png);
+    background: url(img/ADDBG2.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,6 +108,7 @@ form .fields .input-field{
     box-shadow: none;
     outline: none;
     border: none;
+
 }
 
 .input-field input:focus {
@@ -118,6 +123,7 @@ form .fields .input-field{
     padding: 2px;
     width: 500px;
     border: none;
+    
   }
   
   /* Department Name Box */
@@ -159,7 +165,7 @@ form .abstractField .abstract-field{
 
 .abstract-field label{
     font-size: 20px;
-    color: rgb(88, 88, 88);
+    color: rgb(107, 107, 107);
     
 }
 
@@ -185,7 +191,7 @@ form .button, .remove_button {
     height: 55px;
     border-radius: 5px;
     width: 100%;
-    background:#3278FF;
+    background:linear-gradient(to right,#4381fc, #5b91fd, #739ff8);
     margin-top: 20px; /* Add margin top for spacing */
     border: none; /* Remove default button border */
     cursor: pointer; /* Change cursor to pointer on hover */
@@ -195,12 +201,12 @@ form .button, .remove_button {
 }
 
 form .button:hover, .remove_button:hover{
-    background-color: #276fff;
+    background-color: #4478FF;
 }
 
 .alert {
     padding: 20px;
-    background-color: #276fff;
+    background-color: #4478FF;
     color: white;
   }
   
@@ -219,6 +225,9 @@ form .button:hover, .remove_button:hover{
   .closebtn:hover {
     color: black;
   }
+  input[type="date"] {
+    color: rgb(107, 107, 107);
+}
   @media (max-width: 600px) {
     .fields {
         grid-template-columns: 1fr; /* Change to single column */

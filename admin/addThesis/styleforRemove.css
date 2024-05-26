@@ -16,7 +16,7 @@ body {
 
 /* Header Styles */
 header {
-  background: linear-gradient(to right,#47acd3, #87CEEB,lightblue);
+  background: linear-gradient(to right,#4478FF,#779cfc);
   color: #fff; 
   font-size: 2rem;
   text-align: center;
@@ -28,19 +28,19 @@ header {
 table {
   width:95%; 
   margin: 20px auto; 
-  background:linear-gradient(to right,#bebebe, #e0e0e0,rgb(251, 252, 252));
+  background:linear-gradient(to right,#dbdbdb, #f0f0f0,rgb(251, 252, 252));
   border-collapse: collapse;
 }
 
 table th,
 table td {
   padding: 10px;
-  border: 2px solid #5e5e5e;
+  border: 2px solid #161e3b;
   cursor: default;
 }
 
 table th {
-  background: linear-gradient(to right, #f69330, #fcad5f);
+  background: #779cfc;
   color: #fff; 
   cursor: default;
 
@@ -84,7 +84,7 @@ table th {
 }
 /* Delete Button Style */
 .delete-link {
-  background-color: #da190b; 
+  background-color: #ff574b; 
   color: white; 
   border: none; 
   cursor: pointer;
@@ -100,7 +100,7 @@ table th {
 
 /* Change background color on hover */
 .delete-link:hover {
-  background-color: #da190b;
+  background-color: #e94034;
 }
 
 .btn {

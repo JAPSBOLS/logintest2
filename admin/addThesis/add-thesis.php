@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="input-field">
                                         <label>Course </label>
-                                        <input type="text" placeholder="'Computer', 'AI', 'Basta'" required id="Th_Course" name="Th_Course" onkeyup="checkform()">
+                                        <input type="text" placeholder="Bachelor of Science in 'input course'   " required id="Th_Course" name="Th_Course" onkeyup="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label>Thematic Area </label>
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="input-field">
                                         <label>Advisor </label>
-                                        <input type="text" placeholder="basta" required id="Th_Advisor" name="Th_Advisor" onkeyup="checkform()">
+                                        <input type="text" placeholder="First Name, Middle Name, Last Name" required id="Th_Advisor" name="Th_Advisor" onkeyup="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label>Thesis Code</label>
@@ -100,7 +100,7 @@
                                 </div>
                                 <div class="abstractField">
                                     <div class="abstract-field">
-                                        <br><label>Abstract </label>
+                                        <br><label>ABSTRACT</label>
                                         <textarea type="text" placeholder="" required id="Th_Abstract" name="Th_Abstract" onkeyup="checkform()"></textarea>
                                     </div>
                                 </div>

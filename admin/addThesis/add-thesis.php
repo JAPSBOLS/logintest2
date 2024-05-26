@@ -5,6 +5,7 @@
     include "../includes/navbar.php";
 ?>
 <title>BU Online Library Add Thesis</title>
+    <head><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script></head>
         <!-- Content Wrapper -->
         <link rel="stylesheet" href="styleforADD.css">
         <div id="content-wrapper" class="d-flex flex-column">
@@ -28,7 +29,8 @@
                         if (isset($_SESSION['status']) && $_SESSION['status'] !='') {
                     ?>
                         <script>
-                            swal({
+                           const Swal = swal;
+                            Swal.fire({
                                 title: '<?php echo $_SESSION['status']; ?>',
                                 icon: '<?php echo $_SESSION['status_code']; ?>',
                                 button: "OK!",
@@ -39,6 +41,7 @@
                         }
                     ?>
 
+
                     <hr>
                     <form action="add.php" method="POST" name="thesis-form">
                         <div class="form">
@@ -47,19 +50,19 @@
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Thesis Title </label>
-                                        <input type="text" placeholder="Enter Thesis Title" required id="Th_Title" name="Th_Title" onkeyup="checkform()">
+                                        <input type="text" placeholder="Enter Thesis Title" required id="Th_Title" name="Th_Title" oninput="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label>Author Name: </label>
-                                        <input type="text" placeholder="Enter Author Name" required id="Th_Author" name="Th_Author" onkeyup="checkform()">
+                                        <input type="text" placeholder="Enter Author Name" required id="Th_Author" name="Th_Author" oninput="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label>Date Modified </label>
-                                        <input type="date" placeholder="Enter Date" required id="Th_DateModified" name="Th_DateModified" onkeyup="checkform()">
+                                        <input type="date" placeholder="Enter Date" required id="Th_DateModified" name="Th_DateModified" oninput="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label for="Th_Department">Department Name </label>
-                                        <select id="Th_Department" name="Th_Department" required onkeyup="checkform()">
+                                        <select id="Th_Department" name="Th_Department" required oninput="checkform()">
                                             <option  value="" disabled selected ></option>
                                             <option value="Engineering Department" >Engineering Department</option>
                                             <option value="Computer Studies Department">Computer Studies Department</option>
@@ -72,24 +75,24 @@
                                     </div>
                                     <div class="input-field">
                                         <label>Course </label>
-                                        <input type="text" placeholder="Bachelor of Science in 'input course'   " required id="Th_Course" name="Th_Course" onkeyup="checkform()">
+                                        <input type="text" placeholder="Bachelor of Science in 'input course'   " required id="Th_Course" name="Th_Course" oninput="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label>Thematic Area </label>
-                                        <input type="text" placeholder="'Innovation and Technology', 'Sustainable Development'" required id="Th_ThematicArea" name="Th_ThematicArea" onkeyup="checkform()">
+                                        <input type="text" placeholder="'Innovation and Technology', 'Sustainable Development'" required id="Th_ThematicArea" name="Th_ThematicArea" oninput="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label>Advisor </label>
-                                        <input type="text" placeholder="First Name, Middle Name, Last Name" required id="Th_Advisor" name="Th_Advisor" onkeyup="checkform()">
+                                        <input type="text" placeholder="First Name, Middle Name, Last Name" required id="Th_Advisor" name="Th_Advisor" oninput="checkform()">
                                     </div>
                                     <div class="input-field">
                                         <label>Thesis Code</label>
-                                        <input type="text" placeholder="CNH198" required id="Th_Code" name="Th_Code" onkeyup="checkform()">
+                                        <input type="text" placeholder="CNH198" required id="Th_Code" name="Th_Code" oninput="checkform()">
                                     </div>
                                     
                                     <div class="input-field">
                                         <label for="Th_Category">Category</label>
-                                        <select required id="Th_Category" name="Th_Category" onkeyup="checkform()">
+                                        <select required id="Th_Category" name="Th_Category" oninput="checkform()">
                                         <option  value="" disabled selected ></option>
                                             <option value="Development" >Development</option>
                                             <option value="Research" >Research</option>
@@ -101,7 +104,7 @@
                                 <div class="abstractField">
                                     <div class="abstract-field">
                                         <br><label>ABSTRACT</label>
-                                        <textarea type="text" placeholder="" required id="Th_Abstract" name="Th_Abstract" onkeyup="checkform()"></textarea>
+                                        <textarea type="text" placeholder="" required id="Th_Abstract" name="Th_Abstract" oninput="checkform()"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +113,7 @@
                     </form>
 
                     <!-- JavaScript Area-->
-                    <script src="scripts.js"></script>
+                    <script defer src="scripts.js"></script>
 
                     <!-- Remove Thesis Tab -->
                     <!-- <form action="remove-thesis.php" method="POST">
@@ -124,7 +127,6 @@
                         }
                     */  
                      ?>  -->
-                    <script src="scripts.js"></script>
 
                 </div>
                 <!-- End of main Content -->

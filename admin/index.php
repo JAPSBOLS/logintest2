@@ -26,7 +26,7 @@
                         <div class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                             <form method="post" action="generate_report.php">
                                 <button type="submit" class="btn btn-primary">
-                                    <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
+                                    <i class="fas fa-download fa-sm text-white-50"></i> Generate Thesis List
                                 </button>
                             </form>
                         </div>

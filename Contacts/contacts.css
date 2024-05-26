@@ -171,7 +171,7 @@ section {
     justify-content: center;
 }
 body{
-    background-color: rgb(221, 221, 221) !important;
+    background-color: #FFFFFF !important;
 }
 .popup {
     width: 400px;
@@ -183,7 +183,7 @@ body{
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
-    color: #333;
+    color: #272727;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }

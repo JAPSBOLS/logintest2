@@ -1,3 +1,4 @@
+<link rel="icon" href="../../images/websiteLOGO.png" type="image/png">
 <?php
     define("GROOT","../");
     include(GROOT."auth.php");
@@ -5,7 +6,7 @@
     include(GROOT."includes/navbar.php");
     include("getReserveList.php")
 ?>
-<title>Pending Reserve Requests</title>
+<title>BUP - Thesis Library</title>
 <link rel="stylesheet" type="text/css" href="myStyle.css">
 <script src="myJsScrip.js"></script>
         <!-- Content Wrapper -->

@@ -4,7 +4,7 @@
     include "../includes/header.php";
     include "../includes/navbar.php";
 ?>
-<title>BU Online Library Add Thesis</title>
+<title>BUP - Thesis Library</title>
     <head><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script></head>
         <!-- Content Wrapper -->
         <link rel="stylesheet" href="styleforADD.css">

@@ -4,7 +4,7 @@
    include(GROOT."includes/header.php");
    include(GROOT."includes/navbar.php");
 ?>
-<title>FAQs</title>
+<title>BUP - Thesis Library</title>
 <!-- Content Wrapper -->
 <div id="content-wrapper" class="d-flex flex-column">
 

@@ -12,7 +12,7 @@ $query = "SELECT thesis.*, thesis_author.Th_Author
 $run = mysqli_query($con, $query);  
 ?>  
 
-<title>BU Online Library Dashboard</title>
+<title>BUP - Thesis Library</title>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 

@@ -1,3 +1,4 @@
+<link rel="icon" href="../../images/websiteLOGO.png" type="image/png">
 <?php
         include('../config/dbconn.php');
         $query = "SELECT * from reservation WHERE Status = 'Accepted'";
@@ -10,8 +11,7 @@
 
 ?>
 <!-- Magg add na ika ning incrementation puonsa 1000 para sa User_ID -->
-
-<title>Reservation</title>
+<title>BUP - Thesis Library</title>
 <link rel="stylesheet" type="text/css" href="myStylemyattitude.css">
 <script src="ok.js"></script>
         <!-- Content Wrapper -->

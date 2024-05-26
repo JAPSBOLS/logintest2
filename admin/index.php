@@ -1,3 +1,4 @@
+<link rel="icon" href="../images/websiteLOGO.png" type="image/png">
 <?php
     define("GROOT","");
 
@@ -7,7 +8,8 @@
     include('includes/header.php');
     include('includes/navbar.php');
 ?>
-<title>BU Online Library Dashboard</title>
+<title>BUP - Thesis Library</title>
+
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 

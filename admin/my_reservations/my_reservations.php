@@ -1,3 +1,4 @@
+<link rel="icon" href="../../images/websiteLOGO.png" type="image/png">
 <?php
         define("GROOT","../");
         include('../config/dbconn.php');
@@ -12,7 +13,7 @@
 ?>
 <!-- Magg add na ika ning incrementation puonsa 1000 para sa User_ID -->
 
-<title>My Reservations</title>
+<title>BUP - Thesis Library</title>
 <script src="ok.js"></script>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">

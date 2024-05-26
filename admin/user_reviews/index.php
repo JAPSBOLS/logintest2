@@ -1,10 +1,11 @@
+<link rel="icon" href="../../images/websiteLOGO.png" type="image/png">
 <?php
 define("GROOT","../");
 include(GROOT."auth.php");
 include(GROOT."includes/header.php");
 include(GROOT."includes/navbar.php");
 ?>
-<title>User Reviews</title>
+<title>BUP - Thesis Library</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
